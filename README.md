@@ -312,9 +312,6 @@
       - 아니라면, True를 리턴함.
     - 리턴값
       - bool형
-return rate * (1 + adj_rate) / (1 + rate * adj_rate / 100)
-    else:
-        return rate / (1 + adj_rate / 100)
         
   - 점유율 조정하는 함수.
     - 매개변수
