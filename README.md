@@ -348,5 +348,13 @@
 5. 사용한 언어: Python.
 6. 프로그램 구조: test_model_main.py은 메인 스크립트이며, 사용자가 입력한 데이터를 토대로 스킬 정보를 담고 있으며, test_model.py은 데이터 처리 로직을 모듈화한 스크립트 및 아크 직업 스킬 정보를 담고 있습니다.
 7. 핵심 로직 및 공식: 구현 요구사항 문서를 참조 바랍니다. >> 하이퍼 링크
-8. 시제품 이미지: 사진 첨부.
-9. 제작 후기: 문서화 과정과 코드 최적화에 총 15일이 소요되었고, 그중 약 12일을 문서화에 할애했습니다. 저는 이 문서화 작업을 단순한 기록이 아닌 설명서라 생각하고, 다른 개발자가 프로젝트를 한눈에 이해할 수 있도록 만드는 데 집중했습니다.
+8. 시제품 사용 방법:<br>
+   1.&nbsp;프로그램 실행을 위해 Python 환경이 필요합니다.<br>
+   2.&nbsp;test_model.py와 test_model_main.py를 다운로드합니다.<br>
+   3.&nbsp;test_model_main을 실행.<br>
+     - 테스트용 데이터 사용 시: test_model_main 스크립트 내에 아래와 같이 수정하면 데이터를 입력하지 않아도 개발자가 테스트한 데이터가 자동으로 입력됩니다.
+     >&emsp;mastery_core_list = test_model.input_data(mastery_core_list)  ->  #mastery_core_list = test_model.input_data(mastery_core_list)<br>
+     >&emsp;#mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)
+     - 주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다. 비정상적인 데이터 종류 또는 값을 넣을 경우 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니, 데이터를 변경하실 경우 이 점을 유의해 주시기 바랍니다.
+10. 시제품 이미지: 사진 첨부.
+11. 제작 후기: 문서화 과정과 코드 최적화에 총 15일이 소요되었고, 그중 약 12일을 문서화에 할애했습니다. 저는 이 문서화 작업을 단순한 기록이 아닌 설명서라 생각하고, 다른 개발자가 프로젝트를 한눈에 이해할 수 있도록 만드는 데 집중했습니다.
