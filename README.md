@@ -354,7 +354,7 @@
 7. 핵심 로직 및 공식: 구현 요구사항 문서를 참조 바랍니다. >> 하이퍼 링크
 8. 시제품 사용 방법:<br>
    1.&nbsp;프로그램 실행을 위해 Python 환경이 필요합니다.<br>
-   2.&nbsp;test_model.py와 test_model_main.py를 다운로드합니다.<br>
+   2.&nbsp;test_model 폴더 내에 test_model.py와 test_model_main.py를 다운로드합니다.<br>
    3.&nbsp;test_model_main을 실행합니다.<br>
      - 테스트용 데이터 사용 시: test_model_main 스크립트 내에 아래와 같이 수정하면 데이터를 입력하지 않아도 개발자의 테스트용 데이터가 자동으로 입력됩니다.
      >&emsp;mastery_core_list = test_model.input_data(mastery_core_list)  ->  #mastery_core_list = test_model.input_data(mastery_core_list)<br>
