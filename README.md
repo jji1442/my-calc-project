@@ -2,7 +2,7 @@
 
 ## 목차
 [기획의도](##1.-기획의도)<br>
-[2. 시제품 개발 전 시행착오](#development-challenges)
+[2. 시제품 개발 전 시행착오](#trial-and-error-before-prototype-development)
 
 ## 1. 기획의도
   
@@ -22,7 +22,7 @@
 
 <br><br><br>
 
-<h2 id="development-challenges">2. 시제품 개발 전 시행착오</h2>
+<h2 id="trial-and-error-before-prototype-development">2. 시제품 개발 전 시행착오</h2>
 
 
 <br><br><br>
