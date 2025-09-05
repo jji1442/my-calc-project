@@ -202,8 +202,8 @@
           - 점유율(변수)
     - 마스터리 코어 리스트 = [마스터리 코어1, 마스터리 코어2, 마스터리 코어3, 마스터리 코어4]<br><br>
     
-     > &emsp;주의 사항1: 기본 스킬의 스킬 이름의 하위 항목에 30레벨 기준 %데미지라고 작성하지 않은 이유는 '쓸만한 컴뱃 오더스'를 사용 시 '일부 스킬만' 최대 레벨인 30레벨에서 31레벨로 상승하기 때문에 최대 레벨이라고 작성함.<br>
-     > &emsp;주의 사항2: 5레벨 상승 시 측정하는 이유는 특정 구간에서 효율이 급격하게 감소했다가 효율이 다시 올라가는 구조이기 때문에 구간별 소모 재화량(평균) 중 가장 좋은 효율을 기준으로 평균을 내어 작성함.
+     >&emsp;주의 사항1: 기본 스킬의 스킬 이름의 하위 항목에 30레벨 기준 %데미지라고 작성하지 않은 이유는 '쓸만한 컴뱃 오더스'를 사용 시 '일부 스킬만' 최대 레벨인 30레벨에서 31레벨로 상승하기 때문에 최대 레벨이라고 작성함.<br>
+     >&emsp;주의 사항2: 5레벨 상승 시 측정하는 이유는 특정 구간에서 효율이 급격하게 감소했다가 효율이 다시 올라가는 구조이기 때문에 구간별 소모 재화량(평균) 중 가장 좋은 효율을 기준으로 평균을 내어 작성함.
 
     스킬 레벨별 재화 소모량
     | 스킬 레벨 | 재화 소모량 |
@@ -359,7 +359,7 @@
      - 테스트용 데이터 사용 시: test_model_main 스크립트 내에 아래와 같이 수정하면 데이터를 입력하지 않아도 개발자가 테스트한 데이터가 자동으로 입력됩니다.
      >&emsp;mastery_core_list = test_model.input_data(mastery_core_list)  ->  #mastery_core_list = test_model.input_data(mastery_core_list)<br>
      >&emsp;#mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)
-     - 주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다. 비정상적인 데이터 종류 또는 값을 넣을 경우 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니, 데이터를 변경하실 경우 이 점을 유의해 주시기 바랍니다.
+     >&emsp;주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다. 비정상적인 데이터 종류 또는 값을 넣을 경우 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니, 데이터를 변경하실 경우 이 점을 유의해 주시기 바랍니다.
 10. 시제품 이미지:
     <img src="test_model_result_img/test_model_result_1.png" width="1000">
     <img src="test_model_result_img/test_model_result_2.PNG" width="1000">
