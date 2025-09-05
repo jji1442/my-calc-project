@@ -28,6 +28,14 @@
 
 <h2 id="trial-and-error-before-prototype-development">2. 시제품 개발 전 시행착오</h2>
 
+<img src="trial_and_error_img/trial_and_error_1.PNG">
+<img src="trial_and_error_img/trial_and_error_1_1.PNG">
+<img src="trial_and_error_img/trial_and_error_2.PNG">
+<img src="trial_and_error_img/trial_and_error_2_1.PNG">
+<img src="trial_and_error_img/trial_and_error_3.PNG">
+<img src="trial_and_error_img/trial_and_error_4.PNG">
+<img src="trial_and_error_img/add_ascent.PNG">
+<img src="trial_and_error_img/trial_and_error_1_add_test.PNG">
 
 <br><br><br>
 
