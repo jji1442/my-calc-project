@@ -28,11 +28,26 @@
 
 <h2 id="trial-and-error-before-prototype-development">2. 시제품 개발 전 시행착오</h2>
 
+환산주스탯에서 제공하는 100억당 최종데미지 상승율 수치는 어떻게 제공될까라는 생각으로 시제품 개발 전에 해보았던 엑셀 작업입니다.
+
+항목별로 설명 드리겠습니다.
+
+사이트상 최종데미지는 환산주스탯에서 제공하는 스킬 강화 시 최종데미지 상승하는 수치입니다.
+레벨별 간극은 레벨별로 계산한 최종데미지 수치와 사이트상 최종데미지의 간극을 의미하며, 계산 방식은 '계산한 최종데미지 수치 / 사이트상 최종데미지 - 1' 입니다.
+강화 비교는 현재레벨과 이전레벨의 최종데미지 상승량 비교입니다. 계산 방식은 '현재레벨 / 이전레벨' 입니다.
+
+
+1. 전체 딜량에서 딜 상승량만큼 보정하는 엑셀을 제작해봄.
 <img src="trial_and_error_img/trial_and_error_1.PNG">
+1-1. 최대 레벨이 30이라는 점과 최대 간극이 30%인 점을 이용하여 1레벨당 0.01% 감소하는 로직을 넣어봄.
 <img src="trial_and_error_img/trial_and_error_1_1.PNG">
+2. 스킬 %데미지 상승량을 점유율의 곱으로 최종데미지 상승량을 산출해봄.
 <img src="trial_and_error_img/trial_and_error_2.PNG">
+2-1. 점유율을 스킬 %데미지 배율로 나누어 스킬 배율 1%당 최종데미지 상승량을 산출해봄.
 <img src="trial_and_error_img/trial_and_error_2_1.PNG">
+3. 1->2레벨 상승 시의 스킬 %데미지 상승율이 고정적인지 최종데미지 산출해봄.
 <img src="trial_and_error_img/trial_and_error_3.PNG">
+4. 
 <img src="trial_and_error_img/trial_and_error_4.PNG">
 <img src="trial_and_error_img/add_ascent.PNG">
 <img src="trial_and_error_img/trial_and_error_1_add_test.PNG">
