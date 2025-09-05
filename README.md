@@ -358,7 +358,7 @@
    3.&nbsp;test_model_main을 실행.<br>
      - 테스트용 데이터 사용 시: test_model_main 스크립트 내에 아래와 같이 수정하면 데이터를 입력하지 않아도 개발자가 테스트한 데이터가 자동으로 입력됩니다.
      >&emsp;mastery_core_list = test_model.input_data(mastery_core_list)  ->  #mastery_core_list = test_model.input_data(mastery_core_list)<br>
-     >&emsp;#mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)<br>
+     >&emsp;#mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)<br><br>
      >&emsp;주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다. 비정상적인 데이터 종류 또는 값을 넣을 경우 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니, 데이터를 변경하실 경우 이 점을 유의해 주시기 바랍니다.
 10. 시제품 이미지:
     <img src="test_model_result_img/test_model_result_1.png" width="1000">
