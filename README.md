@@ -361,5 +361,7 @@
      >&emsp;#mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)
      - 주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다. 비정상적인 데이터 종류 또는 값을 넣을 경우 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니, 데이터를 변경하실 경우 이 점을 유의해 주시기 바랍니다.
 10. 시제품 이미지:
-    <img src="test_model_result_img/test_model_result_1.png", width="1000">
+    <img src="test_model_result_img/test_model_result_1.png" width="1000">
+    <img src="test_model_result_img/test_model_result_2.PNG" width="1000">
+    <img src="test_model_result_img/test_model_result_3.PNG" width="1000">
 12. 제작 후기: 문서화 과정과 코드 최적화에 총 15일이 소요되었고, 그중 약 12일을 문서화에 할애했습니다. 저는 이 문서화 작업을 단순한 기록이 아닌 설명서라 생각하고, 다른 개발자가 프로젝트를 한눈에 이해할 수 있도록 만드는 데 집중했습니다.
