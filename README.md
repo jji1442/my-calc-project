@@ -360,7 +360,7 @@
      >&emsp;mastery_core_list = test_model.input_data(mastery_core_list)  ->  #mastery_core_list = test_model.input_data(mastery_core_list)<br>
      >&emsp;#mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)<br><br>
      >&emsp;주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다. 리스트화한 데이터에 비정상적인 데이터 종류 또는 값을 넣을 경우, 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니 데이터를 변경하시는 경우 이 점을 주의해 주시기 바랍니다.
-10. 시제품 이미지:
+10. 시제품 이미지: 아래의 시제품 이미지는 사용자가 데이터를 입력하는 과정을 보여줍니다. 첫 사진의 파란색 영역을 보시면, 입력 형식이 다르거나 원하는 범위를 벗어난 값을 입력하면 재입력을 요구하도록 설정하여 프로그램의 안정성을 높였습니다. 또한, 모든 스킬의 강화 효율은 최대 레벨인 30레벨까지 출력되도록 구현했습니다. 그리고 그 아래의 빨간색 영역을 보시면, 일부 구간에서 5레벨 상승 시 효과가 좋다라는 것을 알 수 있습니다. 가장 마지막 사진의 초록색 영역을 보시면, 각 코어의 최대 레벨까지 효율을 측정한 것을 확인하실 수 있습니다.
     <img src="test_model_result_img/test_model_result_1.png" width="1000">
     <img src="test_model_result_img/test_model_result_2.PNG" width="1000">
     <img src="test_model_result_img/test_model_result_3.PNG" width="1000">
