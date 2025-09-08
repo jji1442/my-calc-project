@@ -9,7 +9,11 @@
 [3. 아키텍처 개선 과정](#architectural-improvement-process)<br>
 [4. 시제품 제작](#prototype-development)<br>
 [5. 시제품 결과](#prototype-result)<br>
-[6. 프로젝트 방향성](#project_direction)
+[6. 프로젝트 방향성](#project_direction)<br>
+
+<br>
+<br>
+<br>
 
 <h2 id="planning-intention">1. 기획 의도</h2>
 
