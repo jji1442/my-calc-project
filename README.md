@@ -5,6 +5,7 @@
 ## 목차
 
 [1. 기획 의도](#planning-intention)<br>
+[2. 시제품 개발 전 시행착오](#trial-and-error-before-prototype-developmen)<br>
 [3. 아키텍처 개선 과정](#architectural-improvement-process)<br>
 [4. 시제품 제작](#prototype-development)<br>
 [5. 시제품 결과](#prototype-result)
