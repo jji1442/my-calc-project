@@ -8,7 +8,7 @@
 [2. 시제품 개발 전 시행착오](#trial-and-error-before-prototype-developmen)<br>
 [3. 아키텍처 개선 과정](#architectural-improvement-process)<br>
 [4. 시제품 제작](#prototype-development)<br>
-[5. 시제품 결과](#prototype-result)
+[5. 시제품 결과](#prototype-result)<br>
 [6. 프로젝트 방향성](#project_direction)
 
 <h2 id="planning-intention">1. 기획 의도</h2>
