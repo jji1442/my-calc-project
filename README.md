@@ -408,7 +408,7 @@
 6. 프로그램 구조:<br>
 &emsp;test_model_main.py은 메인 스크립트이며, 사용자가 입력한 데이터를 토대로 스킬 정보를 담고 있습니다.
 &emsp;test_model.py은 데이터 처리 로직을 모듈화한 스크립트 및 아크 직업 스킬 정보를 담고 있습니다.
-7. 핵심 로직 및 공식: 구현 요구사항 문서를 참조 바랍니다. [>> 로직 및 공식 항목으로 이동](#logic)
+7. 핵심 로직 및 공식: 구현 요구사항 문서를 참조 바랍니다. [>> 핵심 로직 및 공식 항목으로 이동](#logic)
 8. 시제품 사용 방법:<br>
    1.&nbsp;프로그램 실행을 위해 python 환경이 필요합니다.<br>
    2.&nbsp;시제품을 다운로드합니다. [>> 시제품 다운로드 하기](https://github.com/jji1442/my-calc-project/releases/download/ver.1.0/test_model.zip)<br>
