@@ -15,9 +15,9 @@
 [5. 시제품 데이터 구조](#prototype-data-structure)<br>
 [6. 시제품 결과](#prototype-result)<br>
 [7. 프로젝트 방향성](#project_direction)<br>
-패치 평가 추가 예정<br>
-알파 프로젝트 데이터 구조 추가 예정<br>
+패치 분석 보고서(25.08.21) 추가 예정<br>
 알파 프로젝트 제작 추가 예정<br>
+알파 프로젝트 데이터 구조 추가 예정<br>
 게임 시스템 설명 추가 예정<br>
 
 <br><br><br>
