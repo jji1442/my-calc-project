@@ -11,10 +11,10 @@
 [1. 기획 의도](#planning-intention)<br>
 [2. 시제품 개발 전 시행착오](#trial-and-error-before-prototype-developmen)<br>
 [3. 아키텍처 개선 과정](#architectural-improvement-process)<br>
-시제품 데이터 구조 추가 예정<br>
-[4. 시제품 제작](#prototype-development)<br>
-[5. 시제품 결과](#prototype-result)<br>
-[6. 프로젝트 방향성](#project_direction)<br>
+[4. 시제품 데이터 구조](#prototype-data-structure)<br>
+[5. 시제품 제작](#prototype-development)<br>
+[6. 시제품 결과](#prototype-result)<br>
+[7. 프로젝트 방향성](#project_direction)<br>
 게임 시스템 설명 추가 예정<br>
 패치 평가 추가 예정<br>
 알파 프로젝트 데이터 구조 추가 예정<br>
@@ -168,7 +168,7 @@
 
 <br><br><br>
 
-## 시제품 데이터 구조
+<h2 id="prototype-data-structure">4. 시제품 데이터 구조</h2>
 
 ### 스킬 1회당 공격횟수를 포함한 "총합 %데미지"입니다. 데이터 구조 확인에 참고 바랍니다.
 
@@ -295,7 +295,7 @@
 
 <br><br><br>
 
-<h2 id="prototype-development">4. 시제품 제작</h2>
+<h2 id="prototype-development">5. 시제품 제작</h2>
 
 ### 테스트용 데이터는 최신화 됩니다. 각각의 제품 / 프로젝트의 기준 날짜를 확인해 주시길 바랍니다.
 
@@ -553,7 +553,7 @@
 
 <br><br><br>
 
-<h2 id="prototype-result">5. 시제품 결과</h2>
+<h2 id="prototype-result">6. 시제품 결과</h2>
 
 1. 프로젝트 이름: 아크 마스터리 코어 효율 시뮬레이션(시제품 프로젝트).
 2. 개발 목표: 아크 직업의 마스터리 코어 효율을 정밀하게 분석하여 최적의 스킬 강화 순서를 도출합니다.
@@ -583,7 +583,7 @@
 
 <br><br><br>
 
-<h2 id="project_direction">6. 프로젝트 방향성</h2>
+<h2 id="project_direction">7. 프로젝트 방향성</h2>
 
 - 알파 프로젝트: 기반 확장 - '합리적인 부분 내에서' 모든 스킬을 자동으로 강화 추천.
 - 알파 프로젝트: 기능 확장 - 다양한 기능 추가.
@@ -603,7 +603,7 @@
 
 <br><br><br>
 
-## 7. 패치 분석 보고서(25.08.21)
+## 8. 패치 분석 보고서(25.08.21)
 
 보고서 작성 기간: 25.09.09 ~ <br>
 게임사에서 전투 경험 개선 목적으로 아크에게 '링 익스체인지' 스킬과 '최종데미지 6% 증가' 패시브를 추가하였습니다.<br>
