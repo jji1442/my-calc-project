@@ -16,9 +16,9 @@
 [2. 시제품 개발 전 시행착오](#trial-and-error-before-prototype-developmen)<br>
 [3. 아키텍처 개선 과정](#architectural-improvement-process)<br>
 4.&nbsp;시제품<br>
-&emsp;[4-1) 시제품 제작](#prototype-development)<br>
-&emsp;[4-2) 시제품 데이터 구조](#prototype-data-structure)<br>
-&emsp;[4-3) 시제품 결과](#prototype-result)<br>
+&emsp;[4-1. 시제품 제작](#prototype-development)<br>
+&emsp;[4-2. 시제품 데이터 구조](#prototype-data-structure)<br>
+&emsp;[4-3. 시제품 결과](#prototype-result)<br>
 [5. 프로젝트 방향성](#project_direction)<br>
 패치 분석 보고서(25.08.21) 추가 예정<br>
 알파 프로젝트 제작 추가 예정<br>
@@ -162,7 +162,7 @@
 <br><br><br>
 
 ## 4. 시제품
-<h2 id="prototype-development">4-1) 시제품 제작</h2>
+<h2 id="prototype-development">4-1. 시제품 제작</h2>
 
 ### 테스트용 데이터는 최신화 됩니다. 각각의 제품 / 프로젝트의 기준 날짜를 확인해 주시길 바랍니다.
 
@@ -420,7 +420,7 @@
 
 <br><br><br>
 
-<h2 id="prototype-data-structure">4-2) 시제품 데이터 구조</h2>
+<h2 id="prototype-data-structure">4-2. 시제품 데이터 구조</h2>
 
 ### 스킬 1회당 공격횟수를 포함한 "총합 %데미지"입니다. 데이터 구조 확인에 참고 바랍니다.
 ### 자세한 설명은 기능 요구사항 문서의 전제조건을 참조 바랍니다. [>> 전제조건 항목으로 이동](#prerequisites)
@@ -545,7 +545,7 @@
 
 <br><br><br>
 
-<h2 id="prototype-result">4-3) 시제품 결과</h2>
+<h2 id="prototype-result">4-3. 시제품 결과</h2>
 
 1. 프로젝트 이름: 아크 마스터리 코어 효율 시뮬레이션(시제품 프로젝트).
 2. 개발 목표: 아크 직업의 마스터리 코어 효율을 정밀하게 분석하여 최적의 스킬 강화 순서를 도출합니다.
