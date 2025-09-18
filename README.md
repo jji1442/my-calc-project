@@ -976,10 +976,19 @@
 ### 정확한 효율 분석을 위해 마지막 스킬을 사용하고 1초 정지 후 측정 종료합니다.
 
 - 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(1)
-
+<img src="unused_ring_exchage_img/1/unused_ring_exchage_1_1.PNG">
+<img src="unused_ring_exchage_img/1/unused_ring_exchage_1_2.PNG">
+<img src="unused_ring_exchage_img/1/unused_ring_exchage_1_3.PNG">
+<img src="unused_ring_exchage_img/1/unused_ring_exchage_1_4.PNG">
+<img src="unused_ring_exchage_img/1/unused_ring_exchage_1_5.PNG">
+<img src="unused_ring_exchage_img/1/unused_ring_exchage_1_6.PNG">
 - 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(2)
 
 - 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(3)
+
+- 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(4)
+
+- 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(5)
 
 <br>
 - 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(1)
@@ -987,6 +996,9 @@
 - 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(2)
 
 - 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(3)
+
+- 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(4)
+
 
 '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율(평균)
 | 스킬 이름 | 링 익스체인지 미사용 | 링 익스체인지 사용 | 비교 |
