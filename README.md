@@ -1040,6 +1040,7 @@
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_5.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG"><br>
 <br>
+
 '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율(평균)
 | 스킬 이름 | 링 익스체인지 미사용 | 링 익스체인지 사용 | 비교 |
 |:---:|:---:|:---:|:---:|
