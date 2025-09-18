@@ -976,12 +976,12 @@
 ### 정확한 효율 분석을 위해 마지막 스킬을 사용하고 1초 정지 후 측정 종료합니다.
 
 - 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(1)
-<img src="unused_ring_exchange_img/1/unused_ring_exchage_1_1.PNG">
-<img src="unused_ring_exchange_img/1/unused_ring_exchage_1_2.PNG">
-<img src="unused_ring_exchange_img/1/unused_ring_exchage_1_3.PNG">
-<img src="unused_ring_exchange_img/1/unused_ring_exchage_1_4.PNG">
-<img src="unused_ring_exchange_img/1/unused_ring_exchage_1_5.PNG">
-<img src="unused_ring_exchange_img/1/unused_ring_exchage_1_6.PNG"><br>
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_1.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_2.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_3.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_4.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_5.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_6.PNG"><br>
 - 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(2)
 <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_1.PNG">
 <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_2.PNG">
