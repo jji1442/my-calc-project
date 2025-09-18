@@ -425,7 +425,8 @@
 <h2 id="prototype-data-structure">4-2. 시제품 데이터 구조</h2>
 
 ### 스킬 1회당 공격횟수를 포함한 "총합 %데미지"입니다. 데이터 구조 확인에 참고 바랍니다.
-### 자세한 설명은 기능 요구사항 문서의 전제조건을 참조 바랍니다. [>> 전제조건 항목으로 이동](#prerequisites)
+### 자세한 설명은 기능 요구사항 문서의 전제조건을 참조 바랍니다.
+[>> 전제조건 항목으로 이동](#prerequisites)
 
 기본(4차 이하 및 하이퍼) 스킬
 | 스킬 이름 | %데미지 |
@@ -502,6 +503,8 @@
 | 8 | 30 | 18 | 75 | 28 | 120 |
 | 9 | 33 | 19 | 80 | 29 | 125 |
 | 10 | 100 | 20 | 175 | 30 | 250 |
+
+[>> 테스트 결과 모두 보기](#test_model_img)<br>
 
 테스트용 데이터의 현재 마스터리 코어별 레벨
 | 마스터리 코어 번호 | 1 | 2 | 3 | 4 |
@@ -904,8 +907,15 @@
 
 
 ## 참고 자료
+<div id="test_model_img"></div>
+- 시제품 6분 주기.
+<img src="test_model_img/test_model_1.PNG">
+<img src="test_model_img/test_model_2.PNG">
+<img src="test_model_img/test_model_3.PNG">
+<img src="test_model_img/test_model_4.PNG">
+<img src="test_model_img/test_model_5.PNG">
+<img src="test_model_img/test_model_6.PNG">
 
-### 정확한 효율 분석을 위해 마지막 스킬을 사용하고 1초 정지 후 측정 종료합니다.
 <div id="unused_and_used_ring_exchange_img"></div>
 - 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(1)
 <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_1.PNG">
