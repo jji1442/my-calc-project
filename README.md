@@ -1017,29 +1017,29 @@
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_3.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_4.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_5.PNG">
-<img src="used_ring_exchange_img/1/used_ring_exchange_1_6.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_6.PNG"><br>
 - 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(2)
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_1.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_2.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_3.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_4.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_5.PNG">
-<img src="used_ring_exchange_img/2/used_ring_exchange_2_6.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_6.PNG"><br>
 - 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(3)
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_1.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_2.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_3.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_4.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_5.PNG">
-<img src="used_ring_exchange_img/3/used_ring_exchange_3_6.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_6.PNG"><br>
 - 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(4)
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_1.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_2.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_3.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_4.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_5.PNG">
-<img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG">
-
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG"><br>
+<br>
 '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율(평균)
 | 스킬 이름 | 링 익스체인지 미사용 | 링 익스체인지 사용 | 비교 |
 |:---:|:---:|:---:|:---:|
@@ -1057,3 +1057,24 @@
 | 거스트 차지드라이브VI | 0.78% | 0.78% | 100.19% |
 | 멈출 수 없는 충동 | 0.63% | 0.64% | 101.19% |
 
+- 최초의 대적자 실전(링 익스체인지 사용).(1)
+<img src="the_first_adversary_test_img/1/the_first_adversary_test_1_1.PNG">
+<img src="the_first_adversary_test_img/1/the_first_adversary_test_1_2.PNG">
+<img src="the_first_adversary_test_img/1/the_first_adversary_test_1_3.PNG">
+<img src="the_first_adversary_test_img/1/the_first_adversary_test_1_4.PNG">
+<img src="the_first_adversary_test_img/1/the_first_adversary_test_1_5.PNG">
+<img src="the_first_adversary_test_img/1/the_first_adversary_test_1_6.PNG">
+- 최초의 대적자 실전(링 익스체인지 사용).(2)
+<img src="the_first_adversary_test_img/2/the_first_adversary_test_2_1.PNG">
+<img src="the_first_adversary_test_img/2/the_first_adversary_test_2_2.PNG">
+<img src="the_first_adversary_test_img/2/the_first_adversary_test_2_3.PNG">
+<img src="the_first_adversary_test_img/2/the_first_adversary_test_2_4.PNG">
+<img src="the_first_adversary_test_img/2/the_first_adversary_test_2_5.PNG">
+<img src="the_first_adversary_test_img/2/the_first_adversary_test_2_6.PNG">
+- 최초의 대적자 실전(링 익스체인지 사용).(3)
+<img src="the_first_adversary_test_img/3/the_first_adversary_test_3_1.PNG">
+<img src="the_first_adversary_test_img/3/the_first_adversary_test_3_2.PNG">
+<img src="the_first_adversary_test_img/3/the_first_adversary_test_3_3.PNG">
+<img src="the_first_adversary_test_img/3/the_first_adversary_test_3_4.PNG">
+<img src="the_first_adversary_test_img/3/the_first_adversary_test_3_5.PNG">
+<img src="the_first_adversary_test_img/3/the_first_adversary_test_3_6.PNG">
