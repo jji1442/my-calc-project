@@ -1041,6 +1041,7 @@
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG"><br>
 <br>
 <div id="detail_table"></div>
+
 링 익스체인지 미사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
 | 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 | 5 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
