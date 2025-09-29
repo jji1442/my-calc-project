@@ -851,8 +851,8 @@
 | 평균 | 298조 3243억 | 279조 7229억 | 301조 5426억 |
 
   &emsp;&emsp;[>> 패치 전 55:55 빌드 분석 결과 자세히 보러가기](#used_ring_exchange_img)<br>
-  &emsp;&emsp;[>> 패치 후 55:55 빌드 분석 결과 자세히 보러가기(하이퍼링크 제작 예정)](#)<br>
-  &emsp;&emsp;[>> 패치 후 58:52 빌드 분석 결과 자세히 보러가기(하이퍼링크 제작 예정)](#)<br>
+  &emsp;&emsp;[>> 패치 후 55:55 빌드 분석 결과 자세히 보러가기](#post_patch_legacy_build_img)<br>
+  &emsp;&emsp;[>> 패치 후 58:52 빌드 분석 결과 자세히 보러가기](#post_patch_new_build_img)<br>
   
   &emsp;&emsp;패치 후 55:55 빌드의 평균 데미지와 패치 후 58:52 빌드의 평균 데미지 차이가 7.80% 나는 것으로 보아, 패치 후 58:52 빌드를 필히 사용해야 합니다.<br>
   &emsp;&emsp;패치 후 58:52 빌드의 데미지는 패치 전 55:55 빌드의 데미지 보다 1.08% 높다는 것을 알 수 있습니다.<br>
@@ -1096,3 +1096,58 @@
 | 어비스 차지드라이브VI | 0.77% | 0.75% | 97.73% |
 | 거스트 차지드라이브VI | 0.78% | 0.78% | 100.19% |
 | 멈출 수 없는 충동 | 0.63% | 0.64% | 101.19% |
+
+<div id="post_patch_legacy_build_img"></div>
+- 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(1)
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_1.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_2.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_3.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_4.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_5.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_6.PNG"><br>
+<div id="unused_ring_exchange_img2"></div>
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(1)
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_1.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_2.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_3.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_4.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_5.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_6.PNG"><br>
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(2)
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_1.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_2.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_3.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_4.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_5.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_6.PNG"><br>
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(3)
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_1.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_2.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_3.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_4.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_5.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_6.PNG"><br>
+<br>
+<div id="post_patch_new_build_img"></div>
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(1)
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_1.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_2.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_3.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_4.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_5.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_6.PNG"><br>
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(2)
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_1.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_2.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_3.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_4.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_5.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_6.PNG"><br>
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(3)
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_1.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_2.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_3.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_4.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_5.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_6.PNG"><br>
+<br>
