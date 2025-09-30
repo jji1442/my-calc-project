@@ -12,14 +12,14 @@
 
 ## 목차
 
-[1. 기획 의도](#planning-intention)<br>
-[2. 시제품 개발 전 시행착오](#trial-and-error-before-prototype-development)<br>
-[3. 아키텍처 개선 과정](#architectural-improvement-process)<br>
+[1. 기획 의도](#planning_intention)<br>
+[2. 시제품 개발 전 시행착오](#trial_and_error_before_prototype_development)<br>
+[3. 아키텍처 개선 과정](#architectural_improvement_process)<br>
 4.&nbsp;시제품<br>
-&emsp;[4-1. 시제품 제작](#prototype-development)<br>
-&emsp;[4-2. 시제품 데이터 구조](#prototype-data-structure)<br>
-&emsp;[4-3. 시제품 결과](#prototype-result)<br>
-[5. 프로젝트 방향성](#project-direction)<br>
+&emsp;[4-1. 시제품 제작](#prototype_development)<br>
+&emsp;[4-2. 시제품 데이터 구조](#prototype_data_structure)<br>
+&emsp;[4-3. 시제품 결과](#prototype_result)<br>
+[5. 프로젝트 방향성](#project_direction)<br>
 [6. 패치 분석 보고서(25.08.21)](#patch_analysis_report_25.08.21)<br>
 [7. 패치 분석 보고서(25.09.18)](#patch_analysis_report_25.09.18)<br>
 알파 프로젝트 제작 추가 예정<br>
@@ -29,7 +29,7 @@
 
 <br><br><br>
 
-<h2 id="planning-intention">1. 기획 의도</h2>
+<h2 id="planning_intention">1. 기획 의도</h2>
 
 - 환산주스탯(=효율분석 사이트)의 특징<br>
   1.&nbsp;보편적 가이드라인.<br>
@@ -49,7 +49,7 @@
 
 <br><br><br>
 
-<h2 id="trial-and-error-before-prototype-development">2. 시제품 개발 전 시행착오</h2>
+<h2 id="trial_and_error_before_prototype_development">2. 시제품 개발 전 시행착오</h2>
 
 시행착오 기간: 25.07.02 ~ 25.08.13<br>
 <br>
@@ -92,7 +92,7 @@
 
 <br><br><br>
 
-<h2 id="architectural-improvement-process">3. 아키텍처 개선 과정</h2>
+<h2 id="architectural_improvement_process">3. 아키텍처 개선 과정</h2>
 
 ### 아키텍처 1
 - 설명
@@ -163,7 +163,7 @@
 <br><br><br>
 
 ## 4. 시제품
-<h2 id="prototype-development">4-1. 시제품 제작</h2>
+<h2 id="prototype_development">4-1. 시제품 제작</h2>
 
 ### 테스트용 데이터는 최신화 됩니다. 각각의 제품 / 프로젝트의 기준 날짜를 확인해 주시길 바랍니다.
 
@@ -177,7 +177,7 @@
 ### 본 프로젝트의 완성일은 개발자가 그 당시 보고서가 완성되었다고 판단한 시점으로 작성되었습니다. 완성일 이후에 보고서 내용의 일관성을 위하여 일부 내용 추가 및 수정되었습니다.
 
 ### 기능 요구사항
-<div id="prerequisites"></div>
+<div id="prototype_prerequisites"></div>
   
 - 전제조건<br>
   1.&nbsp;테스트용 데이터는 25.08.14 기준 개발자의 코어 강화 상태와 점유율임.<br>
@@ -200,7 +200,7 @@
   4.&nbsp;100억당 최종데미지 상승율.
 
 ### 구현 요구사항
-<div id="logic"></div>
+<div id="prototype_logic"></div>
 
 - 데이터 구조
   - 외부 데이터(불변)
@@ -421,11 +421,11 @@
 
 <br><br><br>
 
-<h2 id="prototype-data-structure">4-2. 시제품 데이터 구조</h2>
+<h2 id="prototype_data_structure">4-2. 시제품 데이터 구조</h2>
 
 ### 스킬 1회당 공격횟수를 포함한 "총합 %데미지"입니다. 데이터 구조 확인에 참고 바랍니다.
 ### 자세한 설명은 기능 요구사항 문서의 전제조건을 참조 바랍니다.
-[>> 전제조건 항목으로 이동](#prerequisites)
+[>> 전제조건 항목으로 이동](#prototype_prerequisites)
 
 기본(4차 이하 및 하이퍼) 스킬
 | 스킬 이름 | %데미지 |
@@ -549,15 +549,15 @@
 
 <br><br><br>
 
-<h2 id="prototype-result">4-3. 시제품 결과</h2>
+<h2 id="prototype_result">4-3. 시제품 결과</h2>
 
 1. 프로젝트 이름: 아크 마스터리 코어 효율 시뮬레이션(시제품 프로젝트).
 2. 개발 목표: 아크 직업의 마스터리 코어 효율을 정밀하게 분석하여 최적의 스킬 강화 순서를 도출합니다.
 3. 주요 기능: 현재 스킬 레벨과 점유율을 바탕으로 강화 효율을 측정하여, 어떤 코어를 강화하는 것이 가장 효율적인지 추천합니다.
-4. 전제조건: 기능 요구사항 문서를 참조 바랍니다. [>> 전제조건 항목으로 이동](#prerequisites)
+4. 전제조건: 기능 요구사항 문서를 참조 바랍니다. [>> 전제조건 항목으로 이동](#prototype_prerequisites)
 5. 사용한 언어: python.
 6. 프로그램 구조: test_model_main.py은 메인 스크립트이며, 사용자가 입력한 데이터를 토대로 스킬 정보를 담고 있습니다. test_model.py은 데이터 처리 로직을 모듈화한 스크립트 및 아크 직업 스킬 정보를 담고 있습니다.
-7. 핵심 로직 및 공식: 구현 요구사항 문서를 참조 바랍니다. [>> 핵심 로직 및 공식 항목으로 이동](#logic)
+7. 핵심 로직 및 공식: 구현 요구사항 문서를 참조 바랍니다. [>> 핵심 로직 및 공식 항목으로 이동](#prototype_logic)
 8. 시제품 사용 방법:<br>
    1.&nbsp;프로그램 실행을 위해 python 환경이 필요합니다.<br>
    2.&nbsp;시제품을 다운로드합니다. [>> 시제품 다운로드 하기](https://github.com/jji1442/my-calc-project/releases/download/ver.1.0/test_model.zip)<br>
@@ -579,7 +579,7 @@
 
 <br><br><br>
 
-<h2 id="project-direction">5. 프로젝트 방향성</h2>
+<h2 id="project_direction">5. 프로젝트 방향성</h2>
 
 - 알파 버전: 기반 확장 - '합리적인 부분 내에서' 모든 스킬을 자동으로 강화 추천.
 - 알파 버전: 기능 확장 - 다양한 기능 추가.
