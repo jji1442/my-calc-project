@@ -313,42 +313,42 @@
 <br>
 
 <table>
-<thead>
-<tr>
-<th>스킬 레벨</th>
-<th>재화 소모량</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>8 -> 9</td>
-<td>33</td>
-</tr>
-<tr>
-<td>9 -> 10</td>
-<td>100</td>
-</tr>
-<tr>
-<td>10 -> 11</td>
-<td>40</td>
-</tr>
-<tr>
-<td>11 -> 12</td>
-<td>45</td>
-</tr>
-<tr>
-<td>12 -> 13</td>
-<td>50</td>
-</tr>
-<tr>
-<td>13 -> 14</td>
-<td>55</td>
-</tr>
-<tr>
-<td>14 -> 15</td>
-<td>60</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>스킬 레벨</th>
+      <th>재화 소모량</th>
+    </tr>
+  </thead>
+  <tbody>  
+    <tr>
+      <td>8 -> 9</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>9 -> 10</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>10 -> 11</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>11 -> 12</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>12 -> 13</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>13 -> 14</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>14 -> 15</td>
+      <td>60</td>
+    </tr>
+  </tbody>
 </table>
 
 스킬 레벨별 재화 소모량
