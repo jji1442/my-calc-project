@@ -15,10 +15,10 @@
 [1. 기획 의도](#planning_intention)<br>
 [2. 시제품 개발 전 시행착오](#trial_and_error_before_prototype_development)<br>
 [3. 아키텍처 개선 과정](#architectural_improvement_process)<br>
-4. 시제품
-ㄴ[4-1. 시제품 제작](#prototype_development)
-ㄴ[4-2. 시제품 데이터 구조](#prototype_data_structure)
-ㄴ[4-3. 시제품 결과](#prototype_result)
+4. 시제품<br>
+ㄴ[4-1. 시제품 제작](#prototype_development)<br>
+ㄴ[4-2. 시제품 데이터 구조](#prototype_data_structure)<br>
+ㄴ[4-3. 시제품 결과](#prototype_result)<br>
 [5. 프로젝트 방향성](#project_direction)<br>
 [6. 패치 분석 보고서(25.08.21)](#patch_analysis_report_25.08.21)<br>
 [7. 패치 분석 보고서(25.09.18)](#patch_analysis_report_25.09.18)<br>
