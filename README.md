@@ -99,6 +99,7 @@
 아래 이미지의 빨간색 영역은 렌의 어센트 스킬인 '창룡파천검 : 일매낙화 천비인적' 코어입니다. 하나의 코어가 연속적으로 강화하였을 때 효율적인 구조임을 확인하실 수 있습니다.
 <img src="trial_and_error_img/add_ascent.png">
 <br>
+
 #### 가설 5
 어센트 스킬을 기준으로 가설 1을 추가 테스트하였습니다.
 <img src="trial_and_error_img/trial_and_error_1_add_test.PNG">
