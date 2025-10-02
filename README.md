@@ -560,6 +560,25 @@
 </table>
 
 마스터리 코어 레벨별 재화 소모량
+마스터리 코어4 스킬
+<table>
+  <thead><tr>
+     <th> 다음 레벨 </th><th> 재화 소모량 </th><th> 다음 레벨 </th><th> 재화 소모량 </th><th> 다음 레벨 </th><th> 재화 소모량 </th>
+  </tr></thead>
+  <tbody>
+     <tr><td> 1 </td><td> 50 </td><td> 11 </td><td> 40 </td><td> 21 </td><td> 85 </td></tr>
+     <tr><td> 2 </td><td> 15 </td><td> 12 </td><td> 45 </td><td> 22 </td><td> 90 </td></tr>
+     <tr><td> 3 </td><td> 18 </td><td> 13 </td><td> 50 </td><td> 23 </td><td> 95 </td></tr>
+     <tr><td> 4 </td><td> 20 </td><td> 14 </td><td> 55 </td><td> 24 </td><td> 100 </td></tr>
+     <tr><td> 5 </td><td> 23 </td><td> 15 </td><td> 60 </td><td> 25 </td><td> 105 </td></tr>
+     <tr><td> 6 </td><td> 25 </td><td> 16 </td><td> 65 </td><td> 26 </td><td> 110 </td></tr>
+     <tr><td> 7 </td><td> 28 </td><td> 17 </td><td> 70 </td><td> 27 </td><td> 115 </td></tr>
+     <tr><td> 8 </td><td> 30 </td><td> 18 </td><td> 75 </td><td> 28 </td><td> 120 </td></tr>
+     <tr><td> 9 </td><td> 33 </td><td> 19 </td><td> 80 </td><td> 29 </td><td> 125 </td></tr>
+     <tr><td> 10 </td><td> 100 </td><td> 20 </td><td> 175 </td><td> 30 </td><td> 250 </td></tr>
+  </tbody>
+</table>
+
 | 다음 레벨 | 재화 소모량 | 다음 레벨 | 재화 소모량 | 다음 레벨 | 재화 소모량 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | 50 | 11 | 40 | 21 | 85 |
@@ -572,6 +591,10 @@
 | 8 | 30 | 18 | 75 | 28 | 120 |
 | 9 | 33 | 19 | 80 | 29 | 125 |
 | 10 | 100 | 20 | 175 | 30 | 250 |
+
+
+
+
 
 [>> 시제품용 데이터 보러가기](#test_model_img)<br>
 
