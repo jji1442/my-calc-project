@@ -678,10 +678,12 @@ python
 2. 시제품을 다운로드합니다. [>> 시제품 다운로드 하기](https://github.com/jji1442/my-calc-project/releases/download/ver.1.0/test_model.zip)
 3. test_model_main.py을 실행합니다.
 > 시제품용 데이터 사용하는 방법 test_model_main.py 스크립트 내에 아래와 같이 수정하면 데이터를 입력하지 않아도 개발자의 시제품용 데이터가 자동으로 입력됩니다.<br>
-> mastery_core_list = test_model.input_data(mastery_core_list)  ->  #mastery_core_list = test_model.input_data(mastery_core_list)<br>
-> #mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)<br>
-> 주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다.<br>
-> 시제품용 데이터에 비정상적인 데이터 종류 또는 값을 넣을 경우, 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니 데이터를 변경하시는 경우 이 점을 주의해 주시기 바랍니다.<br>
+> mastery_core_list = test_model.input_data(mastery_core_list)<br>
+> #mastery_core_list = test_model.test_data(mastery_core_list)<br>
+> 위 스크립트를 아래 스크립트로 변경.<br>
+> #mastery_core_list = test_model.input_data(mastery_core_list)<br>
+> mastery_core_list = test_model.test_data(mastery_core_list)<br>
+> 주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다. 시제품용 데이터에 비정상적인 데이터 종류 또는 값을 넣을 경우, 오류 또는 정확하지 않은 효율 측정될 수 있으니 데이터를 변경하시는 경우 이 점을 주의해 주시기 바랍니다.<br>
 
 ### 시제품 이미지
 아래의 시제품 이미지는 사용자가 데이터를 입력하는 과정을 보여줍니다. 첫 사진의 파란색 영역을 보시면, 입력 형식이 다르거나 원하는 범위를 벗어난 값을 입력하면 재입력을 요구하도록 설정하여 프로그램의 안정성을 높였습니다. 그 아래 빨간색 영역은 특정 구간에서 5레벨 상승 시 코어 효율이 크게 증가한다는 것을 나타냅니다. 마지막 사진의 초록색 영역은 각 코어의 현재 레벨부터 최대 레벨까지의 모든 효율을 측정하여 최종 결과를 도출한 것을 보여줍니다.
