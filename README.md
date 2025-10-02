@@ -665,31 +665,23 @@
 아크 헥사코어 효율 시뮬레이션(시제품)
 
 ### 개발 목표
-아크 직업의 마스터리 코어 효율을 스킬 %데미지 분석하여 최적의 스킬 강화 순서를 도출합니다.
+아크 직업의 마스터리 코어 효율을 오직 스킬 %데미지로만 분석하여 최적의 스킬 강화 순서를 도출합니다.
 
 ### 주요 기능
 현재 스킬 레벨과 점유율을 바탕으로 강화 효율을 측정하여, 어떤 코어를 강화하는 것이 가장 효율적인지 추천합니다.
 
-### 전제조건
-기능 요구사항의 전제조건 문서를 참조 바랍니다. [>> 전제조건 보러가기](#prototype_prerequisites)
-
-### 사용한 언어
-python.
-
-### 프로그램 구조
-test_model_main.py은 메인 스크립트이며, 사용자가 입력한 데이터를 토대로 스킬 정보를 담고 있습니다. test_model.py은 데이터 처리 로직을 모듈화한 스크립트 및 아크 직업 스킬 정보를 담고 있습니다.
-
-### 핵심 로직
-구현 설명의 핵심 로직 문서를 참조 바랍니다. [>> 핵심 로직 보러가기](#prototype_main_logic)
+### 개발 환경
+python
 
 ### 시제품 사용 방법
-1. 프로그램 실행을 위해 python 환경이 필요합니다.<br>
-2. 시제품을 다운로드합니다. [>> 시제품 다운로드 하기](https://github.com/jji1442/my-calc-project/releases/download/ver.1.0/test_model.zip)<br>
-3. test_model_main을 실행합니다.<br>
-   > 테스트용 데이터 사용 시: test_model_main 스크립트 내에 아래와 같이 수정하면 데이터를 입력하지 않아도 개발자의 테스트용 데이터가 자동으로 입력됩니다.
-   > mastery_core_list = test_model.input_data(mastery_core_list)  ->  #mastery_core_list = test_model.input_data(mastery_core_list)<br>
-   > #mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)<br><br>
-   > 주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다. 테스트용 데이터에 비정상적인 데이터 종류 또는 값을 넣을 경우, 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니 데이터를 변경하시는 경우 이 점을 주의해 주시기 바랍니다.
+1. 프로그램 실행을 위해 python 환경이 필요합니다.
+2. 시제품을 다운로드합니다. [>> 시제품 다운로드 하기](https://github.com/jji1442/my-calc-project/releases/download/ver.1.0/test_model.zip)
+3. test_model_main.py을 실행합니다.
+> 시제품용 데이터 사용하는 방법 test_model_main.py 스크립트 내에 아래와 같이 수정하면 데이터를 입력하지 않아도 개발자의 시제품용 데이터가 자동으로 입력됩니다.<br>
+> mastery_core_list = test_model.input_data(mastery_core_list)  ->  #mastery_core_list = test_model.input_data(mastery_core_list)<br>
+> #mastery_core_list = test_model.test_data(mastery_core_list)  ->  mastery_core_list = test_model.test_data(mastery_core_list)<br>
+> 주의사항: test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다.<br>
+> 시제품용 데이터에 비정상적인 데이터 종류 또는 값을 넣을 경우, 정확하지 않은 효율 측정 또는 오류를 일으킬 수 있으니 데이터를 변경하시는 경우 이 점을 주의해 주시기 바랍니다.<br>
 
 ### 시제품 이미지
 아래의 시제품 이미지는 사용자가 데이터를 입력하는 과정을 보여줍니다. 첫 사진의 파란색 영역을 보시면, 입력 형식이 다르거나 원하는 범위를 벗어난 값을 입력하면 재입력을 요구하도록 설정하여 프로그램의 안정성을 높였습니다. 그 아래 빨간색 영역은 특정 구간에서 5레벨 상승 시 코어 효율이 크게 증가한다는 것을 나타냅니다. 마지막 사진의 초록색 영역은 각 코어의 현재 레벨부터 최대 레벨까지의 모든 효율을 측정하여 최종 결과를 도출한 것을 보여줍니다.
