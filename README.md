@@ -602,8 +602,8 @@
      <tr><td> 스칼렛 차지드라이브VI </td><td> 0.54</td></tr>
      <tr><td> 스칼렛 스펠VI </td><td> 0.27 </td></tr>
      <tr><td> 거스트 차지드라이브VI </td><td> 0.89 </td></tr>
-     <tr><td> 거스트 스펠VI </td><td> 0.32 </td>/tr>
-     <tr><td> 어비스 차지드라이브VI </td><td> 0.89 </td>/tr>
+     <tr><td> 거스트 스펠VI </td><td> 0.32 </td></tr>
+     <tr><td> 어비스 차지드라이브VI </td><td> 0.89 </td></tr>
      <tr><td> 어비스 스펠VI </td><td> 0.35 </td></tr>
      <tr><td> 깨어난 심연(신규 패시브) </td><td> 11.51 </td></tr>
   </tbody>
