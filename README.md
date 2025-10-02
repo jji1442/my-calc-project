@@ -314,15 +314,6 @@
 <br>
 
 스킬 레벨별 재화 소모량
-<style>
-  table {
-    text-align: center;
-  }
-  th, td {
-    text-align: center;
-  }
-</style>
-
 <table>
   <thead><tr>
       <th> 스킬 레벨 </th>
