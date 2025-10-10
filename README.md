@@ -684,11 +684,13 @@ test_model_main.py 스크립트 내를 다음과 같이 수정하면 데이터�
 mastery_core_list = test_model.input_data(mastery_core_list)<br>
 #mastery_core_list = test_model.test_data(mastery_core_list)
 </code><br>
+<br>
 위 스크립트를 아래 스크립트로 변경.<br>
 <br><code>
 #mastery_core_list = test_model.input_data(mastery_core_list)<br>
 mastery_core_list = test_model.test_data(mastery_core_list)
 </code><br>
+<br>
 #### ※ test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다.
 #### ※ 시제품용 데이터에 비정상적인 데이터 종류 또는 값을 넣을 경우, 오류 또는 정확하지 않은 효율 측정될 수 있습니다.
 
