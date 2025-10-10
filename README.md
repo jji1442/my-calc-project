@@ -680,17 +680,15 @@ python
 
 ### 시제품용 데이터 사용하는 방법
 test_model_main.py 스크립트 내를 다음과 같이 수정하면 데이터를 입력하지 않아도 자동으로 개발자의 시제품용 데이터가 입력됩니다.<br>
-<br><code>
-mastery_core_list = test_model.input_data(mastery_core_list)<br>
-#mastery_core_list = test_model.test_data(mastery_core_list)
-</code><br>
-<br>
+
+<code>mastery_core_list = test_model.input_data(mastery_core_list)<br>
+#mastery_core_list = test_model.test_data(mastery_core_list)</code>
+
 위 스크립트를 아래 스크립트로 변경.<br>
-<br><code>
-#mastery_core_list = test_model.input_data(mastery_core_list)<br>
-mastery_core_list = test_model.test_data(mastery_core_list)
-</code><br>
-<br>
+
+<code>#mastery_core_list = test_model.input_data(mastery_core_list)<br>
+mastery_core_list = test_model.test_data(mastery_core_list)</code>
+
 #### ※ test_data(mastery_core_list) 함수에는 데이터 검증 기능이 없습니다.
 #### ※ 시제품용 데이터에 비정상적인 데이터 종류 또는 값을 넣을 경우, 오류 또는 정확하지 않은 효율 측정될 수 있습니다.
 
