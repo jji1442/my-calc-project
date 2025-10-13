@@ -721,6 +721,22 @@ mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_cor
 정보 종류: cur_level, dmg_up, skill<br>
 세부 항목: 각각의 하위 데이터(final_dmg_per_level, final_dmg_per_level_per_10b, 스킬 이름 등)
 
+위와 같은 접근 방식으로 코드를 작성하면 코드의 길이가 길어 코드의 로직을 이해하는 데 어려움이 생깁니다.<br>
+함수 내부에서 계산식은 다음과 같이 작업하였습니다.
+
+<code>skill_name = core[core_idx]["skill"][skill_name]</code>
+
+위와 같이 사용하면 필요한 정보만 볼 수 있어, 가독성이 굉장히 늘어납니다.
+예시 하나를 보여드리겠습니다.
+
+tempA = skill_name["dmg_up"]
+tempB = skill_name["cur_dmg"]
+avg_dmg_up_rate = ((tempA / tempB + tempA / (tempB + tempA) + tempA / (tempB + 2 * tempA)
+                                    + tempA / (tempB + 3 * tempA) + tempA / (tempB + 4 * tempA)) / 5)
+
+
+
+위와 보시는 것과 같이 코드에 대한 이해도가 있다면, 이해하는데 지장이 없다고 봅니다.
 
 # 자랑하고 싶은 스크립트 및 설명
 
