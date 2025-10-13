@@ -646,7 +646,25 @@
 
 ### 데이터 구조 설명
 
-데이터 구조의 유사성으로 인해, 대표 항목으로 내부 데이터인 'mastery_core_1'의 테이블과 코드를 중심으로 설명하겠습니다.
+데이터 구조의 유사성으로 인해, 대표 항목으로 내부 데이터인 'mastery_core_1'의 데이터 테이블과 코드를 중심으로 설명하겠습니다.
+
+#### 마스터리 코어1 스킬
+<table>
+  <thead><tr>
+     <th> 스킬 이름 </th><th> 최대 %데미지 </th><th> %데미지 상승량(%p) </th>
+  </tr></thead>
+  <tbody>
+     <tr><td> 플레인 차지드라이브VI </td><td> 3615 </td><td> 42 </td></tr>
+     <tr><td> 플레인 스펠VI </td><td> 1610 </td><td> 20 </td></tr>
+     <tr><td> 스칼렛 차지드라이브VI </td><td> 4530 </td><td> 54 </td></tr>
+     <tr><td> 스칼렛 스펠VI </td><td> 2375 </td><td> 30 </td></tr>
+     <tr><td> 거스트 차지드라이브VI </td><td> 5250 </td><td> 66 </td></tr>
+     <tr><td> 거스트 스펠VI </td><td> 1980 </td><td> 24 </td></tr>
+     <tr><td> 어비스 차지드라이브VI </td><td> 7894 </td><td> 102 </td></tr>
+     <tr><td> 어비스 스펠VI </td><td> 302 </td><td> 4 </td></tr>
+     <tr><td> 깨어난 심연(신규 패시브) </td><td> 4380 </td><td> 48 </td></tr>
+  </tbody>
+</table>
 
 #### 시제품용 데이터의 현재 마스터리 코어별 레벨
 <table>
@@ -676,8 +694,7 @@
   </tbody>
 </table>
 
-<code>
-mastery_core_1 = {
+<code>mastery_core_1 = {
     "cur_level": 0,
     "dmg_up": {
         "final_dmg_per_level": 0,
@@ -734,46 +751,20 @@ mastery_core_1 = {
     }
 }
 
-mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_core_4]
-</code>
+mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_core_4]</code>
 
-데이터 구조는 마스터리 코어 항목 안에 '현재 레벨(cur_level)', '데미지 상승 정보(dmg_up)', '스킬 정보(skill)'가 포함된 계층으로 설계되었습니다
-
-최종데미지 상승율 내에 1레벨 상승 시 최종데미지 상승율과 100억 당 1레벨 상승 시 최종데미지 상승율과 5레벨 상승 시 평균 최종데미지 상승율과 100억당 5레벨 상승 시 평균 최종데미지 상승율,
-스킬 종류 내에 최대 데미지 및 데미지 상승량 및 스킬별 점유율을 넣어 처리하였습니다.
+데이터 구조는 마스터리 코어 항목 안에 '현재 레벨(cur_level)', '데미지 상승 정보(dmg_up)', '스킬 정보(skill)' 하위 항목으로 구성되어 있습니다.
+'데미지 상승 정보(dmg_up)' 항목 안에 '1레벨 상승 시 최종데미지 상승율(final_dmg_per_level)', '100억 당 1레벨 상승 시 최종데미지 상승율(final_dmg_per_level_per_10b)', '5레벨 상승 시 평균 최종데미지 상승율(avg_final_dmg_per_5level)', '100억 당 5레벨 상승 시 평균 최종데미지 상승율(avg_final_dmg_per_5level_per_10b)' 하위 항목으로 구성되어 있습니다.
+'스킬 정보(skill)' 항목 안에 '스킬 이름' 하위 항목으로 구성되며, '스킬 이름' 항목 안에 '현재 스킬 %데미지(cur_dmg)', '1레벨 상승 시 스킬 %데미지 상승량(dmg_up)', '스킬별 점유율(rate)' 하위 항목으로 구성되어 있습니다.
 
 최종적으로, 모든 마스터리 코어 데이터는 'mastery_core_list'라는 하나의 리스트로 묶어 처리 효율을 높였습니다.
 
 코드의 이해를 돕기 위해 데이터 구조의 접근 방식을 설명해 드립니다.
 
-mastery_core_list [마스터리 코어 번호] [데이터 종류] [하위 데이터 항목]
+mastery_core_list [마스터리 코어 번호] [정보 종류] [세부 항목]
 
-데이터 종류: cur_level, dmg_up, skill
-하위 데이터 항목: 각각의 하위 데이터(final_dmg_per_level, final_dmg_per_level_per_10b, cur_dmg, dmg_up 등)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+정보 종류: cur_level, dmg_up, skill
+세부 항목: 각각의 하위 데이터(final_dmg_per_level, final_dmg_per_level_per_10b, 스킬 이름 등)
 
 
 # 자랑하고 싶은 스크립트 및 설명
