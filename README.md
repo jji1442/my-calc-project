@@ -694,7 +694,8 @@
   </tbody>
 </table>
 
-<code>mastery_core_1 = {
+```python
+mastery_core_1 = {
     "cur_level": 0,
     "dmg_up": {
         "final_dmg_per_level": 0,
@@ -751,7 +752,8 @@
     }
 }
 
-mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_core_4]</code>
+mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_core_4]
+```
 
 데이터 구조는 마스터리 코어 항목 안에 '현재 레벨(cur_level)', '데미지 상승 정보(dmg_up)', '스킬 정보(skill)' 하위 항목으로 구성되어 있습니다.
 '데미지 상승 정보(dmg_up)' 항목 안에 '1레벨 상승 시 최종데미지 상승율(final_dmg_per_level)', '100억 당 1레벨 상승 시 최종데미지 상승율(final_dmg_per_level_per_10b)', '5레벨 상승 시 평균 최종데미지 상승율(avg_final_dmg_per_5level)', '100억 당 5레벨 상승 시 평균 최종데미지 상승율(avg_final_dmg_per_5level_per_10b)' 하위 항목으로 구성되어 있습니다.
