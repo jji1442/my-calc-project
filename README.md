@@ -646,67 +646,135 @@
 
 ### 데이터 구조 설명
 
-마스터리 코어1에 대한 데이터 테이블을 아래의 코드처럼 작성하였습니다.
+데이터 구조의 유사성으로 인해, 대표 항목으로 내부 데이터인 'mastery_core_1'의 테이블과 코드를 중심으로 설명하겠습니다.
 
+#### 시제품용 데이터의 현재 마스터리 코어별 레벨
 <table>
   <thead><tr>
-     <th> 스킬 이름 </th><th> 최대 %데미지 </th><th> %데미지 상승량(%p) </th>
+     <th> 마스터리 코어 번호 </th><th> 1 </th><th> 2 </th><th> 3 </th><th> 4 </th>
   </tr></thead>
   <tbody>
-     <tr><td> 플레인 차지드라이브VI </td><td> 3615 </td><td> 42 </td></tr>
-     <tr><td> 플레인 스펠VI </td><td> 1610 </td><td> 20 </td></tr>
-     <tr><td> 스칼렛 차지드라이브VI </td><td> 4530 </td><td> 54 </td></tr>
-     <tr><td> 스칼렛 스펠VI </td><td> 2375 </td><td> 30 </td></tr>
-     <tr><td> 거스트 차지드라이브VI </td><td> 5250 </td><td> 66 </td></tr>
-     <tr><td> 거스트 스펠VI </td><td> 1980 </td><td> 24 </td></tr>
-     <tr><td> 어비스 차지드라이브VI </td><td> 7894 </td><td> 102 </td></tr>
-     <tr><td> 어비스 스펠VI </td><td> 302 </td><td> 4 </td></tr>
-     <tr><td> 깨어난 심연(신규 패시브) </td><td> 4380 </td><td> 48 </td></tr>
+     <tr><td> 현재 레벨 </td><td> 19 </td><td> 9 </td><td> 9 </td><td> 9 </td></tr>
+  </tbody>
+</table>
+
+#### 시제품용 데이터의 마스터리 코어1 점유율
+<table>
+  <thead><tr>
+     <th> 스킬 이름 </th><th> 스킬별 점유율 </th>
+  </tr></thead>
+  <tbody>
+     <tr><td> 플레인 차지드라이브VI </td><td> 3.84 </td></tr>
+     <tr><td> 플레인 스펠VI </td><td> 1.63 </td></tr>
+     <tr><td> 스칼렛 차지드라이브VI </td><td> 0.54</td></tr>
+     <tr><td> 스칼렛 스펠VI </td><td> 0.27 </td></tr>
+     <tr><td> 거스트 차지드라이브VI </td><td> 0.89 </td></tr>
+     <tr><td> 거스트 스펠VI </td><td> 0.32 </td></tr>
+     <tr><td> 어비스 차지드라이브VI </td><td> 0.89 </td></tr>
+     <tr><td> 어비스 스펠VI </td><td> 0.35 </td></tr>
+     <tr><td> 깨어난 심연(신규 패시브) </td><td> 11.51 </td></tr>
   </tbody>
 </table>
 
 <code>
 mastery_core_1 = {
-    "플레인 차지드라이브VI": {
-        "max_dmg": 3615,
-        "dmg_up": 42
+    "cur_level": 0,
+    "dmg_up": {
+        "final_dmg_per_level": 0,
+        "final_dmg_per_level_per_10b": 0,
+        "avg_final_dmg_per_5level": 0,
+        "avg_final_dmg_per_5level_per_10b": 0
     },
-    "플레인 스펠VI": {
-        "max_dmg": 1610,
-        "dmg_up": 20
-    },
-    "스칼렛 차지드라이브VI": {
-        "max_dmg": 4530,
-        "dmg_up": 54
-    },
-    "스칼렛 스펠VI": {
-        "max_dmg": 2375,
-        "dmg_up": 30
-    },
-    "거스트 차지드라이브VI": {
-        "max_dmg": 5250,
-        "dmg_up": 66
-    },
-    "거스트 스펠VI": {
-        "max_dmg": 1980,
-        "dmg_up": 24
-    },
-    "어비스 차지드라이브VI": {
-        "max_dmg": 7894,
-        "dmg_up": 102
-    },
-    "어비스 스펠VI": {
-        "max_dmg": 302,
-        "dmg_up": 4
-    },
-    "깨어난 심연": {
-        "max_dmg": 4380,
-        "dmg_up": 48
+    "skill": {
+        "플레인 차지드라이브VI": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        },
+        "플레인 스펠VI": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        },
+        "스칼렛 차지드라이브VI": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        },
+        "스칼렛 스펠VI": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        },
+        "거스트 차지드라이브VI": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        },
+        "거스트 스펠VI": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        },
+        "어비스 차지드라이브VI": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        },
+        "어비스 스펠VI": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        },
+        "깨어난 심연": {
+            "cur_dmg": 0,
+            "dmg_up": 0,
+            "rate": 0
+        }
     }
 }
+
+mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_core_4]
 </code>
 
-스킬 항목 내에 최대 데미지, 데미지 상승량을 넣어 처리하였습니다.
+데이터 구조는 마스터리 코어 항목 안에 '현재 레벨(cur_level)', '데미지 상승 정보(dmg_up)', '스킬 정보(skill)'가 포함된 계층으로 설계되었습니다
+
+최종데미지 상승율 내에 1레벨 상승 시 최종데미지 상승율과 100억 당 1레벨 상승 시 최종데미지 상승율과 5레벨 상승 시 평균 최종데미지 상승율과 100억당 5레벨 상승 시 평균 최종데미지 상승율,
+스킬 종류 내에 최대 데미지 및 데미지 상승량 및 스킬별 점유율을 넣어 처리하였습니다.
+
+최종적으로, 모든 마스터리 코어 데이터는 'mastery_core_list'라는 하나의 리스트로 묶어 처리 효율을 높였습니다.
+
+코드의 이해를 돕기 위해 데이터 구조의 접근 방식을 설명해 드립니다.
+
+mastery_core_list [마스터리 코어 번호] [데이터 종류] [하위 데이터 항목]
+
+데이터 종류: cur_level, dmg_up, skill
+하위 데이터 항목: 각각의 하위 데이터(final_dmg_per_level, final_dmg_per_level_per_10b, cur_dmg, dmg_up 등)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 자랑하고 싶은 스크립트 및 설명
 
