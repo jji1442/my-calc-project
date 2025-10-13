@@ -645,7 +645,6 @@
 <div id="prototype_logic"></div>
 
 ### 데이터 구조 설명
-
 ```
 mastery_core_1 = {
     "cur_level": 0,
@@ -714,35 +713,117 @@ mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_cor
 최종적으로, 모든 마스터리 코어 데이터는 'mastery_core_list'라는 하나의 리스트로 묶어 처리 효율을 높였습니다.
 
 데이터 구조의 접근 방식은 다음과 같습니다.
-
-<code>mastery_core_list [마스터리 코어 번호] [정보 종류] [세부 항목]</code>
-
+```
+mastery_core_list [마스터리 코어 번호] [정보 종류] [세부 항목]
+```
 마스터리 코어 번호: 0 ~ 3<br>
 정보 종류: cur_level, dmg_up, skill<br>
 세부 항목: 각각의 하위 데이터(final_dmg_per_level, final_dmg_per_level_per_10b, 스킬 이름 등)
 
-위와 같은 접근 방식으로 코드를 작성하면 코드의 길이가 길어 코드의 로직을 이해하는 데 어려움이 생깁니다.<br>
-함수 내부에서 계산식은 다음과 같이 작업하였습니다.
+위에 제시된 방식처럼 코드를 구성할 경우, 코드의 길이가 길어지고 데이터에 접근하는 로직이 복잡해져 전체적인 흐름을 파악하기 어려울 수 있습니다.<br>
+이를 개선하기 위해, 함수 내부에서 데이터에 접근할 때는 다음과 같이 변수 선언을 통한 단순화를 적용했습니다.
+```
+skill_name = core[core_idx]["skill"][skill_name]
+```
+이를 활용하면 'skill_name["dmg_up"]' 형식으로 스킬 %데미지 상승량에 접근할 수 있습니다.
 
-<code>skill_name = core[core_idx]["skill"][skill_name]</code>
 
-위와 같이 사용하면 필요한 정보만 볼 수 있어, 가독성이 굉장히 늘어납니다.
-예시 하나를 보여드리겠습니다.
+### 핵심 함수 설명
+핵심적인 함수 2종류에 대해, 해당 코드를 발췌하여 자세히 설명해 보겠습니다.
 
-tempA = skill_name["dmg_up"]
-tempB = skill_name["cur_dmg"]
-avg_dmg_up_rate = ((tempA / tempB + tempA / (tempB + tempA) + tempA / (tempB + 2 * tempA)
+강화효율을 계산하는 함수입니다.
+```
+def cost_eff(cur_price, cost_cnt):
+    # 재화 효율을 계산함.
+    return 1000000 / (cur_price * cost_cnt)
+def calc_enh_eff(core):
+    # 재화 시세를 저장함.
+    cur_price = 550
+
+    for core_idx in range(4):
+        for skill_name in core[core_idx]["skill"].keys():    
+            skill_name = core[core_idx]["skill"][skill_name]
+
+            # 1레벨 상승 시 최종데미지 상승율을 구하기 위해서 현재 레벨을 확인함.
+            if(core[core_idx]["cur_level"] != 30):
+                # 재화 소모량, 데미지 상승율을 저장함.
+                cost_cnt = mastery_core_cost[core[core_idx]["cur_level"]]
+                dmg_up_rate = skill_name["dmg_up"] / skill_name["cur_dmg"]
+
+                # 최종데미지 상승율을 합산함.
+                core[core_idx]["dmg_up"]["final_dmg_per_level"] += skill_name["rate"] * dmg_up_rate
+                core[core_idx]["dmg_up"]["final_dmg_per_level_per_10b"] += (cost_eff(cur_price, cost_cnt)
+                                                                            * skill_name["rate"] * dmg_up_rate)
+    
+            # 5레벨 상승 시 평균 최종데미지 상승율을 구하기 위해서 현재 레벨을 확인함.
+            if(core[core_idx]["cur_level"] + 4 <= 30):
+                # 평균 재화 소모량, 평균 데미지 상승율을 저장함.
+                avg_cost_cnt = sum(mastery_core_cost[core[core_idx]["cur_level"]:core[core_idx]["cur_level"] + 5]) / 5
+                tempA = skill_name["dmg_up"]
+                tempB = skill_name["cur_dmg"]
+                avg_dmg_up_rate = ((tempA / tempB + tempA / (tempB + tempA) + tempA / (tempB + 2 * tempA)
                                     + tempA / (tempB + 3 * tempA) + tempA / (tempB + 4 * tempA)) / 5)
+                
+                # 평균 최종데미지 상승율을 합산함.
+                core[core_idx]["dmg_up"]["avg_final_dmg_per_5level"] += skill_name["rate"] * avg_dmg_up_rate
+                core[core_idx]["dmg_up"]["avg_final_dmg_per_5level_per_10b"] += (cost_eff(cur_price, avg_cost_cnt)
+                                                                                 * skill_name["rate"] * avg_dmg_up_rate)
+
+    return core
+```
+
+- 강화효율 산출하는 함수.
+  - 매개변수
+    - 마스터리 코어 리스트(리스트)
+  - 설명
+    - 마스터리 코어별/스킬별 최종데미지 상승율을 산출하는 과정.
+  - 처리과정
+    - 재화 시세, 마스터리 코어 1~30레벨 재화 소모량, 마스터리 코어 리스트(리스트)를 이용하여, 재화 효율, 스킬 최종데미지 상승율을 산출함. 
+    - 1레벨 상승 시 최종데미지 상승율, 1레벨 상승 시 100억당 최종데미지 상승율, 5레벨 상승 시 평균 최종데미지 상승율, 5레벨 상승 시 100억당 평균 최종데미지 상승율을 산출함.
+    - 모든 최종데미지 상승율은 마스터리 코어 리스트(리스트)에 저장함.
+  - 처리사항
+    - 재화 시세는 성능 향상을 위해 550만 대신 550을 사용함.
+    - 재화 소모량 = 마스터리 코어 1~30레벨 재화 소모량[마스터리 코어[현재 레벨]]
+    - 평균 재화 소모량은 (마스터리 코어 1~30레벨 재화 소모량에서 '현재 레벨' 부터 '현재 레벨 + 4'까지를 합산된 수치) / 5임.
+    - 재화 효율은 성능 향상을 위해 100억 대신 100만을 사용함.
+    - (평균)재화 효율 = 100만 / (재화 시세 * (평균)재화 소모량)
+    - 스킬 데미지 상승율 = 1레벨 상승 시 %데미지 상승량(%p) / 현재 레벨 기준 %데미지
+    - 평균 스킬 데미지 상승율은 (이 마스터리 코어를 5레벨 연속으로 강화했을 경우, 스킬 데미지 상승율이 합산된 수치) / 5 임.
+    - (평균)최종데미지 상승율 = (평균)점유율 * (평균)스킬 데미지 상승율
+    - 100억당 (평균)최종데미지 상승율 = (평균)재화 효율 * 점유율 * (평균)스킬 데미지 상승율
+  - 리턴값
+    - 마스터리 코어 리스트(리스트)
+
+재화 시세는 성능 향상을 위해 550만 대신 550을 사용하였습니다.
+
+이중 for 문으로 마스터리 코어 개수 만큼 실행하는 코드 내에 스킬 개수 만큼 실행하도록 만들었습니다.
+그리고 현재 레벨 기준으로 1레벨 상승 시 30레벨이 초과되지 않는지 확인을 합니다.
+재화 소모량은 마스터리 코어 소모 비용 리스트에서 마스터리 코어의 현재레벨을 대입하여 추출합니다.
+스킬 데미지 상승율은 '1레벨 상승 시 %데미지 상승량(%p) / 현재 레벨 기준 %데미지'으로 계산하여 추출합니다.
+최종데미지 상승율은 점유율 * 스킬 데미지 상승율으로 계산하여 도출합니다.
+
+여기서 중복으로 사용되는 재화 효율을 함수화하여 사용하였습니다.
+재화 시세 기준점이 550만을 550으로 낮춰 계산하였으므로 재화 효율은 100억 대신 100만을 사용하였습니다.
+
+
+100억당 최종데미지 상승율은 (평균)재화 효율 * 점유율 * (평균)스킬 데미지 상승율
+core[core_idx]["dmg_up"]["final_dmg_per_level"] += skill_name["rate"] * dmg_up_rate
+                core[core_idx]["dmg_up"]["final_dmg_per_level_per_10b"] += (cost_eff(cur_price, cost_cnt)
+                                                                            * skill_name["rate"] * dmg_up_rate)
+
+평균 재화 소모량은 (마스터리 코어 1~30레벨 재화 소모량에서 '현재 레벨' 부터 '현재 레벨 + 4'까지를 합산된 수치) / 5임.
 
 
 
-위와 보시는 것과 같이 코드에 대한 이해도가 있다면, 이해하는데 지장이 없다고 봅니다.
 
-# 자랑하고 싶은 스크립트 및 설명
 
-# 시제품 구현 내부에 시제품 데이터 구조와 시제품 함수 구조에 대한 설명.
 
-# 코드 블록으로 스크립트를 스크랩하여 가져올 것. 핵심 로직.
+
+
+
+
+
+
 
 
 <br><br><br>
