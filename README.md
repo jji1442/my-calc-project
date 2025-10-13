@@ -745,6 +745,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ##### 분석 종류
 1. 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기
 2. 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기
+
 ##### 분석 전제조건
 <div id="25.08.21_rate_prerequisites"></div>
 
