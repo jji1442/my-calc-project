@@ -713,7 +713,7 @@ mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_cor
 
 최종적으로, 모든 마스터리 코어 데이터는 'mastery_core_list'라는 하나의 리스트로 묶어 처리 효율을 높였습니다.
 
-코드의 이해를 돕기 위해 데이터 구조의 접근 방식을 설명하겠습니다.
+데이터 구조의 접근 방식은 다음과 같습니다.
 
 <code>mastery_core_list [마스터리 코어 번호] [정보 종류] [세부 항목]</code>
 
