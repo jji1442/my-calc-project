@@ -3,7 +3,6 @@
 <br>
 
 ### 내용은 지속적으로 추가 및 보완될 예정입니다. 특히 게임 관련 용어의 경우, 가독성을 위해 별도의 설명 없이 사용되었습니다.
-
 ### 프로젝트의 완전한 이해를 돕기 위한 상세한 게임 시스템 및 용어 설명은 추후 보충될 예정이니, 이 점 참고하여 주시기 바랍니다.
 
 <br>
@@ -16,14 +15,12 @@
 4.&nbsp;시제품<br>
 &emsp;[4-1. 시제품 기획](#prototype_planning)<br>
 &emsp;[4-2. 시제품 설계](#prototype_architecture)<br>
-&emsp;[4-3. 시제품 구현 설명](#prototype_implementation_explanation)<br>
-&emsp;[4-4. 시제품 결과](#prototype_result)<br>
+&emsp;[4-3. 시제품 결과](#prototype_result)<br>
 [5. 프로젝트 방향성](#project_direction)<br>
 [6. 패치 분석 보고서(25.08.21)](#patch_analysis_report_25.08.21)<br>
 [7. 패치 분석 보고서(25.09.18)](#patch_analysis_report_25.09.18)<br>
-기존 제품 개선 및 변동 사항 추가 예정<br>
-알파 프로젝트 제작 추가 예정<br>
-알파 프로젝트 데이터 구조 추가 예정<br>
+시제품 개선(추가 예정)<br>
+알파 프로젝트(추가 예정)<br>
 [게임 시스템 설명](#game_system_explan)<br>
 [참고 자료](#references)<br>
 
@@ -459,363 +456,7 @@
 
 <br><br><br>
 
-<h2 id="prototype_implementation_explanation">4-3. 시제품 구현 설명</h2>
-
-### 데이터 구조
-
-### 스킬 1회당 "총합 %데미지"입니다.
-### 자세한 %데미지 계산방식은 기능 요구사항의 전제조건을 참조 바랍니다. [>> 전제조건 보러가기](#prototype_prerequisites)
-
-#### 기본(4차 이하 및 하이퍼) 스킬
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> %데미지 </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 플레인 차지드라이브 </td><td> 1839 </td></tr>
-     <tr><td> 플레인 스펠 </td><td> 373 </td></tr>
-     <tr><td> 스칼렛 차지드라이브 </td><td> 2118 </td></tr>
-     <tr><td> 스칼렛 스펠 </td><td> 1105 </td></tr>
-     <tr><td> 거스트 차지드라이브 </td><td> 2418 </td></tr>
-     <tr><td> 거스트 스펠 </td><td> 924 </td></tr>
-     <tr><td> 어비스 차지드라이브 </td><td> 3850 </td></tr>
-     <tr><td> 어비스 스펠 </td><td> 144 </td></tr>
-     <tr><td> 지워지지 않는 상처 </td><td> 2958 </td></tr>
-     <tr><td> 채워지지 않는 굶주림 </td><td> 3451 </td></tr>
-     <tr><td> 걷잡을 수 없는 혼돈 </td><td> 5316 </td></tr>
-     <tr><td> 멈출 수 없는 충동 </td><td> 2190 </td></tr>
-     <tr><td> 멈출 수 없는 본능 </td><td> 2778 </td></tr>
-     <tr><td> 돌아오는 증오 </td><td> 2898 </td></tr>
-     <tr><td> 황홀한 구속 </td><td> 36340 </td></tr>
-     <tr><td> 끝없는 고통 </td><td> 41400 </td></tr>
-     <tr><td> 끝나지 않는 악몽 </td><td> 2658 </td></tr>
-     <tr><td> 끝나지 않는 흉몽 </td><td> 2688 </td></tr>
-     <tr><td> 다가오는 죽음 </td><td> 906 + 266 </td></tr>
-  </tbody>
-</table>
-
-> 다가오는 죽음에 추가된 '266'은 강화 코어인 인피니티 스펠의 효과로 인한 상승 수치입니다.<br>
-> 1회당 스킬 %데미지 * 공격횟수 = 133%p * 2번 공격 = 266%p
-
-#### 마스터리 코어1 스킬
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> 최대 %데미지 </th><th> %데미지 상승량(%p) </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 플레인 차지드라이브VI </td><td> 3615 </td><td> 42 </td></tr>
-     <tr><td> 플레인 스펠VI </td><td> 1610 </td><td> 20 </td></tr>
-     <tr><td> 스칼렛 차지드라이브VI </td><td> 4530 </td><td> 54 </td></tr>
-     <tr><td> 스칼렛 스펠VI </td><td> 2375 </td><td> 30 </td></tr>
-     <tr><td> 거스트 차지드라이브VI </td><td> 5250 </td><td> 66 </td></tr>
-     <tr><td> 거스트 스펠VI </td><td> 1980 </td><td> 24 </td></tr>
-     <tr><td> 어비스 차지드라이브VI </td><td> 7894 </td><td> 102 </td></tr>
-     <tr><td> 어비스 스펠VI </td><td> 302 </td><td> 4 </td></tr>
-     <tr><td> 깨어난 심연(신규 패시브) </td><td> 4380 </td><td> 48 </td></tr>
-  </tbody>
-</table>
-
-#### 마스터리 코어2 스킬
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> 최대 %데미지 </th><th> %데미지 상승량(%p) </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 지워지지 않는 상처VI </td><td> 8040 </td><td> 102 </td></tr>
-     <tr><td> 채워지지 않는 굶주림VI </td><td> 9268 </td><td> 112 </td></tr>
-     <tr><td> 걷잡을 수 없는 혼돈VI </td><td> 14220 </td><td> 168 </td></tr>
-     <tr><td> 멈출 수 없는 충동(패시브) </td><td> 2450 </td><td> 55 </td></tr>
-     <tr><td> 멈출 수 없는 본능(패시브) </td><td> 2940 </td><td> 66 </td></tr>
-     <tr><td> 돌아오는 증오VI(패시브) </td><td> 480 </td><td> 16 </td></tr>
-  </tbody>
-</table>
-
-#### 마스터리 코어3 스킬
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> 최대 %데미지 </th><th> %데미지 상승량(%p) </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 돌아오는 증오VI </td><td> 8320 </td><td> 96 </td></tr>
-     <tr><td> 황홀한 구속VI </td><td> 82200 </td><td> 920 </td></tr>
-     <tr><td> 끝없는 고통VI </td><td> 66330 </td><td> 630 </td></tr>
-  </tbody>
-</table>
-
-#### 마스터리 코어4 스킬
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> 최대 %데미지 </th><th> %데미지 상승량(%p) </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 잊혀지지 않는 악몽VI </td><td> 6685 </td><td> 84 </td></tr>
-     <tr><td> 잊혀지지 않는 흉몽VI </td><td> 6797 </td><td> 84 </td></tr>
-     <tr><td> 다가오는 죽음 </td><td> 120 </td><td> 4 </td></tr>
-  </tbody>
-</table>
-
-#### 마스터리 코어 레벨별 재화 소모량
-<table>
-  <thead><tr>
-     <th> 다음 레벨 </th><th> 재화 소모량 </th><th> 다음 레벨 </th><th> 재화 소모량 </th><th> 다음 레벨 </th><th> 재화 소모량 </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 1 </td><td> 50 </td><td> 11 </td><td> 40 </td><td> 21 </td><td> 85 </td></tr>
-     <tr><td> 2 </td><td> 15 </td><td> 12 </td><td> 45 </td><td> 22 </td><td> 90 </td></tr>
-     <tr><td> 3 </td><td> 18 </td><td> 13 </td><td> 50 </td><td> 23 </td><td> 95 </td></tr>
-     <tr><td> 4 </td><td> 20 </td><td> 14 </td><td> 55 </td><td> 24 </td><td> 100 </td></tr>
-     <tr><td> 5 </td><td> 23 </td><td> 15 </td><td> 60 </td><td> 25 </td><td> 105 </td></tr>
-     <tr><td> 6 </td><td> 25 </td><td> 16 </td><td> 65 </td><td> 26 </td><td> 110 </td></tr>
-     <tr><td> 7 </td><td> 28 </td><td> 17 </td><td> 70 </td><td> 27 </td><td> 115 </td></tr>
-     <tr><td> 8 </td><td> 30 </td><td> 18 </td><td> 75 </td><td> 28 </td><td> 120 </td></tr>
-     <tr><td> 9 </td><td> 33 </td><td> 19 </td><td> 80 </td><td> 29 </td><td> 125 </td></tr>
-     <tr><td> 10 </td><td> 100 </td><td> 20 </td><td> 175 </td><td> 30 </td><td> 250 </td></tr>
-  </tbody>
-</table>
-
-[>> 시제품용 데이터 보러가기](#test_model_img)<br>
-
-#### 시제품용 데이터의 현재 마스터리 코어별 레벨
-<table>
-  <thead><tr>
-     <th> 마스터리 코어 번호 </th><th> 1 </th><th> 2 </th><th> 3 </th><th> 4 </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 현재 레벨 </td><td> 19 </td><td> 9 </td><td> 9 </td><td> 9 </td></tr>
-  </tbody>
-</table>
-
-#### 시제품용 데이터의 마스터리 코어1 점유율
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> 스킬별 점유율 </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 플레인 차지드라이브VI </td><td> 3.84 </td></tr>
-     <tr><td> 플레인 스펠VI </td><td> 1.63 </td></tr>
-     <tr><td> 스칼렛 차지드라이브VI </td><td> 0.54</td></tr>
-     <tr><td> 스칼렛 스펠VI </td><td> 0.27 </td></tr>
-     <tr><td> 거스트 차지드라이브VI </td><td> 0.89 </td></tr>
-     <tr><td> 거스트 스펠VI </td><td> 0.32 </td></tr>
-     <tr><td> 어비스 차지드라이브VI </td><td> 0.89 </td></tr>
-     <tr><td> 어비스 스펠VI </td><td> 0.35 </td></tr>
-     <tr><td> 깨어난 심연(신규 패시브) </td><td> 11.51 </td></tr>
-  </tbody>
-</table>
-
-#### 시제품용 데이터의 마스터리 코어2 점유율
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> 스킬별 점유율 </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 지워지지 않는 상처VI </td><td> 1.61 </td></tr>
-     <tr><td> 채워지지 않는 굶주림VI </td><td> 1.93 </td></tr>
-     <tr><td> 걷잡을 수 없는 혼돈VI </td><td> 1.99 </td></tr>
-     <tr><td> 멈출 수 없는 충동(패시브) </td><td> 0.61 </td></tr>
-     <tr><td> 멈출 수 없는 본능(패시브) </td><td> 1.51 </td></tr>
-     <tr><td> 돌아오는 증오VI(패시브) </td><td> 12.14 </td></tr>
-  </tbody>
-</table>
-
-#### 시제품용 데이터의 마스터리 코어3 점유율
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> 스킬별 점유율 </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 돌아오는 증오VI </td><td> 12.14 </td></tr>
-     <tr><td> 황홀한 구속VI </td><td> 2.32 </td></tr>
-     <tr><td> 끝없는 고통VI </td><td> 2.00 </td></tr>
-  </tbody>
-</table>
-
-#### 시제품용 데이터의 마스터리 코어4 점유율
-<table>
-  <thead><tr>
-     <th> 스킬 이름 </th><th> 스킬별 점유율 </th>
-  </tr></thead>
-  <tbody>
-     <tr><td> 잊혀지지 않는 악몽VI </td><td> 0.96 </td></tr>
-     <tr><td> 잊혀지지 않는 흉몽VI </td><td> 8.42 </td></tr>
-     <tr><td> 다가오는 죽음 </td><td> 27.10 </td></tr>
-  </tbody>
-</table>
-
-<div id="prototype_logic"></div>
-
-### 데이터 구조 설명
-```
-mastery_core_1 = {
-    "cur_level": 0,
-    "dmg_up": {
-        "final_dmg_per_level": 0,
-        "final_dmg_per_level_per_10b": 0,
-        "avg_final_dmg_per_5level": 0,
-        "avg_final_dmg_per_5level_per_10b": 0
-    },
-    "skill": {
-        "플레인 차지드라이브VI": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        },
-        "플레인 스펠VI": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        },
-        "스칼렛 차지드라이브VI": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        },
-        "스칼렛 스펠VI": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        },
-        "거스트 차지드라이브VI": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        },
-        "거스트 스펠VI": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        },
-        "어비스 차지드라이브VI": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        },
-        "어비스 스펠VI": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        },
-        "깨어난 심연": {
-            "cur_dmg": 0,
-            "dmg_up": 0,
-            "rate": 0
-        }
-    }
-}
-
-mastery_core_list = [mastery_core_1, mastery_core_2, mastery_core_3, mastery_core_4]
-```
-
-데이터 구조는 마스터리 코어 항목 안에 '현재 레벨(cur_level)', '데미지 상승 정보(dmg_up)', '스킬 정보(skill)' 하위 항목으로 구성되어 있습니다.<br>
-'데미지 상승 정보(dmg_up)' 항목 안에 '1레벨 상승 시 최종데미지 상승율(final_dmg_per_level)', '100억 당 1레벨 상승 시 최종데미지 상승율(final_dmg_per_level_per_10b)', '5레벨 상승 시 평균 최종데미지 상승율(avg_final_dmg_per_5level)', '100억 당 5레벨 상승 시 평균 최종데미지 상승율(avg_final_dmg_per_5level_per_10b)' 하위 항목으로 구성되어 있습니다.<br>
-'스킬 정보(skill)' 항목 안에 '스킬 이름' 하위 항목으로 구성되며, '스킬 이름' 항목 안에 '현재 스킬 %데미지(cur_dmg)', '1레벨 상승 시 스킬 %데미지 상승량(dmg_up)', '스킬별 점유율(rate)' 하위 항목으로 구성되어 있습니다.
-
-최종적으로, 모든 마스터리 코어 데이터는 'mastery_core_list'라는 하나의 리스트로 묶어 처리 효율을 높였습니다.
-
-데이터 구조의 접근 방식은 다음과 같습니다.
-```
-mastery_core_list [마스터리 코어 번호] [정보 종류] [세부 항목]
-```
-마스터리 코어 번호: 0 ~ 3<br>
-정보 종류: cur_level, dmg_up, skill<br>
-세부 항목: 각각의 하위 데이터(final_dmg_per_level, final_dmg_per_level_per_10b, 스킬 이름 등)
-
-위에 제시된 방식처럼 코드를 구성할 경우, 코드의 길이가 길어지고 데이터에 접근하는 로직이 복잡해져 전체적인 흐름을 파악하기 어려울 수 있습니다.<br>
-이를 개선하기 위해, 함수 내부에서 데이터에 접근할 때는 다음과 같이 변수 선언을 통한 단순화를 적용했습니다.
-```
-skill_name = core[core_idx]["skill"][skill_name]
-```
-이를 활용하면 'skill_name["dmg_up"]' 형식으로 스킬 %데미지 상승량에 접근할 수 있습니다.
-
-
-### 핵심 함수 설명
-핵심적인 함수 2종류에 대해, 해당 코드를 발췌하여 자세히 설명해 보겠습니다.
-
-강화효율을 계산하는 함수입니다.
-```
-def cost_eff(cur_price, cost_cnt):
-    # 재화 효율을 계산함.
-    return 1000000 / (cur_price * cost_cnt)
-def calc_enh_eff(core):
-    # 재화 시세를 저장함.
-    cur_price = 550
-
-    for core_idx in range(4):
-        for skill_name in core[core_idx]["skill"].keys():    
-            skill_name = core[core_idx]["skill"][skill_name]
-
-            # 1레벨 상승 시 최종데미지 상승율을 구하기 위해서 현재 레벨을 확인함.
-            if(core[core_idx]["cur_level"] != 30):
-                # 재화 소모량, 데미지 상승율을 저장함.
-                cost_cnt = mastery_core_cost[core[core_idx]["cur_level"]]
-                dmg_up_rate = skill_name["dmg_up"] / skill_name["cur_dmg"]
-
-                # 최종데미지 상승율을 합산함.
-                core[core_idx]["dmg_up"]["final_dmg_per_level"] += skill_name["rate"] * dmg_up_rate
-                core[core_idx]["dmg_up"]["final_dmg_per_level_per_10b"] += (cost_eff(cur_price, cost_cnt)
-                                                                            * skill_name["rate"] * dmg_up_rate)
-    
-            # 5레벨 상승 시 평균 최종데미지 상승율을 구하기 위해서 현재 레벨을 확인함.
-            if(core[core_idx]["cur_level"] + 4 <= 30):
-                # 평균 재화 소모량, 평균 데미지 상승율을 저장함.
-                avg_cost_cnt = sum(mastery_core_cost[core[core_idx]["cur_level"]:core[core_idx]["cur_level"] + 5]) / 5
-                tempA = skill_name["dmg_up"]
-                tempB = skill_name["cur_dmg"]
-                avg_dmg_up_rate = ((tempA / tempB + tempA / (tempB + tempA) + tempA / (tempB + 2 * tempA)
-                                    + tempA / (tempB + 3 * tempA) + tempA / (tempB + 4 * tempA)) / 5)
-                
-                # 평균 최종데미지 상승율을 합산함.
-                core[core_idx]["dmg_up"]["avg_final_dmg_per_5level"] += skill_name["rate"] * avg_dmg_up_rate
-                core[core_idx]["dmg_up"]["avg_final_dmg_per_5level_per_10b"] += (cost_eff(cur_price, avg_cost_cnt)
-                                                                                 * skill_name["rate"] * avg_dmg_up_rate)
-
-    return core
-```
-
-- 강화효율 산출하는 함수.
-  - 매개변수
-    - 마스터리 코어 리스트(리스트)
-  - 설명
-    - 마스터리 코어별/스킬별 최종데미지 상승율을 산출하는 과정.
-  - 처리과정
-    - 재화 시세, 마스터리 코어 1~30레벨 재화 소모량, 마스터리 코어 리스트(리스트)를 이용하여, 재화 효율, 스킬 최종데미지 상승율을 산출함. 
-    - 1레벨 상승 시 최종데미지 상승율, 1레벨 상승 시 100억당 최종데미지 상승율, 5레벨 상승 시 평균 최종데미지 상승율, 5레벨 상승 시 100억당 평균 최종데미지 상승율을 산출함.
-    - 모든 최종데미지 상승율은 마스터리 코어 리스트(리스트)에 저장함.
-  - 처리사항
-    - 재화 시세는 성능 향상을 위해 550만 대신 550을 사용함.
-    - 재화 소모량 = 마스터리 코어 1~30레벨 재화 소모량[마스터리 코어[현재 레벨]]
-    - 평균 재화 소모량은 (마스터리 코어 1~30레벨 재화 소모량에서 '현재 레벨' 부터 '현재 레벨 + 4'까지를 합산된 수치) / 5임.
-    - 재화 효율은 성능 향상을 위해 100억 대신 100만을 사용함.
-    - (평균)재화 효율 = 100만 / (재화 시세 * (평균)재화 소모량)
-    - 스킬 데미지 상승율 = 1레벨 상승 시 %데미지 상승량(%p) / 현재 레벨 기준 %데미지
-    - 평균 스킬 데미지 상승율은 (이 마스터리 코어를 5레벨 연속으로 강화했을 경우, 스킬 데미지 상승율이 합산된 수치) / 5 임.
-    - (평균)최종데미지 상승율 = (평균)점유율 * (평균)스킬 데미지 상승율
-    - 100억당 (평균)최종데미지 상승율 = (평균)재화 효율 * 점유율 * (평균)스킬 데미지 상승율
-  - 리턴값
-    - 마스터리 코어 리스트(리스트)
-
-재화 시세는 성능 향상을 위해 550만 대신 550을 사용하였습니다.
-
-이중 for 문으로 마스터리 코어 개수 만큼 실행하는 코드 내에 스킬 개수 만큼 실행하도록 만들었습니다.
-
-현재 레벨 기준으로 1레벨 상승 시 30레벨이 초과되지 않는지 검증을 합니다.
-재화 소모량은 마스터리 코어 소모 비용 리스트에서 마스터리 코어의 현재레벨을 대입하여 추출합니다.
-스킬 데미지 상승율은 '1레벨 상승 시 %데미지 상승량(%p) / 현재 레벨 기준 %데미지'으로 계산하여 추출합니다.
-최종데미지 상승율은 점유율 * 스킬 데미지 상승율으로 계산하여 도출한 값을 마스터리 코어 리스트에 넣습니다.
-
-여기서 중복으로 사용되는 재화 효율을 함수화하여 사용하였습니다.
-재화 시세 기준점이 550만을 550으로 낮춰 계산하였으므로 재화 효율은 100억 대신 100만을 사용하였습니다.
-재화 효율 함수에 재화 시세 및 소모개수를 입력하면, 리턴값으로 1000000 / (재화 시세 * 소모 개수)을 받습니다.
-
-100억당 최종데미지 상승율은 재화 효율 * 점유율 * 스킬 데미지 상승율을 계산하여 도출한 값을 마스터리 코어 리스트에 넣습니다.
-
-5레벨 관련 if문...
-
-### 조금 더 구상해볼 것.
-
-<br><br><br>
-
-<h2 id="prototype_result">4-4. 시제품 결과</h2>
+<h2 id="prototype_result">4-3. 시제품 결과</h2>
 
 ### 프로젝트 이름
 아크 헥사코어 효율 시뮬레이션(시제품)
@@ -1324,7 +965,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <h2 id="game_system_explan">게임 시스템 설명</h2>
 
 ### ['헥사코어' 및 '코어' 란?]
-  
+헥사코어는 메이플스토리의 6차이다.
 ### ['특수 스킬 반지', '리스트레인트 링', '웨폰퍼프 링' 이란?]
 ### ['최종데미지' 란?]
 
@@ -1340,20 +981,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ### ['극딜', '준극딜' 이란?]
 - 
 ### ['사이클' 이란?]
-
-- 
-- 
-'링 익스체인지' 스킬이 추가되기 전, 아크의 전투 방식.<br>
-아크는 리스트레인트 링(특수 스킬 반지 중 하나) 단일로 사용했었습니다.
-스킬 쿨타임 6% 감소(메르세데스의 유니온 효과, 먼저 적용) + 쿨타임 2초 감소 모자로 인해 쿨타임 60초인 스킬이 54.4초가 되어,
-인피니티 스펠 지속시간인 50초 이후 웨폰퍼프 링(특수 스킬 반지 중 하나)으로 변경하기 위해서 5초 동안 공격하지 않는다고(게임적 시스템임) 가정해도 스킬 쿨타임이 밀리는 현상이 발생하므로 사용하지 않았습니다.
-그리고 웨폰퍼프 링을 변경한다고 해도 높은 피해량 또는 생존적인 이점 없었기 때문에 변경하지 않았고, 인피니티 스펠(2분 주기 버프)의 효용가치(점유율 대략 27%)가 매우 높아 지속시간 중 웨폰퍼프 링으로 변경하지 않았습니다.
-<br>
-'링 익스체인지'의 사용 방식.<br>
-리스트레인트 링을 착용된 상태에서 2분 및 1분 주기 버프(리스트레인트 링 포함)들을 전부 사용하고, 리스트레인트 링 지속시간 동안 보스에게 공격을 가합니다.<br>
-이후, '링 익스체인지' 스킬 사용 시 리스트레인트 링에서 웨폰퍼프 링으로 변경되며 10초의 쿨타임이 생깁니다. 10초 뒤 웨폰퍼프 링을 사용하여 추가 공격을 가합니다.<br>
-<br>
-'링 익스체인지'라는 스킬 추가로 인해 아크는 2분 주기 버프의 지속시간 중에 특수 스킬 반지 2개를 사용할 수 있게 되어, 테스트용 데이터를 재측정하려고 합니다.<br>
+사이클은 스킬 사용하는 순서를 의미한다.
 
 <br><br><br>
 
