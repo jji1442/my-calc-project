@@ -1256,7 +1256,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <h2 id="alpha_project_planning">5-0 시제품 개선</h2>
 
 ### 작성일
-25.10.16. ~
+25.10.16. ~ .
 
 ### 구현 요구사항(개선 사항)
 1. 평균 재화 효율 계산 기준 최적화.
@@ -1319,143 +1319,29 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 #### 함수 설계
 
-- 강화효율 산출하는 함수.
-  - 매개변수
-    - 마스터리 코어 리스트(리스트)
-  - 설명
-    - 마스터리 코어별 최종데미지 상승율을 산출하는 과정.
-  - 처리과정
-    - 마스터리 코어 리스트(리스트)를 이용하여, 마스터리 코어별 레벨 상승 시 최종데미지 상승율을 산출함.
-  - 처리사항
-    - 마스터리 코어별 스킬별 실행하게 하는 for문.
-    - 스킬 데미지 상승율 = 1레벨 상승 시 %데미지 상승량(%p) / 현재 레벨 기준 %데미지
-    - 평균 스킬 데미지 상승율 = (이 마스터리 코어를 5, 6레벨 연속으로 강화했을 경우, 스킬 데미지 상승율이 합산된 수치) / 5
-    - (평균) 최종데미지 상승율 = (평균) 점유율 * (평균) 스킬 데미지 상승율
-  - 리턴값
-    - 마스터리 코어 리스트(리스트)
-
-- 강화효율 산출하는 함수.
-  - 매개변수
-    - 마스터리 코어 리스트(리스트)
-  - 설명
-    - 마스터리 코어별/스킬별 최종데미지 상승율을 산출하는 과정.
-  - 처리과정
-    - 재화 시세, 마스터리 코어 1~30레벨 재화 소모량, 마스터리 코어 리스트(리스트)를 이용하여, 재화 효율, 스킬 최종데미지 상승율을 산출함. 
-    - 1레벨 상승 시 최종데미지 상승율, 1레벨 상승 시 100억당 최종데미지 상승율, 5레벨 상승 시 평균 최종데미지 상승율, 5레벨 상승 시 100억당 평균 최종데미지 상승율을 산출함.
-    - 모든 최종데미지 상승율은 마스터리 코어 리스트(리스트)에 저장함.
-  - 처리사항
-    - 
-    - (평균)재화 효율 = 100만 / (재화 시세 * (평균)재화 소모량)
-    - 스킬 데미지 상승율 = 1레벨 상승 시 %데미지 상승량(%p) / 현재 레벨 기준 %데미지
-    - 평균 스킬 데미지 상승율은 (이 마스터리 코어를 5, 6레벨 연속으로 강화했을 경우, 스킬 데미지 상승율이 합산된 수치) / 5 임.
-    - (평균)최종데미지 상승율 = (평균)점유율 * (평균)스킬 데미지 상승율
-    - 100억당 (평균)최종데미지 상승율 = (평균)재화 효율 * 점유율 * (평균)스킬 데미지 상승율
-  - 리턴값
-    - 마스터리 코어 리스트(리스트)
-   
-- 강화 추천하는 함수.
-  - 매개변수
-    - 마스터리 코어 리스트(리스트) 
-  - 처리과정
-    - 마스터리 코어별로 1레벨 상승 시 100억당 최종데미지 상승율, 5레벨 상승 시 100억당 평균 최종데미지 상승율을 한 리스트에 담음.
-    - 그 리스트에서 인덱스와 최댓값으로 가장 효율 좋은 마스터리 코어 번호 및 강화 횟수를 유추함.
-  - 처리사항
-    - 재화 소모량 = 마스터리 코어 1~30레벨 재화 소모량[마스터리 코어[현재 레벨]]
-    - 평균 재화 소모량은 (마스터리 코어 1~30레벨 재화 소모량에서 '현재 레벨' 부터 '현재 레벨 + 4'까지를 합산된 수치) / 5임.
-    - 재화 시세는 성능 향상을 위해 550만 대신 550을 사용함.
-    - 재화 효율은 성능 향상을 위해 100억 대신 100만을 사용함.
-    - 100억당 (평균) 최종데미지 상승율 = (평균) 재화 효율 * 최종데미지 상승율
-    - 가장 효율 좋은 마스터리 코어 번호 = 최댓값 인덱스 // 2 + 1
-    - 최댓값이 0이면, 0, 0을 리턴함.
-      - 모든 스킬이 최대 레벨을 달성함.
-    - 최댓값 인덱스 % 2가 0이면, 가장 효율 좋은 마스터리 코어 번호, 1을 리턴함.
-      - 최댓값 인덱스는 0, 2, 4, 6이므로 1레벨 상승 시 100억당 최종데미지 상승율 관련 데이터가 존재함.
-    - 아니라면, 가장 효율 좋은 마스터리 코어 번호, 5를 리턴함.
-      - 최댓값 인덱스는 1, 3, 5, 7이므로 5레벨 상승 시 100억당 평균 최종데미지 상승율 관련 데이터가 존재함.
-  - 리턴값
-    - 가장 효율 좋은 마스터리 코어 번호, 강화 횟수
-
-
-
-
-
-
-
-### 기능 요구사항
-
-<h2 id="alpha_project_planning">5-1 기획</h2>
-
-### 사용된 데이터는 최신화 됩니다. 각각의 제품 / 프로젝트의 기준 날짜를 확인해 주시길 바랍니다.
-### 본 프로젝트의 완성일은 개발자가 그 당시 보고서가 완성되었다고 판단한 시점으로 작성되었습니다.
-### 완성일 이후에 보고서 내용의 일관성을 위하여 일부 내용 추가 및 수정되었습니다.
-
-### 제작 기한
-- 예상 기간: 영업일 기준 8.5일.<br>
-  (5일 + 4 * 8일 + 14일) / 6 = 8.5일.
-- 시작일: 25.08.14.
-- 기한일: 25.08.26.
-- 완성일: 25.09.05.(영업일 기준 16일)
-
-### 기능 요구사항
-#### 전제조건
-<div id="prototype_prerequisites"></div>
-1. 시제품용 데이터는 25.08.14 개발자의 코어 강화 상태 및 허수아비형 보스 상대로 측정한 스킬별 점유율을 기준으로 측정함.<br>
-2. 기본 스킬의 %데미지는 '쓸만한 컴뱃 오더스'가 사용 중인 상태를 기준으로 측정함.<br>
-3. '어비스 차지드라이브 스펠VI'는 스킬 레벨에 따라 '적에게 적중 시 보스 공격 시 데미지 증가'의 효과가 증가하지만, 시제품에선 스킬 %데미지만 효율 측정하기 때문에 제외하고 측정함.<br>
-4. 분석의 범위를 명확히 설정하기 위해서 '다가오는 죽음'은 '인피니티 스펠' 사용 시에만 발생하는 경우를 기준으로 강화 효율을 측정함.<br>
-5. 마스터리 코어 효율 계산에 영향을 미치는 '강화 코어인 인피니티 스펠의 지속시간 중 다가오는 죽음 %p 상승'은 19레벨 기준으로 측정함.<br>
-<br>
-
-> '쓸만한 컴뱃 오더스'는 '일부 스킬만' 최대 레벨이 30레벨에서 31레벨로 상승하는 버프 스킬임.<br>
-> '인피니티 스펠'은 50초간 '다가오는 죽음'이 3개 추가로 생성함. 이 스킬은 강화 코어의 효과를 받아 '다가오는 죽음'의 데미지를 133%p 추가로 상승하는 버프 스킬임.<br>
-
-#### 입력하는 데이터
-1. 마스터리 코어별 현재 레벨.<br>
-2. 스킬별 점유율.
-
-#### 출력되어야하는 데이터
-1. 코어 종류.<br>
-2. 코어 추천 레벨.<br>
-3. 최종데미지 상승율.<br>
-4. 100억당 최종데미지 상승율.
-<div id=""></div>
-  
-- 전제조건<br>
-  1.&nbsp;<br>
-  2.&nbsp;<br>
-  3.&nbsp;<br>
-  4.&nbsp;<br>
-  5.&nbsp;<br>
-  
-- 입력되는 데이터<br>
-  1.&nbsp;모든 코어별 현재 레벨.<br>
-  2.&nbsp;스킬별 점유율.<br>
-  3.&nbsp;방어율 무시율.<br>
-  4.&nbsp;데미지%.<br>
-  5.&nbsp;보스 공격 시 데미지%.
-
-- 출력되어야할 데이터<br>
-  1.&nbsp;코어 종류.<br>
-  2.&nbsp;코어 추천 레벨.<br>
-  3.&nbsp;최종데미지 상승율.<br>
-  4.&nbsp;100억당 최종데미지 상승율.
-
 <br><br><br>
 
 <h2 id="game_system_explan">게임 시스템 설명</h2>
 
-- ['헥사코어' 및 '코어' 란?]
-- ['스킬 쿨타임 감소' 란?]
-- ['특수 스킬 반지', '리스트레인트 링', '웨폰퍼프 링' 이란?]
-- ['최종데미지' 란?]
-- ['점유율' 이란?]
-- ['어센트 스킬' 이란?]
-- ['오리진 스킬' 이란?]
-- ['링 익스체인지' 이란?]
-- ['극딜', '준극딜' 이란?]
-- ['사이클' 이란?]
+### ['헥사코어' 및 '코어' 란?]
+  
+### ['특수 스킬 반지', '리스트레인트 링', '웨폰퍼프 링' 이란?]
+### ['최종데미지' 란?]
 
-- 어센트 스킬은 한 보스에서 '쿨타임과 상관없이 스킬을 최대 3번을 연속으로 사용 가능'합니다.
+### ['어센트 스킬' 이란?]
+- 어센트 스킬은 한 보스에서 쿨타임과 상관없이 스킬을 최대 3번을 연속으로 사용 가능합니다.
+- 시전 중 무적이라는 특징을 지니고 있습니다.
+### ['오리진 스킬' 이란?]
+
+### ['바인드' 란?]
+- 
+### ['링 익스체인지' 이란?]
+- 
+### ['극딜', '준극딜' 이란?]
+- 
+### ['사이클' 이란?]
+
+- 
 - 
 '링 익스체인지' 스킬이 추가되기 전, 아크의 전투 방식.<br>
 아크는 리스트레인트 링(특수 스킬 반지 중 하나) 단일로 사용했었습니다.
@@ -1483,35 +1369,35 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <img src="test_model_img/test_model_6.PNG"><br>
 <br>
 <div id="unused_ring_exchange_img"></div>
-- 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(1)
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(1)
 <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_1.PNG">
 <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_2.PNG">
 <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_3.PNG">
 <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_4.PNG">
 <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_5.PNG">
 <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_6.PNG"><br>
-- 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(2)
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(2)
 <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_1.PNG">
 <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_2.PNG">
 <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_3.PNG">
 <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_4.PNG">
 <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_5.PNG">
 <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_6.PNG"><br>
-- 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(3)
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(3)
 <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_1.PNG">
 <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_2.PNG">
 <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_3.PNG">
 <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_4.PNG">
 <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_5.PNG">
 <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_6.PNG"><br>
-- 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(4)
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(4)
 <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_1.PNG">
 <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_2.PNG">
 <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_3.PNG">
 <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_4.PNG">
 <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_5.PNG">
 <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_6.PNG"><br>
-- 허수아비형 보스 기준 링 익스체인지 '없이' 6분 주기.(5)
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(5)
 <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_1.PNG">
 <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_2.PNG">
 <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_3.PNG">
@@ -1520,28 +1406,28 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_6.PNG"><br>
 <br>
 <div id="used_ring_exchange_img"></div>
-- 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(1)
+- 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_1.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_2.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_3.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_4.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_5.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_6.PNG"><br>
-- 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(2)
+- 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_1.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_2.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_3.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_4.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_5.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_6.PNG"><br>
-- 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(3)
+- 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_1.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_2.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_3.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_4.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_5.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_6.PNG"><br>
-- 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(4)
+- 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(4)
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_1.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_2.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_3.PNG">
@@ -1609,28 +1495,28 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 | 종합 | 4.89% | 4.84% | 98.92% |
 
 <div id="used_ring_exchange_img"></div>
-- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기(1)
+- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(1)
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_1.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_2.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_3.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_4.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_5.PNG">
 <img src="used_ring_exchange_img/1/used_ring_exchange_1_6.PNG"><br>
-- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기(2)
+- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(2)
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_1.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_2.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_3.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_4.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_5.PNG">
 <img src="used_ring_exchange_img/2/used_ring_exchange_2_6.PNG"><br>
-- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기(3)
+- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(3)
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_1.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_2.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_3.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_4.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_5.PNG">
 <img src="used_ring_exchange_img/3/used_ring_exchange_3_6.PNG"><br>
-- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기(4)
+- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(4)
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_1.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_2.PNG">
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_3.PNG">
@@ -1639,21 +1525,21 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG"><br>
 <br>
 <div id="post_patch_legacy_build_img"></div>
-- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(1)
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
 <img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_1.PNG">
 <img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_2.PNG">
 <img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_3.PNG">
 <img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_4.PNG">
 <img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_5.PNG">
 <img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_6.PNG"><br>
-- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(2)
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
 <img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_1.PNG">
 <img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_2.PNG">
 <img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_3.PNG">
 <img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_4.PNG">
 <img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_5.PNG">
 <img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_6.PNG"><br>
-- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(3)
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
 <img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_1.PNG">
 <img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_2.PNG">
 <img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_3.PNG">
@@ -1662,21 +1548,21 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_6.PNG"><br>
 <br>
 <div id="post_patch_new_build_img"></div>
-- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(1)
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
 <img src="post_patch_new_build_img/1/post_patch_new_build_1_1.PNG">
 <img src="post_patch_new_build_img/1/post_patch_new_build_1_2.PNG">
 <img src="post_patch_new_build_img/1/post_patch_new_build_1_3.PNG">
 <img src="post_patch_new_build_img/1/post_patch_new_build_1_4.PNG">
 <img src="post_patch_new_build_img/1/post_patch_new_build_1_5.PNG">
 <img src="post_patch_new_build_img/1/post_patch_new_build_1_6.PNG"><br>
-- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(2)
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
 <img src="post_patch_new_build_img/2/post_patch_new_build_2_1.PNG">
 <img src="post_patch_new_build_img/2/post_patch_new_build_2_2.PNG">
 <img src="post_patch_new_build_img/2/post_patch_new_build_2_3.PNG">
 <img src="post_patch_new_build_img/2/post_patch_new_build_2_4.PNG">
 <img src="post_patch_new_build_img/2/post_patch_new_build_2_5.PNG">
 <img src="post_patch_new_build_img/2/post_patch_new_build_2_6.PNG"><br>
-- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '있이' 6분 주기.(3)
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
 <img src="post_patch_new_build_img/3/post_patch_new_build_3_1.PNG">
 <img src="post_patch_new_build_img/3/post_patch_new_build_3_2.PNG">
 <img src="post_patch_new_build_img/3/post_patch_new_build_3_3.PNG">
