@@ -1008,7 +1008,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ##### 내부 데이터(사용자 캐릭터 정보, 변동)
 - 마스터리 코어1(딕셔너리)
   - 현재 레벨(변수)
-  - 최종데미지 상승율(변수)
+  - 최종데미지 상승율(딕셔너리)
   - 스킬(딕셔너리)
     - 스킬 이름(딕셔너리)
       - 현재 레벨 기준 %데미지(변수)
@@ -1041,6 +1041,10 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 - 마스터리 코어 리스트 = [마스터리 코어1, 마스터리 코어2, 마스터리 코어3, 마스터리 코어4]
 
 #### 함수 설계
+
+
+
+
 
 <br><br><br>
 
