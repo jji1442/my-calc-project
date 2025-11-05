@@ -1239,10 +1239,14 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
   - 점유율(변수)
 - 강화 코어 리스트 = [강화 코어1, 강화 코어2, 강화 코어3, 강화 코어4]
 
-속성 종류 = enh_types
-%p 증가 =
-최종데미지 증가 = 
+강화 종류 = enh_types
 
+스킬 %데미지 증가
+skill_ratio / skill_ratio_gap
+스킬 최종데미지 증가 -> 스킬 데미지 = 스킬 %데미지 증가 * (1 + 스킬 최종데미지 증가)
+skill_dmg_amp / skill_dmg_amp_gap
+최종데미지 증가 = 실질적으로 오르는 데미지양
+final_dmg_up
 
 ##### ※ 강화 코어2는 인피니티 스펠로, 최종데미지 증가 효과를 지닌 강화 코어들과 다르게 %p 상승 효과를 지니고 있습니다.
 
