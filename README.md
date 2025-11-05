@@ -1248,6 +1248,10 @@ skill_dmg_amp / skill_dmg_amp_gap
 최종데미지 증가 = 실질적으로 오르는 데미지양
 final_dmg_up
 
+기본 스탯 = base_stats
+하이브리드 스탯 = hybrid_stats
+평균 스탯 = avg_stats
+
 ##### ※ 강화 코어2는 인피니티 스펠로, 최종데미지 증가 효과를 지닌 강화 코어들과 다르게 %p 상승 효과를 지니고 있습니다.
 
 #### 함수 설계
