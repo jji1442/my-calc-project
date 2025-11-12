@@ -1183,8 +1183,6 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 - 메인 함수
 	- 강화 횟수를 측정하는 함수(스킬 코어 리스트)
-	- 강화 횟수를 측정하는 함수(강화 코어 리스트)
-	- 강화 횟수를 측정하는 함수(마스터리 코어 리스트)
 	- while문
 		- ... 
 		- 강화횟수를 측정하는 함수(강화된 코어)
@@ -1194,7 +1192,6 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 	- 강화 코어 1 ~ 30레벨 재화 소모량(리스트)
 	- 스킬 코어 1 ~ 30레벨 재화 소모량(리스트)
   	- 강화 코어 1 ~ 30레벨 스킬 계수 증폭(리스트)
-
 
 - 직업별 초기 데이터를 가져오는 함수.
 	- 매개변수
