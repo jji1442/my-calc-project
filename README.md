@@ -1206,6 +1206,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
    - 설명: 다양한 코어의 효율을 정확하게 측정하기 위해 함수 기능 확장.
    - 기존 네이밍인 코어별 최종데미지 증가와 혼동이 오지 않도록 강화 코어의 최종데미지 증가는 스킬 계수 증폭으로 변경. 기존의 스킬 %데미지는 스킬 계수로 변경하여 명칭을 통일.
 
+- 데미지 효율 측정하는 함수(for orign)
+- 데미지 효율 측정하는 함수(for ascent)
 <code>
 def calc_dmg_eff_for_orign(core_list, boss_DMG_list, boss_IED_list):
     rate_list = create_rate_list(core_list, 0, immut.skill_core_list)
