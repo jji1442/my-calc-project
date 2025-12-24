@@ -1170,7 +1170,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 #### 함수
 
-#### 함수의 처리 범위가 확장되었지만 기존 로직 구조와 차이가 크지 않을 경우, 함수 설명 대상에서 제외하였습니다.
+#### 함수의 처리 범위가 확장되었지만 기존 로직 구조와 차이가 크지 않을 경우, 변경 사항 설명 및 추가 사항에 대한 함수 설명하는 대상에서 제외하였습니다.
 
 - 강화 횟수를 산출하는 함수를 재귀함수화 및 최적화.
 	- 기존: 강화 효율을 산출하는 과정에서 강화 횟수가 필요 시 함수 호출.
@@ -1200,19 +1200,83 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
    - 변경: 추천 레벨 달성 시 최종데미지 상승율만 산출.
    - 설명: 부가 효과로 인한 최종데미지 상승율을 반영하기 위해서 100억당 최종데미지 상승율을 산출하는 기능 분리.
 
-- 효율을 산출하는 함수 기능 확장 및 변수명 혼란 방지.
+- 스킬 %데미지 효율을 산출하는 함수 기능 확장 및 변수명 혼란 방지.
    - 기존: 스킬 %데미지(4차 이하 마스터리 코어, 6차 스킬 코어)
    - 변경: 스킬 계수(4차 이하 마스터리 코어, 6차 스킬 코어), 스킬 계수 증폭(5차 강화 코어)
    - 설명: 다양한 코어의 효율을 정확하게 측정하기 위해 함수 기능 확장.
    - 기존 네이밍인 코어별 최종데미지 증가와 혼동이 오지 않도록 강화 코어의 최종데미지 증가는 스킬 계수 증폭으로 변경. 기존의 스킬 %데미지는 스킬 계수로 변경하여 명칭을 통일.
 
+<code>
+def calc_dmg_eff_for_orign(core_list, boss_DMG_list, boss_IED_list):
+    rate_list = create_rate_list(core_list, 0, immut.skill_core_list)
+    core = core_list[0]
+    boss_DMG = boss_DMG_list[0]
+    boss_IED = boss_IED_list[0]
+    add_final_dmg_up = 0
+
+    if(core["cur_level"] < 10 and 10 <= core["cur_level"] + core["enh_cnt"]):
+        rate = rate_list[10 - 1][0] / 100
+        skill_dmg_up_from_IDE = calc_dmg_up_from_boss_IED(boss_IED, 20)
+        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_IDE)
+    elif(core["cur_level"] < 20 and 20 <= core["cur_level"] + core["enh_cnt"]):
+        rate = rate_list[20 - 1][0] / 100
+        skill_dmg_up_from_DMG = calc_dmg_up_from_boss_DMG(boss_DMG, 20)
+        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_DMG)
+    elif(core["cur_level"] < 30 and 30 <= core["cur_level"] + core["enh_cnt"]):
+        rate = rate_list[30 - 1][0] / 100
+        skill_dmg_up_from_DMG = calc_dmg_up_from_boss_DMG(boss_DMG, 30, 20)
+        skill_dmg_up_from_IDE = calc_dmg_up_from_boss_IED(boss_IED, 30, 20)
+        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_DMG, skill_dmg_up_from_IDE)
+    
+    core_list[0]["final_dmg_up"]["side_fx"] = add_final_dmg_up
+
+    return core_list
+
+def calc_dmg_eff_for_ascent(core_list, boss_DMG_list, boss_IED_list):
+    rate_list = create_rate_list(core_list, 1, immut.skill_core_list)
+    core = core_list[1]
+    boss_DMG = boss_DMG_list[1]
+    boss_IED = boss_IED_list[1]
+    add_final_dmg_up = 0
+
+    if(core["cur_level"] < 10 and 10 <= core["cur_level"] + core["enh_cnt"]):
+        rate = rate_list[10 - 1][0] / 100
+        skill_dmg_up_from_DMG = calc_dmg_up_from_boss_DMG(boss_DMG, 10, 40)
+        skill_dmg_up_from_IDE = calc_dmg_up_from_boss_IED(boss_IED, 70, 60)
+        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_DMG, skill_dmg_up_from_IDE)
+    elif(core["cur_level"] < 20 and 20 <= core["cur_level"] + core["enh_cnt"]):
+        rate = rate_list[20 - 1][0] / 100
+        skill_dmg_up_from_DMG = calc_dmg_up_from_boss_DMG(boss_DMG, 10, 50)
+        skill_dmg_up_from_IDE = calc_dmg_up_from_boss_IED(boss_IED, 80, 70)
+        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_DMG, skill_dmg_up_from_IDE)
+    elif(core["cur_level"] < 30 and 30 <= core["cur_level"] + core["enh_cnt"]):
+        rate = rate_list[30 - 1][0] / 100
+        skill_dmg_up_from_IDE = calc_dmg_up_from_boss_IED(boss_IED, 100, 80)
+        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_IDE)
+
+    core_list[1]["final_dmg_up"]["side_fx"] = add_final_dmg_up
+
+    return core_list
+
+</code>
+
+### 직업별 예외사항 처리하는 스크립트
+
+- 강화 횟수를 계산하는 함수(for upgrade_core_2)
+   - 매개변수
+      - 코어 리스트(리스트)
+   - 설명
+      - 인피니티 스펠의 현재 레벨이 0레벨 이상 5레벨 이하일 경우, 5레벨로 가는 것이 효율이 좋음.
+   - 처리 과정
+      -
+      -
 
 
 
 
 
-### 메인 스크립트 구현
-- 모든 코어
+
+         메인 스크립트 구현스크립트 구현어
    - 강화 횟수, 강화 종류를 저장하는 변수 추가.
 
 - 스킬 코어
