@@ -1204,36 +1204,24 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
    - 기존: 스킬 %데미지(4차 이하 마스터리 코어, 6차 스킬 코어)
    - 변경: 스킬 계수(4차 이하 마스터리 코어, 6차 스킬 코어), 스킬 계수 증폭(5차 강화 코어)
    - 설명: 다양한 코어의 효율을 정확하게 측정하기 위해 함수 기능 확장.
-   - 기존 네이밍인 코어별 최종데미지 증가와 혼동이 오지 않도록 강화 코어의 최종데미지 증가는 스킬 계수 증폭으로 변경. 기존의 스킬 %데미지는 스킬 계수로 변경하여 명칭을 통일.
+      - 기존 네이밍인 코어별 최종데미지 증가와 혼동이 오지 않도록 강화 코어의 최종데미지 증가는 스킬 계수 증폭으로 변경. 기존의 스킬 %데미지는 스킬 계수로 변경하여 명칭을 통일.
 
-- 데미지 효율 측정하는 함수(for orign)
+- 부가효과 데미지 효율을 산출하는 함수(for orign)
+   - 매개변수
+      - 스킬 코어 리스트(리스트)
+      - 보스에게 적용되는 데미지 스탯 리스트(리스트)
+      - 보스에게 적용되는 방어율 무시 스탯 리스트(리스트)
+   - 설명
+      - 오리진 스킬 코어의 부가효과 데미지 효율을 산출하는 과정.
+   - 처리과정
+      - 스킬 %데미지로 인한 레벨별 스킬 점유율을 산출.
+      - 스킬 %데미지로 인한 데미지 상승율을 산출.
+      - 부가효과로 인한 데미지 상승율을 데미지 상승율에 추가.
+   - 리턴값
+      - 스킬 코어 리스트(리스트)
+
 - 데미지 효율 측정하는 함수(for ascent)
 <code>
-def calc_dmg_eff_for_orign(core_list, boss_DMG_list, boss_IED_list):
-    rate_list = create_rate_list(core_list, 0, immut.skill_core_list)
-    core = core_list[0]
-    boss_DMG = boss_DMG_list[0]
-    boss_IED = boss_IED_list[0]
-    add_final_dmg_up = 0
-
-    if(core["cur_level"] < 10 and 10 <= core["cur_level"] + core["enh_cnt"]):
-        rate = rate_list[10 - 1][0] / 100
-        skill_dmg_up_from_IDE = calc_dmg_up_from_boss_IED(boss_IED, 20)
-        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_IDE)
-    elif(core["cur_level"] < 20 and 20 <= core["cur_level"] + core["enh_cnt"]):
-        rate = rate_list[20 - 1][0] / 100
-        skill_dmg_up_from_DMG = calc_dmg_up_from_boss_DMG(boss_DMG, 20)
-        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_DMG)
-    elif(core["cur_level"] < 30 and 30 <= core["cur_level"] + core["enh_cnt"]):
-        rate = rate_list[30 - 1][0] / 100
-        skill_dmg_up_from_DMG = calc_dmg_up_from_boss_DMG(boss_DMG, 30, 20)
-        skill_dmg_up_from_IDE = calc_dmg_up_from_boss_IED(boss_IED, 30, 20)
-        add_final_dmg_up += calc_total_dmg_up(rate, skill_dmg_up_from_DMG, skill_dmg_up_from_IDE)
-    
-    core_list[0]["final_dmg_up"]["side_fx"] = add_final_dmg_up
-
-    return core_list
-
 def calc_dmg_eff_for_ascent(core_list, boss_DMG_list, boss_IED_list):
     rate_list = create_rate_list(core_list, 1, immut.skill_core_list)
     core = core_list[1]
