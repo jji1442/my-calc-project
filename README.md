@@ -1187,7 +1187,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <details>
 <summary>세부내용 표시하기/숨기기</summary>
 
-#### 세부내용
+#### ========== [module] 강화 횟수를 산출하는 함수 기능 변경의 상세 설명 ==========
 - [module] 강화 횟수를 산출하는 함수(for 스킬 코어) 추가.
    - 매개변수
       - 스킬 코어 리스트(리스트)
@@ -1213,6 +1213,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
   		- 보스에게 적용되는 데미지 리스트(리스트)
     - 설명
   		- 보스에게 적용되는 데미지 상승량에... 추가설명 작성 중
+
+================================================================================
 </details>
 
 
