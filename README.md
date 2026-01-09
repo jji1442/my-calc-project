@@ -1158,17 +1158,17 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 <img src="/10_alpha_project/script_diagram.jpg">
 
-1. alpha_project_main.py: 메인 함수(메인 로직).
+1. alpha_project_main.py
    - 전체적인 프로세스를 실행하는 역할.
-2. alpha_project.py: 데이터 컨트롤러(하위 로직).
+2. alpha_project.py
    - 반복 알고리즘의 작동 순서를 제어 및 가변 데이터를 수정하는 역할.
-3. module.py: 모듈.
+3. module.py
    - 수학적 공식 및 시스템의 핵심인 계산 로직을 통해 값을 산출하는 역할.
-4. exception.py: 직업별 예외사항.
+4. exception.py
    - 직업별로 일반적인 계산 로직과 다르게 적용되어야 하는 모든 예외사항을 담당.
-5. immutable_data.py: 불변 데이터.
+5. immutable_data.py
    - 고정적으로 유지되는 스킬 계수 및 소모 비용 등의 데이터 집합.
-6. mutable_data.py: 가변 데이터.
+6. mutable_data.py
    - 사용자의 상황에 따라 수시로 변경되는 점유율 및 현재 레벨 등의 데이터 집합.
 
 #### 함수 설계도
