@@ -1158,8 +1158,6 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 <img src="/10_alpha_project/script_diagram.jpg">
 
-[[스크립트 설계도 이미지 추가 예정]]
-
 1. alpha_project_main.py: 메인 함수(메인 로직).
    - 전체적인 프로세스를 실행하는 역할.
 2. alpha_project.py: 데이터 컨트롤러(하위 로직).
@@ -1175,7 +1173,6 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 #### 함수 설계도
 
-[[함수 설계도 이미지 추가 예정]]
 <img src="/10_alpha_project/function_diagram.jpg">
 
 세부 로직은 즉흥적으로 구현하였습니다.
