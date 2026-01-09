@@ -1156,6 +1156,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ### 구현 요구사항
 #### 스크립트 설계도
 
+<img src="/10_alpha_project/script_diagram.jpg">
+
 [[스크립트 설계도 이미지 추가 예정]]
 
 1. alpha_project_main.py: 메인 함수(메인 로직).
@@ -1174,6 +1176,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 #### 함수 설계도
 
 [[함수 설계도 이미지 추가 예정]]
+<img src="/10_alpha_project/function_diagram.jpg">
 
 세부 로직은 즉흥적으로 구현하였습니다.
 
@@ -1182,9 +1185,6 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 [[함수 세부 설계도 이미지(어떤 부분 설명할 건지 표시 까지)추가 예정]]
 
 함수 2가지 설명
-
-
-
 
 
 
