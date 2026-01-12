@@ -1177,6 +1177,9 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 ## 9-3. 알파 프로젝트 구현
 
+<img src="10_alpha_project/function_detail_diagram_1.png">
+<img src="10_alpha_project/function_detail_diagram_2.png">
+
 <table style="border-collapse: collapse; border-spacing: 0;">
   <tr><td style="padding: 0; border: none;"><img src="10_alpha_project/function_detail_diagram_1.png" width="100%"></td></tr>
   <tr><td style="padding: 0; border: none;"><img src="10_alpha_project/function_detail_diagram_2.png" width="100%"></td></tr>
