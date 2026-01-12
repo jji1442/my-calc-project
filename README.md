@@ -1180,13 +1180,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <img src="10_alpha_project/function_detail_diagram_1.png">
 <img src="10_alpha_project/function_detail_diagram_2.png">
 
-<table style="border-collapse: collapse; border-spacing: 0;">
-  <tr><td style="padding: 0; border: none;"><img src="10_alpha_project/function_detail_diagram_1.png" width="100%"></td></tr>
-  <tr><td style="padding: 0; border: none;"><img src="10_alpha_project/function_detail_diagram_2.png" width="100%"></td></tr>
-</table>
-
 위 함수 세부 설계도는 프로그램의 제어 흐름을 나타내는 실선과 함수 간의 의존성을 의미하는 점선을 통해 전체 로직을 구조화했습니다.
-이번 알파 프로젝트로 구현된 신규 함수는 빨간색 원으로, 처리 범위가 확장된 기존 함수는 초록색 원으로, 확장 및 최적화된 기존 함수는 보라색 원으로 표기하였습니다.
+이번 알파 프로젝트로 구현된 신규 함수는 빨간색 원으로, 처리 범위가 확장된 기존 함수는 초록색 원으로, 처리 범위가 확장되었으며 최적화된 기존 함수는 보라색 원으로 표기하였습니다.
 
 신규로 구현된 함수들 중에서 중요한 로직을 담당하는 함수인 calc_enh_cnt_for_skill_core_list()에 대한 설명 드리겠습니다.
 
@@ -1223,7 +1218,7 @@ calc_enh_cnt_for_skill_core_list()라는 함수는 스킬 코어 리스트(오�
 그럴 경우에는 두 레벨 구간 간의 효율을 비교합니다.
 그 중 더 높은 효율을 기준으로 추천 레벨을 정렬합니다.
 예를 들어, '19레벨 -> 25레벨'과 '24레벨 -> 30레벨'이 선정되었다고 가정하면 위 2가지의 효율을 비교하여
-전자가 좋다면, 최종적으로 추천 레벨을 '19레벨 -> 25레벨' / '25레벨 -> 30레벨'
+전자가 좋다면, 최종적으로 추천 레벨을 '19레벨 -> 25레벨 -> 30레벨'
 후자가 좋다면, '18레벨 -> 30레벨'의 효율 vs. '18레벨 -> 19레벨'의 효율. 이전 데미지적 이점의 과정을 반복합니다.
 이러다 보면 10레벨 추천 레벨 구간과 겹치는 가능성이 존재할 수 있으니, 두 레벨 구간 간의 효율을 비교할 수 있도록 구성합니다.
 
