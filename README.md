@@ -1154,7 +1154,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ### 구현 요구사항
 #### 스크립트 설계도
 
-<img src="/10_alpha_project/script_diagram.jpg">
+<img src="/10_alpha_project/script_diagram.png">
 
 1. alpha_project_main.py
    - 전체적인 프로세스를 실행하는 역할.
@@ -1171,15 +1171,15 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 #### 함수 설계도
 
-<img src="/10_alpha_project/function_diagram.jpg">
+<img src="/10_alpha_project/function_diagram.png">
 
 위 함수 설계도는 프로그램의 제어 흐름을 나타냅니다. 세부 로직은 즉흥적으로 구현하였습니다.
 
 ## 9-3. 알파 프로젝트 구현
 
 <table style="border-collapse: collapse; border-spacing: 0;">
-  <tr><td style="padding: 0; border: none;"><img src="/10_alpha_project/function_detail_diagram_1.jpg" width="100%"></td></tr>
-  <tr><td style="padding: 0; border: none;"><img src="/10_alpha_project/function_detail_diagram_2.jpg" width="100%"></td></tr>
+  <tr><td style="padding: 0; border: none;"><img src="/10_alpha_project/function_detail_diagram_1.png" width="100%"></td></tr>
+  <tr><td style="padding: 0; border: none;"><img src="/10_alpha_project/function_detail_diagram_2.png" width="100%"></td></tr>
 </table>
 
 위 함수 세부 설계도는 프로그램의 제어 흐름을 나타내는 실선과 함수 간의 의존성을 의미하는 점선을 통해 전체 로직을 구조화했습니다.
