@@ -1264,46 +1264,42 @@ python
 <table>
   <thead>
     <tr>
-      <th align="center">구분 (배율)</th>
+      <th align="center">이미지 1, 2, 3</th>
       <th align="center"></th>
-      <th align="center">효율 지점 2</th>
-      <th align="center">효율 지점 3</th>
-      <th align="center">효율 지점 4</th>
-      <th align="center">특이사항</th>
+      <th align="center"></th>
+      <th align="center"></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center"><b>20%</b></td>
-      <td align="center"></td>
-      <td align="center"></td>
-      <td align="center"></td>
-      <td align="center"></td>
-      <td align="center">최저 효율</td>
+      <td align="center">배율</td>
+      <td align="center">20%</td>
+      <td align="center">500%</td>
+      <td align="center">1000%</td>
     </tr>
     <tr>
-      <td align="center"><b>1000%</b></td>
-      <td align="center"></td>
-      <td align="center"></td>
-      <td align="center"></td>
-      <td align="center"></td>
-      <td align="center">전환점</td>
+      <td align="center">설명</td>
+      <td align="center">... -> 17렙 -> 18렙 -> 19렙 -> 25렙 -> 26렙 -> ...</td>
+      <td align="center">... -> 17렙 -> 18렙 -> 19렙 -> 25렙 -> 26렙 -> ...</td>
+      <td align="center">... -> 17렙 -> 18렙 -> 19렙 -> 20렙 -> 21렙 -> ...</td>
     </tr>
     <tr>
-      <td align="center"><b>3000%</b></td>
+      <td align="center">이미지 4, 5</td>
       <td align="center"></td>
       <td align="center"></td>
       <td align="center"></td>
-      <td align="center"></td>
-      <td align="center">가속 구간</td>
     </tr>
     <tr>
-      <td align="center"><b>8000%</b></td>
+      <td align="center">배율</td>
+      <td align="center">3000%</td>
+      <td align="center">8000%</td>
       <td align="center"></td>
+    </tr>
+    <tr>
+      <td align="center">설명</td>
+      <td align="center">9렙 -> 14렙 -> 15렙 -> 16렙 -> 20렙 -> 21렙 -> ....</td>
+      <td align="center">9렙 -> 20렙 -> 21렙 -> ....</td>
       <td align="center"></td>
-      <td align="center"></td>
-      <td align="center"></td>
-      <td align="center">최대 효율</td>
     </tr>
   </tbody>
 </table>
