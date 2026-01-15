@@ -1255,6 +1255,81 @@ python
 스킬 코어2(어센트 스킬)의 20레벨의 부가 효과의 효율이 낮아 20레벨을 거치지 않고 19레벨에서 바로 25레벨을 달성하는 것이 추천 되었습니다.
 
 
+
+
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">구분 (배율)</th>
+      <th align="center"></th>
+      <th align="center">효율 지점 2</th>
+      <th align="center">효율 지점 3</th>
+      <th align="center">효율 지점 4</th>
+      <th align="center">특이사항</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><b>20%</b></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center">최저 효율</td>
+    </tr>
+    <tr>
+      <td align="center"><b>1000%</b></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center">전환점</td>
+    </tr>
+    <tr>
+      <td align="center"><b>3000%</b></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center">가속 구간</td>
+    </tr>
+    <tr>
+      <td align="center"><b>8000%</b></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center">최대 효율</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 알파 프로젝트 제작 후기
 이번 단계에서 코드가 정말 방대해져 코드 관리에 어려움을 겪었습니다. 이를 개선하기 위해 설계도를 만들어 해결했습니다. 그리고 이 설계도를 통해 비슷한 종류를 하나로 묶어 객체지향 프로그래밍의 이점을 보려고 노력했습니다.
 
