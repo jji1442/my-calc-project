@@ -1271,13 +1271,13 @@ python
       <td align="center">배율</td>
       <td align="center">20%</td>
       <td align="center">500%</td>
-      <td align="center">1000%</td>
+      <td align="center">800%</td>
     </tr>
     <tr>
       <td align="center">설명</td>
-      <td align="center">... -> 17렙 -> 18렙 -> 19렙 -> 25렙 -> 26렙 -> ...</td>
-      <td align="center">... -> 17렙 -> 18렙 -> 19렙 -> 25렙 -> 26렙 -> ...</td>
-      <td align="center">... -> 17렙 -> 18렙 -> 19렙 -> 20렙 -> 21렙 -> ...</td>
+      <td align="center">... 17 -> 18 -> 19 -> 24 -> 25 ...</td>
+      <td align="center">... 17 -> 18 -> 19 -> 24 -> 25 ...</td>
+      <td align="center">... 17 -> 18 -> 19 -> 24 -> 25 ...</td>
     </tr>
     <tr>
       <td align="center">이미지 4, 5</td>
@@ -1293,8 +1293,8 @@ python
     </tr>
     <tr>
       <td align="center">설명</td>
-      <td align="center">9렙 -> 14렙 -> 15렙 -> 16렙 -> 20렙 -> 21렙 -> ....</td>
-      <td align="center">9렙 -> 20렙 -> 21렙 -> ....</td>
+      <td align="center">... 15 -> 16 -> 20 -> 21 -> 22 ...</td>
+      <td align="center">9 -> 20 -> 21 -> 22 ...</td>
       <td align="center"></td>
     </tr>
   </tbody>
