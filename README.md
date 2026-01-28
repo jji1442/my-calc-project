@@ -1275,9 +1275,9 @@ python
     </tr>
     <tr>
       <td align="center">설명</td>
-      <td align="center">... 17 -> 18 -> 19 -> 24 -> 25 ...</td>
-      <td align="center">... 17 -> 18 -> 19 -> 24 -> 25 ...</td>
-      <td align="center">... 17 -> 18 -> 19 -> 24 -> 25 ...</td>
+      <td align="center">... -> 17 -> 18 -> 19 -> 23 -> 24 -> ...</td>
+      <td align="center">... -> 17 -> 18 -> 19 -> 22 -> 23 -> ...</td>
+      <td align="center">... -> 17 -> 18 -> 20 -> 21 -> 22 -> ...</td>
     </tr>
     <tr>
       <td align="center">이미지 4, 5</td>
@@ -1293,8 +1293,8 @@ python
     </tr>
     <tr>
       <td align="center">설명</td>
-      <td align="center">... 15 -> 16 -> 20 -> 21 -> 22 ...</td>
-      <td align="center">9 -> 20 -> 21 -> 22 ...</td>
+      <td align="center">... -> 14 -> 15 -> 20 -> 21 -> 22 -> ...</td>
+      <td align="center">9 -> 20 -> 21 -> ...</td>
       <td align="center"></td>
     </tr>
   </tbody>
