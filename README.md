@@ -1261,9 +1261,9 @@ python
   <thead>
     <tr>
       <th align="center">이미지 1, 2, 3</th>
-      <th align="center"></th>
-      <th align="center"></th>
-      <th align="center"></th>
+      <th align="center"><img src="10_alpha_project/side_fx_result/20%.png"></th>
+      <th align="center"><img src="10_alpha_project/side_fx_result/500%.png"></th>
+      <th align="center"><img src="10_alpha_project/side_fx_result/800%.png"></th>
     </tr>
   </thead>
   <tbody>
@@ -1281,8 +1281,8 @@ python
     </tr>
     <tr>
       <td align="center">이미지 4, 5</td>
-      <td align="center"></td>
-      <td align="center"></td>
+      <td align="center"><img src="10_alpha_project/side_fx_result/3000%.png"></td>
+      <td align="center"><img src="10_alpha_project/side_fx_result/8000%.png"></td>
       <td align="center"></td>
     </tr>
     <tr>
