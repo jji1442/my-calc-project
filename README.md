@@ -1180,7 +1180,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ### 구현 요구사항
 #### 스크립트 설계도
 
-<img src="10_alpha_project/script_diagram.png">
+<img src="10_alpha_project/script_diagram.jpg">
 
 1. alpha_main.py
    - 전체적인 프로세스를 실행하는 역할.
@@ -1197,14 +1197,14 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 #### 함수 설계도
 
-<img src="10_alpha_project/function_diagram.png">
+<img src="10_alpha_project/function_diagram.jpg">
 
 위 함수 설계도는 프로그램의 제어 흐름을 나타냅니다. 세부 로직은 즉흥적으로 구현하였습니다.
 
 ## 9-3. 알파 프로젝트 구현
 
-<img src="10_alpha_project/function_detail_diagram_1.png">
-<img src="10_alpha_project/function_detail_diagram_2.png">
+<img src="10_alpha_project/function_detail_diagram_1.jpg">
+<img src="10_alpha_project/function_detail_diagram_2.jpg">
 
 &emsp;위 함수 세부 설계도는 프로그램의 제어 흐름을 나타내는 실선과 함수 간의 의존성을 의미하는 점선을 통해 전체 로직을 시각화하였습니다.<br>
 이번 알파 프로젝트로 구현된 신규 함수는 빨간색 원으로, 처리 범위가 확장된 기존 함수는 초록색 원으로, 처리 범위가 확장되었으며 최적화된 기존 함수는 보라색 원으로 표기하였습니다.
