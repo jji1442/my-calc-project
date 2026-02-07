@@ -22,7 +22,7 @@
 [7. 패치 분석 보고서(25.09.18)](#patch_analysis_report_25.09.18)<br>
 [8. 패치 분석 보고서(25.10.23)](#patch_analysis_report_25.10.23)<br>
 시제품 개선(추가 예정)<br>
-알파 프로젝트(추가 예정)<br>
+알파(추가 예정)<br>
 [게임 시스템 설명](#game_system_explan)<br>
 [참고 자료](#references)<br>
 
@@ -1112,9 +1112,9 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 <br><br><br>
 
-## 9. 알파 프로젝트
+## 9. 알파
 
-## 9-1. 알파 프로젝트 기획
+## 9-1. 알파 기획
 
 ### 사용된 데이터는 최신화 됩니다. 각각의 제품 / 프로젝트의 기준 날짜를 확인해 주시길 바랍니다.
 ### 본 프로젝트의 완성일은 개발자가 그 당시 보고서가 완성되었다고 판단한 시점으로 작성되었습니다.
@@ -1150,7 +1150,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 3. 최종데미지 상승율.
 4. 100억당 최종데미지 상승율.
 
-## 9-2. 알파 프로젝트 설계
+## 9-2. 알파 설계
 ### 로직 변경 사항
 1. 평균 재화 효율 계산 기준 최적화.
    - 기존: 19레벨일 경우, 5레벨 상승 시 기준으로 효율 측정.
@@ -1201,7 +1201,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 위 함수 설계도는 프로그램의 제어 흐름을 나타냅니다. 세부 로직은 즉흥적으로 구현하였습니다.
 
-## 9-3. 알파 프로젝트 구현
+## 9-3. 알파 구현
+### 함수 세부 설계도
 
 <img src="10_alpha_project/function_detail_diagram_1.jpg">
 <img src="10_alpha_project/function_detail_diagram_2.jpg">
@@ -1319,7 +1320,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 결과적으로 부과 효과에 대한 이점이 더 커지려는 시점이 대략 배율 800% 기점으로 효율이 뒤바뀐다는 점을 알 수 있으며, 위 스크립트는 정상적으로 처리됨을 알 수 있습니다.
 
-## 9-4. 알파 프로젝트 결과
+## 9-4. 알파 결과
 
 ### 프로젝트 이름
 아크 헥사코어 효율 시뮬레이션(알파 프로젝트)
