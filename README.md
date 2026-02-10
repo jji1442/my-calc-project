@@ -1180,7 +1180,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ### 구현 요구사항
 #### 스크립트 설계도
 
-<img src="10_alpha_project/script_diagram.jpg">
+<img src="10_alpha/script_diagram.jpg">
 
 1. alpha_main.py
    - 전체적인 프로세스를 실행하는 역할.
@@ -1197,15 +1197,15 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 #### 함수 설계도
 
-<img src="10_alpha_project/function_diagram.JPG">
+<img src="10_alpha/function_diagram.jpg">
 
 위 함수 설계도는 프로그램의 제어 흐름을 나타냅니다. 세부 로직은 즉흥적으로 구현하였습니다.
 
 ## 9-3. 알파 구현
 ### 함수 세부 설계도
 
-<img src="10_alpha_project/function_detail_diagram_1.jpg">
-<img src="10_alpha_project/function_detail_diagram_2.jpg">
+<img src="10_alpha/function_detail_diagram_1.jpg">
+<img src="10_alpha/function_detail_diagram_2.jpg">
 
 &emsp;위 함수 세부 설계도는 프로그램의 제어 흐름을 나타내는 실선과 함수 간의 의존성을 의미하는 점선을 통해 전체 로직을 시각화하였습니다.<br>
 이번 알파 프로젝트로 구현된 신규 함수는 빨간색 원으로, 처리 범위가 확장된 기존 함수는 초록색 원으로, 처리 범위가 확장되었으며 최적화된 기존 함수는 보라색 원으로 표기하였습니다.
@@ -1264,9 +1264,9 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
   <thead>
     <tr>
       <th align="center">이미지 1, 2, 3</th>
-      <th align="center"><img src="10_alpha_project/side_fx_result/20per.PNG"></th>
-      <th align="center"><img src="10_alpha_project/side_fx_result/500per.PNG"></th>
-      <th align="center"><img src="10_alpha_project/side_fx_result/800per.PNG"></th>
+      <th align="center"><img src="10_alpha/side_fx_result/20per.PNG"></th>
+      <th align="center"><img src="10_alpha/side_fx_result/500per.PNG"></th>
+      <th align="center"><img src="10_alpha/side_fx_result/800per.PNG"></th>
     </tr>
   </thead>
   <tbody>
@@ -1284,8 +1284,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
     </tr>
     <tr>
       <td align="center">이미지 4, 5</td>
-      <td align="center"><img src="10_alpha_project/side_fx_result/3000per.PNG"></td>
-      <td align="center"><img src="10_alpha_project/side_fx_result/8000per.PNG"></td>
+      <td align="center"><img src="10_alpha/side_fx_result/3000per.PNG"></td>
+      <td align="center"><img src="10_alpha/side_fx_result/8000per.PNG"></td>
       <td align="center"></td>
     </tr>
     <tr>
@@ -1330,7 +1330,7 @@ python
 ### 알파 이미지
 알파 스크립트를 실행 시 출력되는 텍스트 양이 많아, 출력물 중 일부만 이미지를 첨부하여 정상적으로 실행됨을 보여드리겠습니다.
 
-<img src="10_alpha_project/result.png">
+<img src="10_alpha/result.png">
 
 (위 이미지는 수정해야함)
 위 결과 이미지에서 보시는 바와 같이, 이번 단계에서 새롭게 설계한 스킬 코어 및 강화 코어의 데이터가 시스템에 추가되어 효율이 분석되고 있음을 확인할 수 있습니다.
