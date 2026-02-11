@@ -1308,7 +1308,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
     <tr>
       <td align="center">강화 순서</td>
       <td align="center">... -> 14 -> 15 -> 20 -> 21 -> 22 -> ...</td>
-      <td align="center">9 -> 20 -> 21 -> ...</td>
+      <td align="center">20 -> 21 -> 22 -> ...</td>
       <td align="center"></td>
     </tr>
   </tbody>
