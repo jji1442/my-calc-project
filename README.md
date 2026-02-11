@@ -1246,7 +1246,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
   </thead>
   <tbody>
     <tr>
-      <td align="center"><img src="10_alpha/implement/3000per_logic/off.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/3000per_logic/off.png"></td>
       <td align="center"><img src="10_alpha/implement/3000per_logic/on.PNG"></td>
     </tr>
   </tbody>
