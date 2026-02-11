@@ -1274,30 +1274,24 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <table>
   <thead>
     <tr>
-      <th align="center">이미지 1, 2, 3</th>
-      <th align="center"><img src="10_alpha/implement/side_fx_result/20per.PNG"></th>
-      <th align="center"><img src="10_alpha/implement/side_fx_result/500per.PNG"></th>
-      <th align="center"><img src="10_alpha/implement/side_fx_result/800per.PNG"></th>
+      <th align="center">배율</th>
+      <th align="center">20%</th>
+      <th align="center">500%</th>
+      <th align="center">800%</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">배율</td>
-      <td align="center">20%</td>
-      <td align="center">500%</td>
-      <td align="center">800%</td>
+      <td align="center">이미지</td>
+      <td align="center"><img src="10_alpha/implement/side_fx_result/20per.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/side_fx_result/500per.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/side_fx_result/800per.PNG"></td>
     </tr>
     <tr>
-      <td align="center">설명</td>
+      <td align="center">강화 순서</td>
       <td align="center">... -> 17 -> 18 -> 19 -> 23 -> 24 -> ...</td>
       <td align="center">... -> 17 -> 18 -> 19 -> 22 -> 23 -> ...</td>
       <td align="center">... -> 18 -> 19 -> 20 -> 21 -> 22 -> ...</td>
-    </tr>
-    <tr>
-      <td align="center">이미지 4, 5</td>
-      <td align="center"><img src="10_alpha/implement/side_fx_result/3000per.PNG"></td>
-      <td align="center"><img src="10_alpha/implement/side_fx_result/8000per.PNG"></td>
-      <td align="center"></td>
     </tr>
     <tr>
       <td align="center">배율</td>
@@ -1306,7 +1300,13 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
       <td align="center"></td>
     </tr>
     <tr>
-      <td align="center">설명</td>
+      <td align="center">이미지</td>
+      <td align="center"><img src="10_alpha/implement/side_fx_result/3000per.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/side_fx_result/8000per.PNG"></td>
+      <td align="center"></td>
+    </tr>
+    <tr>
+      <td align="center">강화 순서</td>
       <td align="center">... -> 14 -> 15 -> 20 -> 21 -> 22 -> ...</td>
       <td align="center">9 -> 20 -> 21 -> ...</td>
       <td align="center"></td>
