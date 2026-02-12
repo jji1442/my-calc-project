@@ -1331,12 +1331,12 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ### 개발 환경
 python
 
-### 알파 사용 방법
+### 실행 방법
 1. 프로그램 실행을 위해 python 환경이 필요합니다.
 2. 알파 버전을 다운로드합니다. [>> 알파 버전 다운로드 하기(추가 예정)](https://github.com/jji1442/my-calc-project/releases/download/ver.1.0/test_model.zip)
 3. alpha_main.py을 실행합니다.
 
-### 알파 이미지
+### 결과 이미지
 alpha_main.py 스크립트를 실행 시 출력되는 텍스트 양이 많아, 출력물 중 일부만 이미지를 첨부하여 정상적으로 실행됨을 보여드리겠습니다.
 
 <img src="10_alpha/verification/result.png">
