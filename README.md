@@ -1208,7 +1208,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 <img src="10_alpha/implement/function_detail_diagram_2.jpg">
 
 &emsp;위 함수 세부 설계도는 프로그램의 제어 흐름을 나타내는 실선과 함수 간의 의존성을 의미하는 점선을 통해 전체 로직을 시각화하였습니다.<br>
-이번 알파 버전에 구현된 신규 함수는 빨간색 원으로, 처리 범위가 확장된 기존 함수는 초록색 원으로, 처리 범위가 확장되었으며 최적화된 기존 함수는 보라색 원으로 표기하였습니다.
+이번 알파 버전에 구현된 신규 함수는 빨간색 원으로, 처리 범위가 확장된 기존 함수는 초록색 원으로, 최적화된 기존 함수는 보라색 원으로 표기하였습니다.
 
 ### 핵심 함수 설명
 &emsp;신규로 구현된 함수들 중에서 중요한 로직을 담당하는 함수인 calc_enh_cnt_for_skill_core_list()에 대해 설명드리겠습니다.<br>
