@@ -1231,23 +1231,24 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 전자가 좋다면, 이어서 '9레벨 -> 12레벨'의 효율 vs. '11레벨 -> 12레벨'의 효율을 측정하는 구조로 앞의 구간과의 효율을 비교합니다.<br>
 후자가 좋다면, '10레벨 -> 11레벨'의 효율 보다 좋지 않으니 비용적 측면에서는 '9레벨 -> 10레벨'라는 결과를 내놓게 되는 구조입니다.
 
+&emsp;『강화 순서 보정 로직』<br>
 &emsp;부가 효과의 효율이 높을수록 비용적 측면의 결과값이 '9레벨 -> 10레벨'의 효율이 좋다고 수렴하게 됩니다.<br>
 이 과정에서 데미지적 측면의 효율이 상대적으로 과소평가되어 강화 순서가 역전되는 현상이 발생합니다.<br>
-(로직) 이를 개선하고자 비용적 측면의 결과가 '9레벨 -> 10레벨'로 도출될 경우, 강화 단계의 논리적 선후 관계를 유지하기 위해 데미지적 측면의 결과값을 적용하도록 설정하였습니다.
+이를 개선하고자 비용적 측면의 결과가 '9레벨 -> 10레벨'로 도출될 경우, 강화 단계의 논리적 선후 관계를 유지하기 위해 데미지적 측면의 결과값을 적용하도록 설정하였습니다.
 
 &emsp;아래의 예시는 오리진 스킬 코어는 9레벨, 나머지 코어는 30레벨로 설정하고 20레벨 부가 효과인 보스에게 적용되는 데미지 증가의 배율을 3000%로 조정하여 부가 효과의 효율이 높게 설정하였습니다.
 
 <table>
   <thead>
     <tr>
-      <th align="center">로직 OFF</th>
-      <th align="center">로직 ON</th>
+      <th align="center">강화 순서 보정 로직 OFF</th>
+      <th align="center">강화 순서 보정 로직 ON</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center"><img src="10_alpha/implement/3000per_logic/off.png"></td>
-      <td align="center"><img src="10_alpha/implement/3000per_logic/on.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/enh_seq_adj_logic_off.png"></td>
+      <td align="center"><img src="10_alpha/implement/enh_seq_adj_logic_on.PNG"></td>
     </tr>
   </tbody>
 </table>
@@ -1283,9 +1284,9 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
   <tbody>
     <tr>
       <td align="center">이미지</td>
-      <td align="center"><img src="10_alpha/implement/side_fx_result/20per.PNG"></td>
-      <td align="center"><img src="10_alpha/implement/side_fx_result/500per.PNG"></td>
-      <td align="center"><img src="10_alpha/implement/side_fx_result/800per.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/side_fx_20per.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/side_fx_500per.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/side_fx_800per.PNG"></td>
     </tr>
     <tr>
       <td align="center">강화 순서</td>
@@ -1301,8 +1302,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
     </tr>
     <tr>
       <td align="center">이미지</td>
-      <td align="center"><img src="10_alpha/implement/side_fx_result/3000per.PNG"></td>
-      <td align="center"><img src="10_alpha/implement/side_fx_result/8000per.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/side_fx_3000per.PNG"></td>
+      <td align="center"><img src="10_alpha/implement/side_fx_8000per.PNG"></td>
       <td align="center"></td>
     </tr>
     <tr>
