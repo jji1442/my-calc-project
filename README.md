@@ -1340,7 +1340,12 @@ python
 ### 결과 이미지
 alpha_main.py 스크립트를 실행 시 출력되는 텍스트 양이 많아, 출력물 중 일부만 이미지를 첨부하여 정상적으로 실행됨을 보여드리겠습니다.
 
-<img src="10_alpha/verification/result.png">
+<img src="10_alpha/result/1.PNG">
+<img src="10_alpha/result/2.PNG">
+<img src="10_alpha/result/3.PNG">
+<img src="10_alpha/result/4.PNG">
+<img src="10_alpha/result/5.PNG">
+<img src="10_alpha/result/6.PNG">
 
 (위 이미지는 수정해야함)
 위 결과 이미지에서 보시는 바와 같이, 이번 단계에서 새롭게 설계한 스킬 코어 및 강화 코어의 데이터가 시스템에 추가되어 효율이 분석되고 있음을 확인할 수 있습니다.
