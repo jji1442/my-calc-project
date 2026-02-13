@@ -1349,24 +1349,24 @@ alpha_main.py 스크립트를 실행 시 출력되는 텍스트 양이 많아, �
   </thead>
   <tbody>
      <tr>
-      <td align="center"><img src="10_alpha/result/1.png"></td>
-      <td align="center"><img src="10_alpha/result/2.png"></td>
+      <td align="center"><img src="10_alpha/result/1.PNG"></td>
+      <td align="center"><img src="10_alpha/result/2.PNG"></td>
     </tr>
      <tr>
       <td align="center">결과 3 ▼</td>
       <td align="center">결과 4 ▼</td>
     </tr>
      <tr>
-      <td align="center"><img src="10_alpha/result/3.png"></td>
-      <td align="center"><img src="10_alpha/result/4.png"></td>
+      <td align="center"><img src="10_alpha/result/3.PNG"></td>
+      <td align="center"><img src="10_alpha/result/4.PNG"></td>
     </tr>
      <tr>
       <td align="center">결과 5 ▼</td>
       <td align="center">결과 6 ▼</td>
     </tr>
      <tr>
-      <td align="center"><img src="10_alpha/result/5.png"></td>
-      <td align="center"><img src="10_alpha/result/6.png"></td>
+      <td align="center"><img src="10_alpha/result/5.PNG"></td>
+      <td align="center"><img src="10_alpha/result/6.PNG"></td>
     </tr>
   </tbody>
 </table>
