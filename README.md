@@ -1334,7 +1334,7 @@ python
 
 ### 실행 방법
 1. 프로그램 실행을 위해 python 환경이 필요합니다.
-2. 알파 버전을 다운로드합니다. [>> 알파 버전 다운로드 하기(추가 예정)](https://github.com/jji1442/my-calc-project/releases/download/ver.2.0/alpha_version.zip)
+2. 알파 버전을 다운로드합니다. [>> 알파 버전 다운로드 하기](https://github.com/jji1442/my-calc-project/releases/download/ver.2.0/alpha_version.zip)
 3. alpha_main.py을 실행합니다.
 
 ### 결과 이미지
