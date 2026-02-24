@@ -1118,7 +1118,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 ## 9. 알파 버전
 
-<h2 id="#alpha_version_planning">9-1. 알파 버전 기획</h2>
+<h2 id="alpha_version_planning">9-1. 알파 버전 기획</h2>
 
 ### 사용된 데이터는 최신화 됩니다. 각각의 제품 / 프로젝트의 기준 날짜를 확인해 주시길 바랍니다.
 ### 본 프로젝트의 완성일은 개발자가 그 당시 보고서가 완성되었다고 판단한 시점으로 작성되었습니다.
@@ -1152,7 +1152,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 3. 최종데미지 상승율.
 4. 100억당 최종데미지 상승율.
 
-<h2 id="#alpha_version_architecture">9-2. 알파 버전 설계</h2>
+<h2 id="alpha_version_architecture">9-2. 알파 버전 설계</h2>
 
 ### 로직 변경 사항
 1. 평균 재화 효율 계산 기준 최적화.
@@ -1204,7 +1204,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 위 함수 설계도는 프로그램의 제어 흐름을 나타냅니다. 세부 로직은 즉흥적으로 구현하였습니다.
 
-<h2 id="#alpha_version_implement">9-3. 알파 버전 구현</h2>
+<h2 id="alpha_version_implement">9-3. 알파 버전 구현</h2>
 
 ### 함수 세부 설계도
 
@@ -1323,7 +1323,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 &emsp;결과적으로 부과 효과에 대한 이점이 더 커지려는 시점이 대략 배율 800% 기점으로 효율이 뒤바뀐다는 점을 알 수 있으며, 위 함수는 정상적으로 처리되고 있음을 알 수 있습니다.
 
-<h2 id="#alpha_version_result">9-4. 알파 버전 결과</h2>
+<h2 id="alpha_version_result">9-4. 알파 버전 결과</h2>
 ### 프로젝트 이름
 아크 헥사코어 효율 시뮬레이션(알파 버전)
 
