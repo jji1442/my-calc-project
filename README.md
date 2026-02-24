@@ -1179,7 +1179,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ### 구현 요구사항
 #### 스크립트 설계도
 
-<img src="10_alpha/design/script_diagram.jpg">
+<img src="alpha_version/design/script_diagram.jpg">
 
 1. alpha_main.py
    - 전체적인 프로세스를 실행하는 역할.
@@ -1203,8 +1203,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 ## 9-3. 알파 버전 구현
 ### 함수 세부 설계도
 
-<img src="10_alpha/implement/function_detail_diagram_1.jpg">
-<img src="10_alpha/implement/function_detail_diagram_2.jpg">
+<img src="alpha_version/implement/function_detail_diagram_1.jpg">
+<img src="alpha_version/implement/function_detail_diagram_2.jpg">
 
 &emsp;위 함수 세부 설계도는 프로그램의 제어 흐름을 나타내는 실선과 함수 간의 의존성을 의미하는 점선을 통해 전체 로직을 시각화하였습니다.<br>
 이번 알파 버전에 구현된 신규 함수는 빨간색 원으로, 처리 범위가 확장된 기존 함수는 초록색 원으로, 최적화된 기존 함수는 보라색 원으로 표기하였습니다.
@@ -1246,8 +1246,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
   </thead>
   <tbody>
     <tr>
-      <td align="center"><img src="10_alpha/implement/enh_seq_adj_logic_off.png"></td>
-      <td align="center"><img src="10_alpha/implement/enh_seq_adj_logic_on.PNG"></td>
+      <td align="center"><img src="alpha_version/implement/enh_seq_adj_logic_off.png"></td>
+      <td align="center"><img src="alpha_version/implement/enh_seq_adj_logic_on.PNG"></td>
     </tr>
   </tbody>
 </table>
@@ -1283,9 +1283,9 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
   <tbody>
     <tr>
       <td align="center">이미지</td>
-      <td align="center"><img src="10_alpha/implement/side_fx_20per.PNG"></td>
-      <td align="center"><img src="10_alpha/implement/side_fx_500per.PNG"></td>
-      <td align="center"><img src="10_alpha/implement/side_fx_800per.PNG"></td>
+      <td align="center"><img src="alpha_version/implement/side_fx_20per.PNG"></td>
+      <td align="center"><img src="alpha_version/implement/side_fx_500per.PNG"></td>
+      <td align="center"><img src="alpha_version/implement/side_fx_800per.PNG"></td>
     </tr>
     <tr>
       <td align="center">강화 순서</td>
@@ -1301,8 +1301,8 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
     </tr>
     <tr>
       <td align="center">이미지</td>
-      <td align="center"><img src="10_alpha/implement/side_fx_3000per.PNG"></td>
-      <td align="center"><img src="10_alpha/implement/side_fx_8000per.PNG"></td>
+      <td align="center"><img src="alpha_version/implement/side_fx_3000per.PNG"></td>
+      <td align="center"><img src="alpha_version/implement/side_fx_8000per.PNG"></td>
       <td align="center"></td>
     </tr>
     <tr>
@@ -1346,24 +1346,24 @@ python
   </thead>
   <tbody>
      <tr>
-      <td align="center"><img src="10_alpha/result/1.PNG"></td>
-      <td align="center"><img src="10_alpha/result/2.PNG"></td>
+      <td align="center"><img src="alpha_version/result/1.PNG"></td>
+      <td align="center"><img src="alpha_version/result/2.PNG"></td>
     </tr>
      <tr>
       <td align="center">결과 3 ▼</td>
       <td align="center">결과 4 ▼</td>
     </tr>
      <tr>
-      <td align="center"><img src="10_alpha/result/3.PNG"></td>
-      <td align="center"><img src="10_alpha/result/4.PNG"></td>
+      <td align="center"><img src="alpha_version/result/3.PNG"></td>
+      <td align="center"><img src="alpha_version/result/4.PNG"></td>
     </tr>
      <tr>
       <td align="center">결과 5 ▼</td>
       <td align="center">결과 6 ▼</td>
     </tr>
      <tr>
-      <td align="center"><img src="10_alpha/result/5.PNG"></td>
-      <td align="center"><img src="10_alpha/result/6.PNG"></td>
+      <td align="center"><img src="alpha_version/result/5.PNG"></td>
+      <td align="center"><img src="alpha_version/result/6.PNG"></td>
     </tr>
   </tbody>
 </table>
