@@ -1196,7 +1196,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 #### 함수 설계도
 
-<img src="10_alpha/design/function_diagram.jpg">
+<img src="alpha_version/design/function_diagram.jpg">
 
 위 함수 설계도는 프로그램의 제어 흐름을 나타냅니다. 세부 로직은 즉흥적으로 구현하였습니다.
 
