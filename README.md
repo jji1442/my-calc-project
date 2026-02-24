@@ -29,7 +29,7 @@
 9. 알파 버전<br>
 &emsp;[9-1. 알파 버전 기획](#alpha_version_planning)<br>
 &emsp;[9-2. 알파 버전 설계](#alpha_version_architecture)<br>
-&emsp;[9-3. 알파 버전 구현](#alpha_version_mplement)<br>
+&emsp;[9-3. 알파 버전 구현](#alpha_version_implement)<br>
 &emsp;[9-4. 알파 버전 결과](#alpha_version_result)<br>
 [게임 시스템 설명](#game_system_explan)<br>
 [참고 자료](#references)<br>
@@ -1153,6 +1153,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 4. 100억당 최종데미지 상승율.
 
 <h2 id="#alpha_version_architecture">9-2. 알파 버전 설계</h2>
+
 ### 로직 변경 사항
 1. 평균 재화 효율 계산 기준 최적화.
    - 기존: 19레벨일 경우, 5레벨 상승 시 기준으로 효율 측정.
@@ -1204,6 +1205,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 위 함수 설계도는 프로그램의 제어 흐름을 나타냅니다. 세부 로직은 즉흥적으로 구현하였습니다.
 
 <h2 id="#alpha_version_implement">9-3. 알파 버전 구현</h2>
+
 ### 함수 세부 설계도
 
 <img src="alpha_version/implement/function_detail_diagram_1.jpg">
