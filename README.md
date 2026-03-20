@@ -1362,18 +1362,6 @@ python
   </tbody>
 </table>
 
-
-
-
-| 시행횟수 \ 분석 종류 | 패치 전 | 패치 후 |
-|:---:|:---:|:---:|
-| 1 | 500조 7564억 | 526조 3341억 |
-| 2 | 496조 9202억 | 524조 5766억 |
-| 3 | 499조 5698억 | 525조 3320억 |
-| 4 | 496조 7607억 | 524조 4833억 |
-| 5 | 494조 2731억 | 524조 3227억 |
-| 평균 | 497조 6560억 | 525조 0117억 |
-
 <details>
 <summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
 - 패치 전(1)
@@ -1453,70 +1441,394 @@ python
   
 다음으로, 패치 전과 패치 후 일부 스킬별 점유율 비교입니다.
 
-| 스킬 이름 \ 분석 종류 | 패치 전(평균) | 패치 후(평균) | 비교 |
-|:---:|:---:|:---:|:---:|
-| 다가오는 죽음 | 17.16% | 17.22% | 100.33% |
-| 잊혀지지 않는 흉몽VI | 11.87% | 12.32% | 103.81% |
-| 깨어난 심연 | 10.33% | 10.32% | 99.92% |
-| 돌아오는 증오VI | 8.46% | 8.63% | 101.94% |
-| 플레인 차지드라이브VI | 4.60% | 4.53% | 98.48% |
-| 영원히 굶주리는 짐승 | 3.62% | 3.60% | 99.45% |
-| 끝없는 고통VI | 2.68% | 2.62% | 97.62% |
-| 근원의 기억 | 1.61% | 1.38% | 85.70% |
-| 솔 헤카테 | 2.95% | 2.94% | 99.39% |
-| 솔 헤카테: 스틱스 | 1.70% | 1.59% | 93.63% |
+<table>
+  <thead>
+    <tr>
+      <th align="center">스킬 이름 \ 분석 종류</th>
+      <th align="center">패치 전(평균)</th>
+      <th align="center">패치 후(평균)</th>
+      <th align="center">비교</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">다가오는 죽음</td>
+      <td align="center">17.16%</td>
+      <td align="center">17.22%</td>
+      <td align="center">100.33%</td>
+    </tr>
+    <tr>
+      <td align="center">잊혀지지 않는 흉몽VI</td>
+      <td align="center">11.87%</td>
+      <td align="center">12.32%</td>
+      <td align="center">103.81%</td>
+    </tr>
+    <tr>
+      <td align="center">깨어난 심연</td>
+      <td align="center">10.33%</td>
+      <td align="center">10.32%</td>
+      <td align="center">99.92%</td>
+    </tr>
+    <tr>
+      <td align="center">돌아오는 증오VI</td>
+      <td align="center">8.46%</td>
+      <td align="center">8.63%</td>
+      <td align="center">101.94%</td>
+    </tr>
+    <tr>
+      <td align="center">플레인 차지드라이브VI</td>
+      <td align="center">4.60%</td>
+      <td align="center">4.53%</td>
+      <td align="center">98.48%</td>
+    </tr>
+    <tr>
+      <td align="center">영원히 굶주리는 짐승</td>
+      <td align="center">3.62%</td>
+      <td align="center">3.60%</td>
+      <td align="center">99.45%</td>
+    </tr>
+    <tr>
+      <td align="center">끝없는 고통VI</td>
+      <td align="center">2.68%</td>
+      <td align="center">2.62%</td>
+      <td align="center">97.62%</td>
+    </tr>
+    <tr>
+      <td align="center">근원의 기억</td>
+      <td align="center">1.61%</td>
+      <td align="center">1.38%</td>
+      <td align="center">85.70%</td>
+    </tr>
+    <tr>
+      <td align="center">솔 헤카테</td>
+      <td align="center">2.95%</td>
+      <td align="center">2.94%</td>
+      <td align="center">99.39%</td>
+    </tr>
+    <tr>
+      <td align="center">솔 헤카테: 스틱스</td>
+      <td align="center">1.70%</td>
+      <td align="center">1.59%</td>
+      <td align="center">93.63%</td>
+    </tr>
+  </tbody>
+</table>
 
 <details>
 <summary> 일부 스킬별 점유율 확인하기(펼치기/닫기)</summary>
 
-| 패치 전(평균) | 1 | 2 | 3 | 4 | 5 | 평균 |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 다가오는 죽음 | 17.35% | 17.42% | 16.98% | 16.77% | 17.30% | 17.16% |
-| 잊혀지지 않는 흉몽VI | 12.49% | 11.98% | 11.85% | 11.74% | 11.27% | 11.87% |
-| 깨어난 심연 | 10.50% | 10.32% | 10.33% | 10.32% | 10.18% | 10.33% |
-| 돌아오는 증오VI | 8.31% | 8.35% | 8.65% | 8.51% | 8.50% | 8.46% |
-| 플레인 차지드라이브VI | 4.49% | 4.52% | 4.65% | 4.60% | 4.76% | 4.60% |
-| 영원히 굶주리는 짐승 | 3.61% | 3.62% | 3.61% | 3.64% | 3.64% | 3.62% |
-| 끝없는 고통VI | 2.67% | 2.70% | 2.67% | 2.68% | 2.70% | 2.68% |
-| 근원의 기억 | 1.59% | 1.60% | 1.61% | 1.60% | 1.64% | 1.61% |
-| 솔 헤카테 | 2.92% | 2.98% | 2.95% | 2.96% | 2.96% | 2.95% |
-| 솔 헤카테: 스틱스 | 1.69% | 1.68% | 1.70% | 1.71% | 1.70% | 1.70% |
+<table>
+  <thead>
+    <tr>
+      <th align="center">패치 전(평균)</th>
+      <th align="center">1</th>
+      <th align="center">2</th>
+      <th align="center">3</th>
+      <th align="center">4</th>
+      <th align="center">5</th>
+      <th align="center">평균</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">다가오는 죽음</td>
+      <td align="center">17.35%</td>
+      <td align="center">17.42%</td>
+      <td align="center">16.98%</td>
+      <td align="center">16.77%</td>
+      <td align="center">17.30%</td>
+      <td align="center">17.16%</td>
+    </tr>
+    <tr>
+      <td align="center">잊혀지지 않는 흉몽VI</td>
+      <td align="center">12.49%</td>
+      <td align="center">11.98%</td>
+      <td align="center">11.85%</td>
+      <td align="center">11.74%</td>
+      <td align="center">11.27%</td>
+      <td align="center">11.87%</td>
+    </tr>
+    <tr>
+      <td align="center">깨어난 심연</td>
+      <td align="center">10.50%</td>
+      <td align="center">10.32%</td>
+      <td align="center">10.33%</td>
+      <td align="center">10.32%</td>
+      <td align="center">10.18%</td>
+      <td align="center">10.33%</td>
+    </tr>
+    <tr>
+      <td align="center">돌아오는 증오VI</td>
+      <td align="center">8.31%</td>
+      <td align="center">8.35%</td>
+      <td align="center">8.65%</td>
+      <td align="center">8.51%</td>
+      <td align="center">8.50%</td>
+      <td align="center">8.46%</td>
+    </tr>
+    <tr>
+      <td align="center">플레인 차지드라이브VI</td>
+      <td align="center">4.49%</td>
+      <td align="center">4.52%</td>
+      <td align="center">4.65%</td>
+      <td align="center">4.60%</td>
+      <td align="center">4.76%</td>
+      <td align="center">4.60%</td>
+    </tr>
+    <tr>
+      <td align="center">영원히 굶주리는 짐승</td>
+      <td align="center">3.61%</td>
+      <td align="center">3.62%</td>
+      <td align="center">3.61%</td>
+      <td align="center">3.64%</td>
+      <td align="center">3.64%</td>
+      <td align="center">3.62%</td>
+    </tr>
+    <tr>
+      <td align="center">끝없는 고통VI</td>
+      <td align="center">2.67%</td>
+      <td align="center">2.70%</td>
+      <td align="center">2.67%</td>
+      <td align="center">2.68%</td>
+      <td align="center">2.70%</td>
+      <td align="center">2.68%</td>
+    </tr>
+    <tr>
+      <td align="center">근원의 기억</td>
+      <td align="center">1.59%</td>
+      <td align="center">1.60%</td>
+      <td align="center">1.61%</td>
+      <td align="center">1.60%</td>
+      <td align="center">1.64%</td>
+      <td align="center">1.61%</td>
+    </tr>
+    <tr>
+      <td align="center">솔 헤카테</td>
+      <td align="center">2.92%</td>
+      <td align="center">2.98%</td>
+      <td align="center">2.95%</td>
+      <td align="center">2.96%</td>
+      <td align="center">2.96%</td>
+      <td align="center">2.95%</td>
+    </tr>
+    <tr>
+      <td align="center">솔 헤카테: 스틱스</td>
+      <td align="center">1.69%</td>
+      <td align="center">1.68%</td>
+      <td align="center">1.70%</td>
+      <td align="center">1.71%</td>
+      <td align="center">1.70%</td>
+      <td align="center">1.70%</td>
+    </tr>
+  </tbody>
+</table>
 
-| 패치 후(평균) | 1 | 2 | 3 | 4 | 5 | 평균 |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 다가오는 죽음 | 17.58% | 16.92% | 17.12% | 17.30% | 17.18% | 17.22% |
-| 잊혀지지 않는 흉몽VI | 12.28% | 12.66% | 12.00% | 12.43% | 12.22% | 12.32% |
-| 깨어난 심연 | 10.28% | 10.47% | 10.17% | 10.32% | 10.37% | 10.32% |
-| 돌아오는 증오VI | 8.61% | 8.45% | 8.76% | 8.72% | 8.60% | 8.63% |
-| 플레인 차지드라이브VI | 4.61% | 4.37% | 4.71% | 4.46% | 4.52% | 4.53% |
-| 영원히 굶주리는 짐승 | 3.59% | 3.55% | 3.63% | 3.62% | 3.63% | 3.60% |
-| 끝없는 고통VI | 2.62% | 2.63% | 2.62% | 2.62% | 2.61% | 2.62% |
-| 근원의 기억 | 1.43% | 1.36% | 1.37% | 1.37% | 1.36% | 1.38% |
-| 솔 헤카테 | 2.93% | 2.95% | 2.96% | 2.93% | 2.91% | 2.94% |
-| 솔 헤카테: 스틱스 | 1.59% | 1.59% | 1.59% | 1.58% | 1.59% | 1.59% |
+<table>
+  <thead>
+    <tr>
+      <th align="center">패치 후(평균)</th>
+      <th align="center">1</th>
+      <th align="center">2</th>
+      <th align="center">3</th>
+      <th align="center">4</th>
+      <th align="center">5</th>
+      <th align="center">평균</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">다가오는 죽음</td>
+      <td align="center">17.58%</td>
+      <td align="center">16.92%</td>
+      <td align="center">17.12%</td>
+      <td align="center">17.30%</td>
+      <td align="center">17.18%</td>
+      <td align="center">17.22%</td>
+    </tr>
+    <tr>
+      <td align="center">잊혀지지 않는 흉몽VI</td>
+      <td align="center">12.28%</td>
+      <td align="center">12.66%</td>
+      <td align="center">12.00%</td>
+      <td align="center">12.43%</td>
+      <td align="center">12.22%</td>
+      <td align="center">12.32%</td>
+    </tr>
+    <tr>
+      <td align="center">깨어난 심연</td>
+      <td align="center">10.28%</td>
+      <td align="center">10.47%</td>
+      <td align="center">10.17%</td>
+      <td align="center">10.32%</td>
+      <td align="center">10.37%</td>
+      <td align="center">10.32%</td>
+    </tr>
+    <tr>
+      <td align="center">돌아오는 증오VI</td>
+      <td align="center">8.61%</td>
+      <td align="center">8.45%</td>
+      <td align="center">8.76%</td>
+      <td align="center">8.72%</td>
+      <td align="center">8.60%</td>
+      <td align="center">8.63%</td>
+    </tr>
+    <tr>
+      <td align="center">플레인 차지드라이브VI</td>
+      <td align="center">4.61%</td>
+      <td align="center">4.37%</td>
+      <td align="center">4.71%</td>
+      <td align="center">4.46%</td>
+      <td align="center">4.52%</td>
+      <td align="center">4.53%</td>
+    </tr>
+    <tr>
+      <td align="center">영원히 굶주리는 짐승</td>
+      <td align="center">3.59%</td>
+      <td align="center">3.55%</td>
+      <td align="center">3.63%</td>
+      <td align="center">3.62%</td>
+      <td align="center">3.63%</td>
+      <td align="center">3.60%</td>
+    </tr>
+    <tr>
+      <td align="center">끝없는 고통VI</td>
+      <td align="center">2.62%</td>
+      <td align="center">2.63%</td>
+      <td align="center">2.62%</td>
+      <td align="center">2.62%</td>
+      <td align="center">2.61%</td>
+      <td align="center">2.62%</td>
+    </tr>
+    <tr>
+      <td align="center">근원의 기억</td>
+      <td align="center">1.43%</td>
+      <td align="center">1.36%</td>
+      <td align="center">1.37%</td>
+      <td align="center">1.37%</td>
+      <td align="center">1.36%</td>
+      <td align="center">1.38%</td>
+    </tr>
+    <tr>
+      <td align="center">솔 헤카테</td>
+      <td align="center">2.93%</td>
+      <td align="center">2.95%</td>
+      <td align="center">2.96%</td>
+      <td align="center">2.93%</td>
+      <td align="center">2.91%</td>
+      <td align="center">2.94%</td>
+    </tr>
+    <tr>
+      <td align="center">솔 헤카테: 스틱스</td>
+      <td align="center">1.59%</td>
+      <td align="center">1.59%</td>
+      <td align="center">1.59%</td>
+      <td align="center">1.58%</td>
+      <td align="center">1.59%</td>
+      <td align="center">1.59%</td>
+    </tr>
+  </tbody>
+</table>
 </details>
 
 데이터상으로는 근원의 기억 및 솔 헤카테: 스틱스의 점유율이 낮아졌는데, 웨폰퍼프 링을 사용 후 바로 시전되는 스킬이라 비교적 낮게 책정되는 현상이 생겼습니다. 또한, '잊혀지지 않는 흉몽VI'의 점유율이 소폭 상승한 것으로 나타납니다. 하지만 이는 패치 전 데이터의 최소\~최대 편차 범위 내에 머무르는 수준으로, 반지 구조 개편에 의한 직접적인 상향이라기보다는 근원의 기억 및 솔 헤카테: 스틱스의 점유율 하락에 따른 상대적인 수치 변동으로 해석될 여지가 큽니다.
 
 다음은 연계 스킬 점유율을 종합한 결과를 확인해 보겠습니다.
 
-| ~와 연계되는 종류 \ 분석 종류 | 패치 전(평균) | 패치 후(평균) | 비교 |
-|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 흉몽VI | 13.154% | 13.256% | 100.78% |
-| 플레인 차지드라이브VI | 7.494% | 7.488% | 99.92% |
+<table>
+  <thead>
+    <tr>
+      <th align="center">~와 연계되는 종류 \ 분석 종류</th>
+      <th align="center">패치 전(평균)</th>
+      <th align="center">패치 후(평균)</th>
+      <th align="center">비교</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">잊혀지지 않는 흉몽VI</td>
+      <td align="center">13.154%</td>
+      <td align="center">13.256%</td>
+      <td align="center">100.78%</td>
+    </tr>
+    <tr>
+      <td align="center">플레인 차지드라이브VI</td>
+      <td align="center">7.494%</td>
+      <td align="center">7.488%</td>
+      <td align="center">99.92%</td>
+    </tr>
+  </tbody>
+</table>
 
 <details>
 <summary> 연계되는 스킬들 점유율 확인하기(펼치기/닫기)</summary>
 
-| 패치 전(평균) | 1 | 2 | 3 | 4 | 5 | 평균 |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 흉몽VI | 13.54% | 12.90% | 13.35% | 13.35% | 12.63% | 13.154% |
-| 플레인 차지드라이브VI | 6.68% | 7.44% | 7.37% | 7.69% | 8.29% | 7.494% |
+<table>
+  <thead>
+    <tr>
+      <th align="center">패치 전(평균)</th>
+      <th align="center">1</th>
+      <th align="center">2</th>
+      <th align="center">3</th>
+      <th align="center">4</th>
+      <th align="center">5</th>
+      <th align="center">평균</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">잊혀지지 않는 흉몽VI</td>
+      <td align="center">13.54%</td>
+      <td align="center">12.90%</td>
+      <td align="center">13.35%</td>
+      <td align="center">13.35%</td>
+      <td align="center">12.63%</td>
+      <td align="center">13.154%</td>
+    </tr>
+    <tr>
+      <td align="center">플레인 차지드라이브VI</td>
+      <td align="center">6.68%</td>
+      <td align="center">7.44%</td>
+      <td align="center">7.37%</td>
+      <td align="center">7.69%</td>
+      <td align="center">8.29%</td>
+      <td align="center">7.494%</td>
+    </tr>
+  </tbody>
+</table>
 
-| 패치 후(평균) | 1 | 2 | 3 | 4 | 5 | 평균 |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 흉몽VI | 13.09% | 13.86% | 12.68% | 13.10% | 13.55% | 13.256% |
-| 플레인 차지드라이브VI | 7.39% | 7.13% | 8.12% | 7.39% | 7.41% | 7.488% |
+<table>
+  <thead>
+    <tr>
+      <th align="center">패치 후(평균)</th>
+      <th align="center">1</th>
+      <th align="center">2</th>
+      <th align="center">3</th>
+      <th align="center">4</th>
+      <th align="center">5</th>
+      <th align="center">평균</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">잊혀지지 않는 흉몽VI</td>
+      <td align="center">13.09%</td>
+      <td align="center">13.86%</td>
+      <td align="center">12.68%</td>
+      <td align="center">13.10%</td>
+      <td align="center">13.55%</td>
+      <td align="center">13.256%</td>
+    </tr>
+    <tr>
+      <td align="center">플레인 차지드라이브VI</td>
+      <td align="center">7.39%</td>
+      <td align="center">7.13%</td>
+      <td align="center">8.12%</td>
+      <td align="center">7.39%</td>
+      <td align="center">7.41%</td>
+      <td align="center">7.488%</td>
+    </tr>
+  </tbody>
+</table>
 </details>
 
 연계되는 스킬들의 데미지는 기존과 큰 차이가 없음을 알 수 있습니다.
