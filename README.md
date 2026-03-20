@@ -1329,8 +1329,80 @@ python
 | 5 | 494조 2731억 | 524조 3227억 |
 | 평균 | 497조 6560억 | 525조 0117억 |
 
-   - [>> 패치 전 55:55 빌드 분석 결과 자세히 보러가기](#used_ring_exchange_img)
-   - [>> 패치 후 55:55 빌드 분석 결과 자세히 보러가기](#post_patch_legacy_build_img)
+<details>
+<summary> 전투분석 결과 확인하기(펼치기 / 닫기)</summary>
+- 패치 전(1)
+<img src="patch_analysis_report_26.03.19/patch_before/1/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/1/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/1/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/1/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/1/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/1/6.PNG"><br>
+- 패치 전(2)
+<img src="patch_analysis_report_26.03.19/patch_before/2/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/2/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/2/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/2/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/2/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/2/6.PNG"><br>
+- 패치 전(3)
+<img src="patch_analysis_report_26.03.19/patch_before/3/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/3/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/3/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/3/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/3/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/3/6.PNG"><br>
+- 패치 전(4)
+<img src="patch_analysis_report_26.03.19/patch_before/4/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/4/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/4/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/4/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/4/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/4/6.PNG"><br>
+- 패치 전(5)
+<img src="patch_analysis_report_26.03.19/patch_before/5/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/5/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/5/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/5/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/5/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_before/5/6.PNG"><br>
+<br>
+- 패치 후(1)
+<img src="patch_analysis_report_26.03.19/patch_after/1/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/1/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/1/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/1/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/1/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/1/6.PNG"><br>
+- 패치 후(2)
+<img src="patch_analysis_report_26.03.19/patch_after/2/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/2/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/2/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/2/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/2/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/2/6.PNG"><br>
+- 패치 후(3)
+<img src="patch_analysis_report_26.03.19/patch_after/3/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/3/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/3/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/3/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/3/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/3/6.PNG"><br>
+- 패치 후(4)
+<img src="patch_analysis_report_26.03.19/patch_after/4/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/4/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/4/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/4/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/4/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/4/6.PNG"><br>
+- 패치 후(5)
+<img src="patch_analysis_report_26.03.19/patch_after/5/1.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/5/2.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/5/3.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/5/4.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/5/5.PNG">
+<img src="patch_analysis_report_26.03.19/patch_after/5/6.PNG"><br>
+</details>
 
 패치 전에 비해 전체 데미지가 5.49% 상승함을 알 수 있습니다.
   
