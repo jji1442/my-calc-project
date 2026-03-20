@@ -1320,6 +1320,51 @@ python
     - 데미지 증가와 보스 공격 시 데미지 증가는 합연산으로 처리되므로 이와 같이 처리함.
 
 #### 분석 결과
+<table>
+  <thead>
+    <tr>
+      <th align="center">시행횟수 \ 분석 종류</th>
+      <th align="center">패치 전</th>
+      <th align="center">패치 후</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">500조 7564억</td>
+      <td align="center">526조 3341억</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="center">496조 9202억</td>
+      <td align="center">524조 5766억</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="center">499조 5698억</td>
+      <td align="center">525조 3320억</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">496조 7607억</td>
+      <td align="center">524조 4833억</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">494조 2731억</td>
+      <td align="center">524조 3227억</td>
+    </tr>
+    <tr>
+      <td align="center">평균</td>
+      <td align="center">497조 6560억</td>
+      <td align="center">525조 0117억</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
 | 시행횟수 \ 분석 종류 | 패치 전 | 패치 후 |
 |:---:|:---:|:---:|
 | 1 | 500조 7564억 | 526조 3341억 |
