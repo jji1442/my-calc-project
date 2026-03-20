@@ -1366,7 +1366,9 @@ python
 <img src="patch_analysis_report_26.03.19/patch_before/5/4.PNG">
 <img src="patch_analysis_report_26.03.19/patch_before/5/5.PNG">
 <img src="patch_analysis_report_26.03.19/patch_before/5/6.PNG"><br>
-<br>
+
+<br><br><br>
+
 - 패치 후(1)
 <img src="patch_analysis_report_26.03.19/patch_after/1/1.PNG">
 <img src="patch_analysis_report_26.03.19/patch_after/1/2.PNG">
