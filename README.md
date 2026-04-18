@@ -1853,7 +1853,7 @@ python
 
 #### 분석 방법
 ##### 분석 종류
-1. 공용 코어의 스킬 사양 변경.
+1. 공용 코어의 스킬 메커니즘 변경.
 2. 기존 사이클 vs. 신규 사이클.
    1) 기존 사이클: 35초 스펙터 / 20초 레프 / 20초 스펙터 / 35초 레프 구조.
    2) 신규 사이클: 55초 스펙터 / 55초 레프 구조.
@@ -1878,7 +1878,7 @@ python
 10. 총 5회 측정하고, 평균값 낸 수치를 작성.
 
 #### 분석 결과
-##### 1. 공용 코어의 스킬 사양 변경.
+##### 1. 공용 코어의 스킬 메커니즘 변경.
 [매직 서킷 풀드라이브(5차 30레벨, 이하 매서풀)]<br>
 60초 동안 데미지 45% 증가.<br>
 공격 스킬 사용 시 4초마다 MP를 150 추가 소모하고 최대 6명의 적을 1100%의 데미지로 3번 공격하는 마력 폭풍 발생.<br>
@@ -1963,76 +1963,76 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 <details>
 <summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
 - 기존 사이클(1)
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/1/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/1/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/1/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/1/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/1/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/1/6.PNG"><br>
 - 기존 사이클(2)
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/2/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/2/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/2/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/2/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/2/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/2/6.PNG"><br>
 - 기존 사이클(3)
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/3/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/3/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/3/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/3/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/3/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/3/6.PNG"><br>
 - 기존 사이클(4)
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/4/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/4/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/4/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/4/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/4/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/4/6.PNG"><br>
 - 기존 사이클(5)
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/5/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/5/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/5/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/5/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/5/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/previous_build/5/6.PNG"><br>
 <br><br><br>
 - 신규 사이클(1)
-<img src="patch_analysis_report_26.04.16/build_change/new_build/1/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/1/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/1/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/1/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/1/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/1/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/1/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/1/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/1/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/1/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/1/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/1/6.PNG"><br>
 - 신규 사이클(2)
-<img src="patch_analysis_report_26.04.16/build_change/new_build/2/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/2/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/2/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/2/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/2/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/2/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/2/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/2/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/2/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/2/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/2/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/2/6.PNG"><br>
 - 신규 사이클(3)
-<img src="patch_analysis_report_26.04.16/build_change/new_build/3/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/3/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/3/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/3/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/3/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/3/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/3/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/3/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/3/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/3/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/3/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/3/6.PNG"><br>
 - 신규 사이클(4)
-<img src="patch_analysis_report_26.04.16/build_change/new_build/4/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/4/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/4/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/4/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/4/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/4/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/4/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/4/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/4/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/4/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/4/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/4/6.PNG"><br>
 - 신규 사이클(5)
-<img src="patch_analysis_report_26.04.16/build_change/new_build/5/1.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/5/2.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/5/3.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/5/4.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/5/5.PNG">
-<img src="patch_analysis_report_26.04.16/build_change/new_build/5/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/5/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/5/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/5/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/5/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/5/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_0/new_build/5/6.PNG"><br>
 </details>
 
 기존 사이클이 신규 사이클 보다 0.396% 더 높은 효율을 보였습니다.<br>
@@ -2082,6 +2082,45 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
     </tr>
   </tbody>
 </table>
+
+<details>
+<summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
+- '매서풀VI' 1레벨 + 기존 사이클(1)
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/1/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/1/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/1/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/1/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/1/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/1/6.PNG"><br>
+- '매서풀VI' 1레벨 + 기존 사이클(2)
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/2/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/2/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/2/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/2/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/2/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/2/6.PNG"><br>
+- '매서풀VI' 1레벨 + 기존 사이클(3)
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/3/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/3/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/3/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/3/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/3/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/3/6.PNG"><br>
+- '매서풀VI' 1레벨 + 기존 사이클(4)
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/4/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/4/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/4/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/4/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/4/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/4/6.PNG"><br>
+- '매서풀VI' 1레벨 + 기존 사이클(5)
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/5/1.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/5/2.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/5/3.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/5/4.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/5/5.PNG">
+<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_1/previous_build/5/6.PNG"><br>
+</details>
 
 기존 사이클 보다 '매서풀VI' 1레벨 + 기존 사이클이 0.567% 낮은 현상이 발생하였습니다.
 '매서풀'의 스킬 사양인 '다가오는 죽음'의 사용횟수가 줄었기 때문에 이러한 현상이 발생하였습니다.
@@ -2182,18 +2221,18 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 </table>
 </details>
 
-결과를 보시면, '다가오는 죽음'의 사용횟수가 1804.4회에서 1683회(121.4회)로 줄어듦을 알 수 있습니다.
+결과를 보시면, '다가오는 죽음'의 사용횟수가 기존 1804.4회에서 1683회로 121.4회 급감하였음을 확인할 수 있습니다.
 
-원인은 '매서풀' 때문입니다.
-제 기존 사이클은 재사용 대기시간 120초 및 60초인 버프 스킬 사용 후 35초 동안 스펙터 상태로 공격합니다.
-'인피니티 스펠'이 서버렉에 영향을 받아서 짧으면 30초 길면 최대 35초까지 유지된다는 점을 생각해보면,
-이론상 최대 35초 / 4초 마다 공격 + 1회 = 9회(사용 후 바로 발동될 수 있기에 +1회, 소숫점은 버림) 인피니티 스펠에 영향을 받아 공격할 수 있습니다.
-120초 마다 다가오는 죽음이 최대 36회 발동 되지 않으며, 6분 사이클 기준으로는 3번 사이클을 돌리기 때문에 36 * 3 = 118회.
-121.4회와 유사한 118회로 도출되었습니다.
+이에 대한 원인은 '매서풀 VI'의 메커니즘 때문입니다.<br>
+제 기존 사이클은 재사용 대기시간 120초 및 60초인 버프 스킬 사용 후 35초 동안 스펙터 상태로 공격합니다.<br>
+'인피니티 스펠'이 서버렉에 영향을 받아서 짧으면 30초 길면 최대 35초까지 유지된다는 점을 생각해보면,<br>
+'매서풀'은 이론상 35초 / 4초 + 1회 = 9회 인피니티 스펠에 영향을 받아 '다가오는 죽음'을 발생시킬 수 있습니다.<br>
+(이론상 최대 35초 유지, 4초 마다 공격하며, 사용 후 즉시 발동 +1회, 소숫점은 버림)<br>
+120초 마다 '다가오는 죽음'이 최대 36회 발동 되지 않으며, 360초 기준으로는 3번 사이클을 돌리기 때문에 36회 * 3번 = 108회.<br>
 
-이대로 끝내긴 아쉬우니, %데미지만으로 매서풀VI는 어느 시점에서 마이너스가 아닌 플러스로 나올지 찾아보도록 하겠습니다.
+'매서풀VI'의 스킬 %데미지가 어느 시점에서 높을지 찾아보도록 하겠습니다.
 
-매서풀 VI는 다음과 같이 수치가 상승합니다.
+'매서풀 VI'는 다음과 같이 수치가 상승합니다.
 
 [공용코어로 출시된 "매직 서킷 풀드라이브 VI"]<br>
 MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레벨', 마력 '2 + 3 * 스킬레벨' 증가.<br>
@@ -2202,35 +2241,33 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 마력 폭풍 재발동 대기시간 1초.<br>
 (재사용 대기시간 120초)<br>
 
-전체 스킬 %데미지 총합을 구해보려고 합니다.
-
-매서풀 기준으로 평균 0.5% 점유율을 가졌고, 사용횟수 평균은 47.6회 이므로,<br>
-1,100 * 3 * 47.6 * 200 = 31,416,000(3141만 6000%)<br>
-
-[4차 이하]: 다가오는 죽음 데미지는 450% * 2번,<br>
-[6차]: 잊혀지지 않는 흉몽VI의 패시브 '다가오는 죽음' 데미지 54%p 증가.<br>
-[6차]: 인피니티 스펠 지속시간 중 '다가오는 죽음' 데미지 112%p 증가.<br>
+[4차 이하]: '다가오는 죽음' 데미지 450% * 2번,<br>
+[6차]: '잊혀지지 않는 흉몽VI'의 패시브 '다가오는 죽음' 데미지 54%p 증가.<br>
+[6차]: '인피니티 스펠' 지속시간 중 '다가오는 죽음' 데미지 112%p 증가.<br>
 [5차]: '다가오는 죽음' 최종데미지 120% 증가.<br>
 
-매서풀 총 %데미지 + 다가오는 죽음 총 %데미지.<br>
-1100 * 3 * 47.6 + ((450 + 54 + 112) * 2 * 121) * 2.2 = 485,038.4(48만 5038.4%)<br>
-485,038.4 / 31,416,000 * 100 = 1.5439%<br>
+'매서풀'로 인한 총 %데미지 = '매서풀' %데미지 + '다가오는 죽음' %데미지.<br>
+1100 * 3 * 47.6 + ((450 + 54 + 112) * 2 * 121.4) * 2.2 = 486,122.56(48만 6122.56%)<br>
 
-매서풀VI 1레벨 %데미지.<br>
+'매서풀 VI' 1레벨 %데미지.<br>
 296 * 6 * 168 = 298,368(29만 8368%)<br>
 60초 동안 공격력 13<br>
--186,670.4 / 31,416,000 * 100 = -0.5942%<br>
 
-%데미지 기준으로 0.5942% 낮은 상황이고,
-직접 측정한 결과는 0.567% 낮은 상황이니.
-60초 동안 공격력 13 = (1 - 0.567%) / (1 - 0.5942%) * 100 - 100 = 0.0274%
+...(중략)
 
+'매서풀 VI' 8레벨 %데미지.<br>
+464 * 6 * 168 = 467,712(46만 7712%)<br>
+60초 동안 공격력 34<br>
 
+'매서풀 VI' 9레벨 %데미지.<br>
+488 * 6 * 168 = 491,904(49만 1904%)<br>
+60초 동안 공격력 37<br>
 
+'매서풀 VI' 0레벨은 '매서풀 VI' 8레벨보다 스킬 %데미지가 더 높다는 점을 알 수 있습니다.
+효율 면에서는 '매서풀 VI' 6레벨과 비슷할 것으로 예상됩니다.
 
 #### 분석 결론
 분석 결과에 따라 '매서풀VI' 0레벨을 사용하는 사람과 '매서풀VI' 1레벨을 사용하는 사람 간의 '다가오는 죽음'의 가치가 달라진다는 것을 알 수 있습니다.
-이는 유저들 간의 혼란이 생기게 하기 충분하고, 이 현상을 해결하기 위해서는
 
 #### 주관적인 평가
 가장 간단한 방식으로는 매서풀의 기본 사양인 다가오는 죽음을 발생하지 않도록 사양 변경 및 다가오는 죽음의 %데미지를 보정시키는 방식.
@@ -2240,67 +2277,14 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 >> 밸류가 어느정도인지 유저들이 측정한 결과.
 >> 유저들의 환산 10.3 챌린지 결과 이미지.
 
-
-### 분석 보고서 - 점유율 편
-#### 개요
-스킬별 데미지 점유율이 어떻게 변화하였는지 확인하려고 합니다.
-
-#### 분석 방법
-##### 분석 종류
-1. 패치 '전' 35\~40초 스펙터 / 15\~20초 레프 / 15초 스펙터 / 40초 레프 구조.
-2. 패치 '후' 35\~40초 스펙터 / 15\~20초 레프 / 15초 스펙터 / 40초 레프 구조.
-
-##### 분석 전제조건
-1. 직업별 가장 강력한 스킬인 오리진 스킬(쿨타임 6분) 기준으로 측정.
-2. 6분 주기 측정에 적합하지 않은 스킬인 '스파이더 인 미러', '크레스트 오브 더 솔라'(쿨타임 4분) 미사용.
-3. 서버렉 패치되었으므로, '일격필살' 사용.
-4. 확률형 버프인 '컨택트 카라반' 제외.
-5. 메르세데스 유니온 효과(200레벨과 250레벨의 평균값)를 적용하여 오리진 스킬(360초)의 실제 쿨타임은 340.2초.
-   - 대부분의 유저들이 메르세데스 200레벨 유니온 효과(5%)를 가지고 있지만, 250레벨 유니온 효과(6%)는 비교적 소수의 유저들이 사용하므로 평균값(5.5%)으로 측정.
-   - 스킬 쿨타임 감소 효과를 지닌 모자는 유효가 아닌 직업군도 존재하고, 사용하는 직업군들 조차도 사용하지 않거나 쿨타임 감소 수치가 다른 아이템을 사용하기 때문에 평균을 내기 어려움.
-6. 특수한 경우가 아닌 보편적인 경우를 기준으로 측정.
-   - ex) 개발자의 아크는 스킬 쿨타임 2초 감소인 모자를 착용 중.
-   - 340.2초 기준으로 측정 시, 4회차 쿨타임 2분인 버프 및 스킬을 8초 가량 사용할 수 있으니 쿨타임 2분인 스킬은 3회로 제한.
-7. 어센트 스킬은 시간 내에 가장 데미지 손해가 적은 구간에서 1회 사용.
-8. 필드는 어센틱 포스 요구치 1. 보스는 레벨 250, 방어율 380%, 체력 무한, 대형, 반감 기준으로 측정.
-   - 버프 세팅 중 길드 스킬의 방어율 무시 버프, 콜렉터의 영약, 챔피언의 가호는 제외.
-9. 어빌리티는 보스 공격 시 데미지 증가 / 상태 이상에 걸린 적 공격 시 데미지 증가 / 버프 스킬 지속 시간 증가 기준으로 측정.
-    - 재사용 어빌리티는 데미지 편차가 심하므로 사용하지 않음.
-10. 총 5회 측정하고, 평균값 낸 수치를 작성.
-
-#### 분석 결과
+헥사 초기화권을 준다면, '매서풀 VI'는 절대로 찍지 않을 겁니다.
+기본적인 이유는 아크라는 직업 자체가 공격력이 너무 높아 효율이 박살난 직업이라서 이보다 더 높은 공격력을 가지고 스킬 %데미지를 포기할 수 없기 때문입니다.
+헥사코어를 안찍었던 아크 유저들 기준으로도 '매서풀 VI' 1레벨의 스킬 %데미지가 마이너스기 때문에 강화할 이유 조차 없기 때문입니다.
 
 
+밸런스 패치를 헥사코어로 하는 것 자체가 상당히 불쾌합니다. 상승량이 낮았으면 낮았지. 마이너스가 말이 안된다고 생각합니다. 심지어 초기화가 자유로운 시스템도 아니면서,
 
 
-
-
-1. 스킬 사양 설명.
-- 기존 스킬의 사양
-- 새로운 코어의 사양
-
-기존 매서풀은 깨심은 미발동, 다가오는 죽음은 발동됨.
--> 변경된 매서풀은 깨심은 미발동, 다가오는 죽음도 미발동.
-위 조건 때문에 2번으로 딜량 테스트.
-
-2. 라이브 서버에서 테스트.
-- 기존 딜 사이클
-- 새로운 딜 사이클
-
-2% 이상 높다면, 새로운 딜사이클로 3번 실행.
-2% 보다 낮다면, 기존 딜 사이클로 3번 실행.
-
-3. 테스트 서버에서 테스트.
-# 길드 스킬 및 길드 패시브 버프 없다는 점을 감안.
-# 본섭은 쌍크 장갑, 테스트 서버는 크힘힘 장갑으로 테스트.
-- 기존 딜량
-- 새로운 코어 1레벨 연 후 딜량.
-
-
-89%....* 12번
--> 96% 12번
-
-6레벨 까지 올리기...
 
 
 
