@@ -1854,9 +1854,9 @@ python
 #### 분석 방법
 ##### 분석 종류
 1. 공용 코어의 스킬 사양 변경.
-2. 기존 스킬 기준으로 기존 사이클 vs. 새로운 사이클.
+2. 기존 사이클 vs. 신규 사이클.
    1) 기존 사이클: 35초 스펙터 / 20초 레프 / 20초 스펙터 / 35초 레프 구조.
-   2) 새로운 사이클: 55초 스펙터 / 55초 레프 구조.
+   2) 신규 사이클: 55초 스펙터 / 55초 레프 구조.
 
 ##### 분석 전제조건
 1. 직업별 가장 강력한 스킬인 오리진 스킬(쿨타임 6분) 기준으로 측정.
@@ -1913,7 +1913,7 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 
 메커니즘의 변화로 인해, '다가오는 죽음' 사용횟수가 줄었음을 알 수 있습니다.
 
-##### 2. 기존 스킬 기준으로 기존 사이클 vs. 신규 사이클.
+##### 2. 기존 사이클 vs. 신규 사이클.
 그 동안 저는 매서풀이 스탯 버프 및 일정 간격 마다 공격하는 형식만 가지고 있는 버프 스킬인 줄 알고 기존 사이클을 유지하였습니다.<br>
 일정 간격 마다 공격하는 형식에 '다가오는 죽음'이 발동된다는 사실을 깨닫고, 다른 사람들의 사이클(이하 신규 사이클)과 비교 해보았습니다.<br>
 
@@ -1961,35 +1961,35 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 
 <details>
 <summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
-- 패치 전(1)
+- 기존 사이클(1)
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/1/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/1/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/1/3.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/1/4.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/1/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/1/6.PNG"><br>
-- 패치 전(2)
+- 기존 사이클(2)
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/2/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/2/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/2/3.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/2/4.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/2/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/2/6.PNG"><br>
-- 패치 전(3)
+- 기존 사이클(3)
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/3/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/3/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/3/3.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/3/4.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/3/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/3/6.PNG"><br>
-- 패치 전(4)
+- 기존 사이클(4)
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/4/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/4/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/4/3.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/4/4.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/4/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/4/6.PNG"><br>
-- 패치 전(5)
+- 기존 사이클(5)
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/5/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/5/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/5/3.PNG">
@@ -1997,35 +1997,35 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/5/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/previous_build/5/6.PNG"><br>
 <br><br><br>
-- 패치 후(1)
+- 신규 사이클(1)
 <img src="patch_analysis_report_26.04.16/build_change/new_build/1/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/1/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/1/3.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/1/4.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/1/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/1/6.PNG"><br>
-- 패치 후(2)
+- 신규 사이클(2)
 <img src="patch_analysis_report_26.04.16/build_change/new_build/2/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/2/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/2/3.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/2/4.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/2/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/2/6.PNG"><br>
-- 패치 후(3)
+- 신규 사이클(3)
 <img src="patch_analysis_report_26.04.16/build_change/new_build/3/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/3/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/3/3.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/3/4.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/3/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/3/6.PNG"><br>
-- 패치 후(4)
+- 신규 사이클(4)
 <img src="patch_analysis_report_26.04.16/build_change/new_build/4/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/4/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/4/3.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/4/4.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/4/5.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/4/6.PNG"><br>
-- 패치 후(5)
+- 신규 사이클(5)
 <img src="patch_analysis_report_26.04.16/build_change/new_build/5/1.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/5/2.PNG">
 <img src="patch_analysis_report_26.04.16/build_change/new_build/5/3.PNG">
