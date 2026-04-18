@@ -2099,40 +2099,21 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
   <tbody>
     <tr>
       <td align="center">다가오는 죽음</td>
-      <td align="center">534조 3089억</td>
-      <td align="center">536조 5032억</td>
+      <td align="center">1804.4회</td>
+      <td align="center">1683회</td>
     </tr>
     <tr>
-      <td align="center">매서풀</td>
-      <td align="center">537조 3832억</td>
-      <td align="center">537조 1919억</td>
-    </tr>
-    <tr>
-      <td align="center">매서풀VI 1레벨</td>
-      <td align="center">540조 1350억</td>
-      <td align="center">530조 0668억</td>
-    </tr>
-    <tr>
-      <td align="center">4</td>
-      <td align="center">536조 5861억</td>
-      <td align="center">534조 2614억</td>
-    </tr>
-    <tr>
-      <td align="center">5</td>
-      <td align="center">536조 1978억</td>
-      <td align="center">531조 3620억</td>
-    </tr>
-    <tr>
-      <td align="center">평균</td>
-      <td align="center">536조 9222억</td>
-      <td align="center">533조 8771억</td>
+      <td align="center">매서풀(또는 VI)</td>
+      <td align="center">47.6회</td>
+      <td align="center">168회</td>
     </tr>
   </tbody>
 </table>
 
 <details>
-<summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
+<summary> 분석 결과 확인하기(펼치기/닫기)</summary>
 - 다가오는 죽음
+
 <table>
   <thead>
     <tr>
