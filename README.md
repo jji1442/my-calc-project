@@ -1849,32 +1849,51 @@ python
 
 ### 분석 보고서 - 스킬 사양 편
 #### 개요
-게임사에서 3번째 공용코어의 효용감을 확인해보려고 합니다. 
-게임사에서 반지를 개편하여 패치 전의 문제점을 작성하였고, 패치한 의도가 무엇인지 확인해보려고 합니다.
+게임사에서 3번째 공용코어의 효용감을 확인해보려고 합니다.
 
 #### 분석 방법
 ##### 분석 종류
 1. 공용 코어의 스킬 사양 변경.
 2. 기존 스킬 기준으로 기존 사이클 vs. 새로운 사이클.
+   1) 기존 사이클: 35초 스펙터 / 20초 레프 / 20초 스펙터 / 35초 레프 구조.
+   2) 새로운 사이클: 55초 스펙터 / 55초 레프 구조.
+
+##### 분석 전제조건
+1. 직업별 가장 강력한 스킬인 오리진 스킬(쿨타임 6분) 기준으로 측정.
+2. 6분 주기 측정에 적합하지 않은 스킬인 '스파이더 인 미러', '크레스트 오브 더 솔라'(쿨타임 4분) 미사용.
+3. 서버렉 패치되었으므로, '일격필살' 사용.
+4. 확률형 버프인 '컨택트 카라반' 제외.
+5. 메르세데스 유니온 효과(200레벨과 250레벨의 평균값)를 적용하여 오리진 스킬(360초)의 실제 쿨타임은 340.2초.
+   - 대부분의 유저들이 메르세데스 200레벨 유니온 효과(5%)를 가지고 있지만, 250레벨 유니온 효과(6%)는 비교적 소수의 유저들이 사용하므로 평균값(5.5%)으로 측정.
+   - 스킬 쿨타임 감소 효과를 지닌 모자는 유효가 아닌 직업군도 존재하고, 사용하는 직업군들 조차도 사용하지 않거나 쿨타임 감소 수치가 다른 아이템을 사용하기 때문에 평균을 내기 어려움.
+6. 특수한 경우가 아닌 보편적인 경우를 기준으로 측정.
+   - ex) 개발자의 아크는 스킬 쿨타임 2초 감소인 모자를 착용 중.
+   - 340.2초 기준으로 측정 시, 4회차 쿨타임 2분인 버프 및 스킬을 8초 가량 사용할 수 있으니 쿨타임 2분인 스킬은 3회로 제한.
+7. 어센트 스킬은 시간 내에 가장 데미지 손해가 적은 구간에서 1회 사용.
+8. 필드는 어센틱 포스 요구치 1. 보스는 레벨 250, 방어율 380%, 체력 무한, 대형, 반감 기준으로 측정.
+   - 버프 세팅 중 길드 스킬의 방어율 무시 버프, 콜렉터의 영약, 챔피언의 가호는 제외.
+9. 어빌리티는 보스 공격 시 데미지 증가 / 상태 이상에 걸린 적 공격 시 데미지 증가 / 버프 스킬 지속 시간 증가 기준으로 측정.
+    - 재사용 어빌리티는 데미지 편차가 심하므로 사용하지 않음.
+10. 총 5회 측정하고, 평균값 낸 수치를 작성.
 
 #### 분석 결과
 ##### 1. 공용 코어의 스킬 사양 변경.
-[매직 서킷 풀드라이브(5차 30레벨, 이하 매서풀)]
-60초 동안 데미지 45% 증가.
-공격 스킬 사용 시 4초마다 MP를 150 추가 소모하고 최대 6명의 적을 1100%의 데미지로 3번 공격하는 마력 폭풍 발생.
-(재사용 대기시간 120초)
+[매직 서킷 풀드라이브(5차 30레벨, 이하 매서풀)]<br>
+60초 동안 데미지 45% 증가.<br>
+공격 스킬 사용 시 4초마다 MP를 150 추가 소모하고 최대 6명의 적을 1100%의 데미지로 3번 공격하는 마력 폭풍 발생.<br>
+(재사용 대기시간 120초)<br>
 
-[공용코어로 출시된 "매직 서킷 풀드라이브 VI"(6차 1레벨, 이하 매서풀VI)]
-※ 라이브 서버 기준 스킬 설명입니다.
-MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가.
-지속시간 동안 일정 범위 내 최대 10명의 적에게 마력 표식을 새김.
-마력 표식이 있는 적에게 자신의 직접 공격 스킬 적중 시 296%의 데미지로 6번 공격하는 마력 폭풍 발생.
-마력 폭풍 재발동 대기시간 1초.
-(재사용 대기시간 120초)
+[공용코어로 출시된 "매직 서킷 풀드라이브 VI"(6차 1레벨, 이하 매서풀VI)]<br>
+※ 라이브 서버 기준 스킬 설명입니다.<br>
+MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가.<br>
+지속시간 동안 일정 범위 내 최대 10명의 적에게 마력 표식을 새김.<br>
+마력 표식이 있는 적에게 자신의 직접 공격 스킬 적중 시 296%의 데미지로 6번 공격하는 마력 폭풍 발생.<br>
+마력 폭풍 재발동 대기시간 1초.<br>
+(재사용 대기시간 120초)<br>
 
-텍스트 상으로만 보면, "메커니즘이 바뀌었구나"라는 것을 알 수 있습니다.
-'매서풀': 캐릭터 주변에 마력 폭풍 발생
-'매서풀VI': 적에게 마력 표식을 새기고, 적에게 스킬 적중 시 마력 폭풍 발생.
+텍스트 상으로만 보면, "메커니즘이 바뀌었구나"라는 것을 알 수 있습니다.<br>
+'매서풀': 캐릭터 주변에 마력 폭풍 발생<br>
+'매서풀VI': 적에게 마력 표식을 새기고, 적에게 스킬 적중 시 마력 폭풍 발생.<br>
 
 이 메커니즘이 변경되면서, '매서풀'에 마력 폭풍과 연동되어 발동되던 '다가오는 죽음'이 발동되지 않은 현상이 발생하였습니다.
 
@@ -1888,18 +1907,136 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 
 ※ 위 이미지는 테스트 서버에서 촬영된 결과이며, 라이브 서버에선 수치가 조정되었으나 메커니즘 상의 결함은 동일하게 재현됨을 안내드립니다.
 
-'다가오는 죽음' 사용 횟수를 보시면,
-'매서풀' 사용 시 52회로, ('잊혀지지 않는 흉몽VI' 10회 + '새어 나오는 흉몽' 1회 + '매서풀' 2회) * '인피니티 스펠' 4회.
-'매서풀VI' 사용 시 44회로, ('잊혀지지 않는 흉몽VI' 10회 + '새어 나오는 흉몽' 1회) * '인피니티 스펠' 4회.
+'다가오는 죽음' 사용 횟수를 보시면,<br>
+'매서풀' 사용 시 52회로, ('잊혀지지 않는 흉몽VI' 10회 + '새어 나오는 흉몽' 1회 + '매서풀' 2회) * '인피니티 스펠' 4회.<br>
+'매서풀VI' 사용 시 44회로, ('잊혀지지 않는 흉몽VI' 10회 + '새어 나오는 흉몽' 1회) * '인피니티 스펠' 4회.<br>
 
 메커니즘의 변화로 인해, '다가오는 죽음' 사용횟수가 줄었음을 알 수 있습니다.
 
 ##### 2. 기존 스킬 기준으로 기존 사이클 vs. 신규 사이클.
-그 동안 저는 매서풀이 스탯 버프 및 일정 간격 마다 공격하는 형식만 가지고 있는 버프 스킬인 줄 알고 기존 사이클을 유지하였습니다. '다가오는 죽음'이 발동된다는 사실을 깨닫고, 다른 사람들의 사이클과 비교해보았습니다.
+그 동안 저는 매서풀이 스탯 버프 및 일정 간격 마다 공격하는 형식만 가지고 있는 버프 스킬인 줄 알고 기존 사이클을 유지하였습니다.<br>
+일정 간격 마다 공격하는 형식에 '다가오는 죽음'이 발동된다는 사실을 깨닫고, 다른 사람들의 사이클(이하 신규 사이클)과 비교 해보았습니다.<br>
 
-두 사이클 비교.
+<table>
+  <thead>
+    <tr>
+      <th align="center">시행횟수 \ 분석 종류</th>
+      <th align="center">기존 사이클</th>
+      <th align="center">신규 사이클</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">534조 3089억</td>
+      <td align="center">534조 0160억</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="center">537조 3832억</td>
+      <td align="center">538조 7019억</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="center">540조 1350억</td>
+      <td align="center">533조 2350억</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">536조 5861억</td>
+      <td align="center">532조 8107억</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">536조 1978억</td>
+      <td align="center">535조 2650억</td>
+    </tr>
+    <tr>
+      <td align="center">평균</td>
+      <td align="center">536조 9222억</td>
+      <td align="center">534조 8057억</td>
+    </tr>
+  </tbody>
+</table>
 
-기존 사이클에 맞춰서 6차 강화를 한 탓인지 알 수 없지만, 신규 사이클에 비해 기존 사이클이 더 낫다라는 결과를 얻었습니다.
+<details>
+<summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
+- 패치 전(1)
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/1/6.PNG"><br>
+- 패치 전(2)
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/2/6.PNG"><br>
+- 패치 전(3)
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/3/6.PNG"><br>
+- 패치 전(4)
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/4/6.PNG"><br>
+- 패치 전(5)
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/previous_build/5/6.PNG"><br>
+<br><br><br>
+- 패치 후(1)
+<img src="patch_analysis_report_26.04.16/build_change/new_build/1/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/1/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/1/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/1/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/1/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/1/6.PNG"><br>
+- 패치 후(2)
+<img src="patch_analysis_report_26.04.16/build_change/new_build/2/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/2/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/2/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/2/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/2/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/2/6.PNG"><br>
+- 패치 후(3)
+<img src="patch_analysis_report_26.04.16/build_change/new_build/3/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/3/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/3/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/3/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/3/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/3/6.PNG"><br>
+- 패치 후(4)
+<img src="patch_analysis_report_26.04.16/build_change/new_build/4/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/4/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/4/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/4/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/4/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/4/6.PNG"><br>
+- 패치 후(5)
+<img src="patch_analysis_report_26.04.16/build_change/new_build/5/1.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/5/2.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/5/3.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/5/4.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/5/5.PNG">
+<img src="patch_analysis_report_26.04.16/build_change/new_build/5/6.PNG"><br>
+</details>
+
+기존 사이클이 신규 사이클 보다 0.396% 더 높은 효율을 보였습니다.<br>
+다만, 기존 사이클은 6차 스킬을 강화가 이미 상당 부분 진행된 상태에서의 결과임을 감안해야합니다.<br>
+신규 사이클이 1% 미만의 차이가 난다는 점은, 향후 빌드 최적화 및 추가 성장에 따라 신규 사이클이 기존 사이클의 고점을 상회할 수 있는 충분한 잠재력을 갖췄음을 알 수 있습니다.<br>
 
 #### 분석 결론
 분석 결과에 따라 '매서풀VI' 0레벨을 사용하는 사람과 '매서풀VI' 1레벨을 사용하는 사람 간의 '다가오는 죽음'의 가치가 달라진다는 것을 알 수 있습니다.
@@ -1943,23 +2080,6 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 
 #### 분석 결과
 
-##### 분석 전제조건
-1. 직업별 가장 강력한 스킬인 오리진 스킬(쿨타임 6분) 기준으로 측정.
-2. 6분 주기 측정에 적합하지 않은 스킬인 '스파이더 인 미러', '크레스트 오브 더 솔라'(쿨타임 4분) 미사용.
-3. 서버렉 패치되었으므로, '일격필살' 사용.
-4. 확률형 버프인 '컨택트 카라반' 제외.
-5. 메르세데스 유니온 효과(200레벨과 250레벨의 평균값)를 적용하여 오리진 스킬(360초)의 실제 쿨타임은 340.2초.
-   - 대부분의 유저들이 메르세데스 200레벨 유니온 효과(5%)를 가지고 있지만, 250레벨 유니온 효과(6%)는 비교적 소수의 유저들이 사용하므로 평균값(5.5%)으로 측정.
-   - 스킬 쿨타임 감소 효과를 지닌 모자는 유효가 아닌 직업군도 존재하고, 사용하는 직업군들 조차도 사용하지 않거나 쿨타임 감소 수치가 다른 아이템을 사용하기 때문에 평균을 내기 어려움.
-6. 특수한 경우가 아닌 보편적인 경우를 기준으로 측정.
-   - ex) 개발자의 아크는 스킬 쿨타임 2초 감소인 모자를 착용 중.
-   - 340.2초 기준으로 측정 시, 4회차 쿨타임 2분인 버프 및 스킬을 8초 가량 사용할 수 있으니 쿨타임 2분인 스킬은 3회로 제한.
-7. 어센트 스킬은 시간 내에 가장 데미지 손해가 적은 구간에서 1회 사용.
-8. 필드는 어센틱 포스 요구치 1. 보스는 레벨 250, 방어율 380%, 체력 무한, 대형, 반감 기준으로 측정.
-   - 버프 세팅 중 길드 스킬의 방어율 무시 버프, 콜렉터의 영약, 챔피언의 가호는 제외.
-9. 어빌리티는 보스 공격 시 데미지 증가 / 상태 이상에 걸린 적 공격 시 데미지 증가 / 버프 스킬 지속 시간 증가 기준으로 측정.
-    - 재사용 어빌리티는 데미지 편차가 심하므로 사용하지 않음.
-10. 총 5회 측정하고, 평균값 낸 수치를 작성.
 
 
 
