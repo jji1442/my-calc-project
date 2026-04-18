@@ -1857,6 +1857,7 @@ python
 2. 기존 사이클 vs. 신규 사이클.
    1) 기존 사이클: 35초 스펙터 / 20초 레프 / 20초 스펙터 / 35초 레프 구조.
    2) 신규 사이클: 55초 스펙터 / 55초 레프 구조.
+3. 기존 사이클 vs. '매서풀VI' 1레벨 + 기존 사이클.
 
 ##### 분석 전제조건
 1. 직업별 가장 강력한 스킬인 오리진 스킬(쿨타임 6분) 기준으로 측정.
@@ -1914,8 +1915,8 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 메커니즘의 변화로 인해, '다가오는 죽음' 사용횟수가 줄었음을 알 수 있습니다.
 
 ##### 2. 기존 사이클 vs. 신규 사이클.
-그 동안 저는 매서풀이 스탯 버프 및 일정 간격 마다 공격하는 형식만 가지고 있는 버프 스킬인 줄 알고 기존 사이클을 유지하였습니다.<br>
-일정 간격 마다 공격하는 형식에 '다가오는 죽음'이 발동된다는 사실을 깨닫고, 다른 사람들의 사이클(이하 신규 사이클)과 비교 해보았습니다.<br>
+그 동안 저는 '매서풀'이 스탯 버프 및 일정 간격 마다 공격하는 버프 스킬로만 인지하여 기존 사이클을 유지하였습니다.<br>
+일정 간격 마다 발생하는 마력 폭풍에 '다가오는 죽음'이 발동된다는 사실을 새롭게 알게되어 타 유저의 사이클(이하 신규 사이클)과 비교 분석을 진행하였습니다.<br>
 
 <table>
   <thead>
@@ -2035,8 +2036,177 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 </details>
 
 기존 사이클이 신규 사이클 보다 0.396% 더 높은 효율을 보였습니다.<br>
-다만, 기존 사이클은 6차 스킬을 강화가 이미 상당 부분 진행된 상태에서의 결과임을 감안해야합니다.<br>
+다만, 기존 사이클을 기준으로 6차 스킬 강화가 상당 부분 진행된 상태에서의 결과임을 감안해야합니다.<br>
 신규 사이클이 1% 미만의 차이가 난다는 점은, 향후 빌드 최적화 및 추가 성장에 따라 신규 사이클이 기존 사이클의 고점을 상회할 수 있는 충분한 잠재력을 갖췄음을 알 수 있습니다.<br>
+
+##### 3. 기존 사이클 vs. '매서풀VI' 1레벨 + 기존 사이클.
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">시행횟수 \ 분석 종류</th>
+      <th align="center">기존 사이클</th>
+      <th align="center">'매서풀VI' 1레벨 + 기존 사이클</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">534조 3089억</td>
+      <td align="center">536조 5032억</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="center">537조 3832억</td>
+      <td align="center">537조 1919억</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="center">540조 1350억</td>
+      <td align="center">530조 0668억</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">536조 5861억</td>
+      <td align="center">534조 2614억</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">536조 1978억</td>
+      <td align="center">531조 3620억</td>
+    </tr>
+    <tr>
+      <td align="center">평균</td>
+      <td align="center">536조 9222억</td>
+      <td align="center">533조 8771억</td>
+    </tr>
+  </tbody>
+</table>
+
+기존 사이클 보다 '매서풀VI' 1레벨 + 기존 사이클이 0.567% 낮은 현상이 발생하였습니다.
+'매서풀'의 스킬 사양인 '다가오는 죽음'의 사용횟수가 줄었기 때문에 이러한 현상이 발생하였습니다.
+
+다음은 일부 스킬들의 평균 사용횟수 추출하였습니다.
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">스킬 종류 \ 분석 종류</th>
+      <th align="center">기존 사이클</th>
+      <th align="center">'매서풀VI' 1레벨 + 기존 사이클</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">다가오는 죽음</td>
+      <td align="center">534조 3089억</td>
+      <td align="center">536조 5032억</td>
+    </tr>
+    <tr>
+      <td align="center">매서풀</td>
+      <td align="center">537조 3832억</td>
+      <td align="center">537조 1919억</td>
+    </tr>
+    <tr>
+      <td align="center">매서풀VI 1레벨</td>
+      <td align="center">540조 1350억</td>
+      <td align="center">530조 0668억</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">536조 5861억</td>
+      <td align="center">534조 2614억</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">536조 1978억</td>
+      <td align="center">531조 3620억</td>
+    </tr>
+    <tr>
+      <td align="center">평균</td>
+      <td align="center">536조 9222억</td>
+      <td align="center">533조 8771억</td>
+    </tr>
+  </tbody>
+</table>
+
+<details>
+<summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
+- 다가오는 죽음
+<table>
+  <thead>
+    <tr>
+      <th align="center">분석 종류 / 시행 횟수</th>
+      <th align="center">1</th>
+      <th align="center">2</th>
+      <th align="center">3</th>
+      <th align="center">4</th>
+      <th align="center">5</th>
+      <th align="center">평균</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">기존 사이클</td>
+      <td align="center">1807회</td>
+      <td align="center">1816회</td>
+      <td align="center">1780회</td>
+      <td align="center">1817회</td>
+      <td align="center">1802회</td>
+      <td align="center">1804.4회</td>
+    </tr>
+    <tr>
+      <td align="center">'매서풀VI' 1레벨 + 기존 사이클</td>
+      <td align="center">1687회</td>
+      <td align="center">1689회</td>
+      <td align="center">1649회</td>
+      <td align="center">1717회</td>
+      <td align="center">1673회</td>
+      <td align="center">1683회</td>
+    </tr>
+  </tbody>
+</table>
+
+- 매직 서킷 풀드라이브(또는 VI)
+<table>
+  <thead>
+    <tr>
+      <th align="center">분석 종류 / 시행 횟수</th>
+      <th align="center">1</th>
+      <th align="center">2</th>
+      <th align="center">3</th>
+      <th align="center">4</th>
+      <th align="center">5</th>
+      <th align="center">평균</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">기존 사이클</td>
+      <td align="center">48회</td>
+      <td align="center">47회</td>
+      <td align="center">48회</td>
+      <td align="center">47회</td>
+      <td align="center">48회</td>
+      <td align="center">47.6회</td>
+    </tr>
+    <tr>
+      <td align="center">'매서풀VI' 1레벨 + 기존 사이클</td>
+      <td align="center">169회</td>
+      <td align="center">168회</td>
+      <td align="center">165회</td>
+      <td align="center">165회</td>
+      <td align="center">173회</td>
+      <td align="center">168회</td>
+    </tr>
+  </tbody>
+</table>
+</details>
+
+
+
+
+
 
 #### 분석 결론
 분석 결과에 따라 '매서풀VI' 0레벨을 사용하는 사람과 '매서풀VI' 1레벨을 사용하는 사람 간의 '다가오는 죽음'의 가치가 달라진다는 것을 알 수 있습니다.
