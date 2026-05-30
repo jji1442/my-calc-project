@@ -2362,9 +2362,9 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 <table>
   <thead>
     <tr>
-      <th align="center">분석 종류</th>
-      <th align="center">매서풀VI 1레벨</th>
-      <th align="center">매서풀VI 9레벨</th>
+      <th align="center">분석 항목</th>
+      <th align="center">매서풀VI 1레벨 스킬 자체</th>
+      <th align="center">매서풀VI 9레벨 스킬 자체</th>
     </tr>
   </thead>
   <tbody>
