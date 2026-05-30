@@ -2420,7 +2420,7 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
     <tr>
       <td align="center">평균</td>
       <td align="center">5조 1859억</td>
-      <td align="center">8조 8510억</td>
+      <td align="center">8조 5103억</td>
     </tr>
   </tbody>
 </table>
