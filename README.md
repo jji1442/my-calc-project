@@ -2152,75 +2152,92 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 <summary> 분석 결과 확인하기(펼치기/닫기)</summary>
 - 다가오는 죽음
 <table>
-  <thead>
-    <tr>
-      <th align="center">분석 종류 / 시행 횟수</th>
-      <th align="center">1</th>
-      <th align="center">2</th>
-      <th align="center">3</th>
-      <th align="center">4</th>
-      <th align="center">5</th>
-      <th align="center">평균</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">'매서풀VI' 0레벨 + 기존 사이클</td>
-      <td align="center">1807회</td>
-      <td align="center">1816회</td>
-      <td align="center">1780회</td>
-      <td align="center">1817회</td>
-      <td align="center">1802회</td>
-      <td align="center">1804.4회</td>
-    </tr>
-    <tr>
-      <td align="center">'매서풀VI' 1레벨 + 기존 사이클</td>
-      <td align="center">1687회</td>
-      <td align="center">1689회</td>
-      <td align="center">1649회</td>
-      <td align="center">1717회</td>
-      <td align="center">1673회</td>
-      <td align="center">1683회</td>
-    </tr>
-  </tbody>
+  <thead>
+    <tr>
+      <th align="center">시행 횟수 \ 분석 종류</th>
+      <th align="center">'매서풀VI' 0레벨 + 기존 사이클</th>
+      <th align="center">'매서풀VI' 1레벨 + 기존 사이클</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">1807회</td>
+      <td align="center">1687회</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="center">1816회</td>
+      <td align="center">1689회</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="center">1780회</td>
+      <td align="center">1649회</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">1817회</td>
+      <td align="center">1717회</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">1802회</td>
+      <td align="center">1673회</td>
+    </tr>
+    <tr>
+      <td align="center">평균</td>
+      <td align="center">1804.4회</td>
+      <td align="center">1683회</td>
+    </tr>
+  </tbody>
 </table>
+
 - 매직 서킷 풀드라이브(또는 VI)
 <table>
-  <thead>
-    <tr>
-      <th align="center">분석 종류 / 시행 횟수</th>
-      <th align="center">1</th>
-      <th align="center">2</th>
-      <th align="center">3</th>
-      <th align="center">4</th>
-      <th align="center">5</th>
-      <th align="center">평균</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">'매서풀VI' 0레벨 + 기존 사이클</td>
-      <td align="center">48회</td>
-      <td align="center">47회</td>
-      <td align="center">48회</td>
-      <td align="center">47회</td>
-      <td align="center">48회</td>
-      <td align="center">47.6회</td>
-    </tr>
-    <tr>
-      <td align="center">'매서풀VI' 1레벨 + 기존 사이클</td>
-      <td align="center">169회</td>
-      <td align="center">168회</td>
-      <td align="center">165회</td>
-      <td align="center">165회</td>
-      <td align="center">173회</td>
-      <td align="center">168회</td>
-    </tr>
-  </tbody>
+  <thead>
+    <tr>
+      <th align="center">시행 횟수 \ 분석 종류</th>
+      <th align="center">'매서풀VI' 0레벨 + 기존 사이클</th>
+      <th align="center">'매서풀VI' 1레벨 + 기존 사이클</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">48회</td>
+      <td align="center">169회</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="center">47회</td>
+      <td align="center">168회</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="center">48회</td>
+      <td align="center">165회</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">47회</td>
+      <td align="center">165회</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">48회</td>
+      <td align="center">173회</td>
+    </tr>
+    <tr>
+      <td align="center">평균</td>
+      <td align="center">47.6회</td>
+      <td align="center">168회</td>
+    </tr>
+  </tbody>
 </table>
 </details>
 
-결과를 보시면, '다가오는 죽음'의 사용횟수가 기존 1804.4회에서 1683회로 121.4회 급감하였음을 확인할 수 있습니다.
+결과를 보시면, '다가오는 죽음'의 사용횟수가 기존 1804.4회에서 1683회로 급감(-121.4회)하였음을 확인할 수 있습니다.
 
 이에 대한 원인은 '매서풀VI'의 메커니즘 때문입니다.<br>
 제 기존 사이클은 재사용 대기시간 120초 및 60초인 버프 스킬 사용 후 35초 동안 스펙터 상태로 공격합니다.<br>
