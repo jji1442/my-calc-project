@@ -2394,33 +2394,33 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
   <tbody>
     <tr>
       <td align="center">1</td>
-      <td align="center">5.2115조</td>
-      <td align="center">8.4813조</td>
+      <td align="center">5조 2115억</td>
+      <td align="center">8조 4813억</td>
     </tr>
     <tr>
       <td align="center">2</td>
-      <td align="center">5.1945조</td>
-      <td align="center">8.6114조</td>
+      <td align="center">5조 1945억</td>
+      <td align="center">8조 6114억</td>
     </tr>
     <tr>
       <td align="center">3</td>
-      <td align="center">5.0979조</td>
-      <td align="center">8.2618조</td>
+      <td align="center">5조 0979억</td>
+      <td align="center">8조 2618억</td>
     </tr>
     <tr>
       <td align="center">4</td>
-      <td align="center">5.0990조</td>
-      <td align="center">8.7662조</td>
+      <td align="center">5조 0990억</td>
+      <td align="center">8조 7662억</td>
     </tr>
     <tr>
       <td align="center">5</td>
-      <td align="center">5.3265조</td>
-      <td align="center">8.4307조</td>
+      <td align="center">5조 3265억</td>
+      <td align="center">8조 4307억</td>
     </tr>
     <tr>
       <td align="center">평균</td>
-      <td align="center">5.1859조</td>
-      <td align="center">8.5103조</td>
+      <td align="center">5조 1859억</td>
+      <td align="center">8조 8510억</td>
     </tr>
   </tbody>
 </table>
@@ -2428,32 +2428,40 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 <table>
   <thead>
     <tr>
-      <th align="center">분석 종류 / 시행 횟수</th>
-      <th align="center">1</th>
-      <th align="center">2</th>
-      <th align="center">3</th>
-      <th align="center">4</th>
-      <th align="center">5</th>
-      <th align="center">평균</th>
+      <th align="center">시행 횟수 \ 분석 종류</th>
+      <th align="center">매서풀VI 1레벨 사용횟수</th>
+      <th align="center">매서풀VI 9레벨 사용횟수</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">매서풀VI 1레벨 사용횟수</td>
+      <td align="center">1</td>
       <td align="center">169회</td>
+      <td align="center">166회</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
       <td align="center">168회</td>
-      <td align="center">165회</td>
-      <td align="center">165회</td>
-      <td align="center">173회</td>
       <td align="center">168회</td>
     </tr>
     <tr>
-      <td align="center">매서풀VI 9레벨 사용횟수</td>
-      <td align="center">166회</td>
-      <td align="center">168회</td>
-      <td align="center">162회</td>
-      <td align="center">171회</td>
+      <td align="center">3</td>
       <td align="center">165회</td>
+      <td align="center">162회</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">165회</td>
+      <td align="center">171회</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">173회</td>
+      <td align="center">165회</td>
+    </tr>
+    <tr>
+      <td align="center">평균</td>
+      <td align="center">168회</td>
       <td align="center">166.4회</td>
     </tr>
   </tbody>
