@@ -2129,19 +2129,19 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 13, 마력 5 증가
 <table>
   <thead>
     <tr>
-      <th align="center">스킬별 사용횟수 \ 분석 종류</th>
+      <th align="center">스킬 종류 \ 분석 종류</th>
       <th align="center">'매서풀VI' 0레벨 + 기존 사이클</th>
       <th align="center">'매서풀VI' 1레벨 + 기존 사이클</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">다가오는 죽음</td>
+      <td align="center">다가오는 죽음 사용횟수</td>
       <td align="center">1804.4회</td>
       <td align="center">1683회</td>
     </tr>
     <tr>
-      <td align="center">매서풀(또는 VI)</td>
+      <td align="center">매서풀(또는 VI) 사용횟수</td>
       <td align="center">47.6회</td>
       <td align="center">168회</td>
     </tr>
