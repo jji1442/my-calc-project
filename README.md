@@ -2304,8 +2304,8 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
   <thead>
     <tr>
       <th align="center">시행 횟수 \ 분석 종류</th>
-      <th align="center">'매서풀VI' 1레벨</th>
-      <th align="center">'매서풀VI' 9레벨</th>
+      <th align="center">매서풀VI 1레벨 + 기존 사이클<</th>
+      <th align="center">매서풀VI 9레벨 + 기존 사이클<</th>
     </tr>
   </thead>
   <tbody>
@@ -2343,6 +2343,7 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 </table>
 <details>
 <summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
+- 매서풀VI 9레벨 + 기존 사이클(1)
 </details>
 
 매서풀VI 1레벨 대비 1.07%(5.7148조) 상승하는 것을 확인할 수 있습니다.
@@ -2354,7 +2355,34 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 3단계. 매서풀VI 스킬을 제외한 전체 스킬에 미치는 공격력 상승분 구하기.
 4단계. 1~3단계 상승분 합치기.
 
-[매서풀VI 스킬 자체가 입힌 누적 데미지 비교 표]
+
+
+'매서풀VI' 1레벨과 '매서풀VI' 9레벨 각각의 스킬 자체가 입힌 누적 데미지 및 사용횟수를 산출해보았습니다.
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">분석 종류</th>
+      <th align="center">매서풀VI 1레벨</th>
+      <th align="center">매서풀VI 9레벨</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">누적 데미지</td>
+      <td align="center">5.1859조</td>
+      <td align="center">8.5103조</td>
+    </tr>
+    <tr>
+      <td align="center">사용횟수</td>
+      <td align="center">168회</td>
+      <td align="center">166.4회</td>
+    </tr>
+  </tbody>
+</table>
+
+<details>
+<summary> 분석 결과 확인하기(펼치기/닫기)</summary>
 <table>
   <thead>
     <tr>
@@ -2397,32 +2425,6 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
   </tbody>
 </table>
 
-[매서풀VI 사용횟수 비교]
-
-<table>
-  <thead>
-    <tr>
-      <th align="center">스킬 종류 \ 분석 종류</th>
-      <th align="center">매서풀VI 1레벨</th>
-      <th align="center">매서풀VI 9레벨</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center">다가오는 죽음</td>
-      <td align="center">5.1859조</td>
-      <td align="center">8.5103조</td>
-    </tr>
-    <tr>
-      <td align="center">매서풀(또는 VI)</td>
-      <td align="center">168회</td>
-      <td align="center">166.4회</td>
-    </tr>
-  </tbody>
-</table>
-
-<details>
-<summary> 분석 결과 확인하기(펼치기/닫기)</summary>
 <table>
   <thead>
     <tr>
@@ -2437,7 +2439,7 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
   </thead>
   <tbody>
     <tr>
-      <td align="center">매서풀VI 1레벨</td>
+      <td align="center">매서풀VI 1레벨 사용횟수</td>
       <td align="center">169회</td>
       <td align="center">168회</td>
       <td align="center">165회</td>
@@ -2446,7 +2448,7 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
       <td align="center">168회</td>
     </tr>
     <tr>
-      <td align="center">매서풀VI 9레벨</td>
+      <td align="center">매서풀VI 9레벨 사용횟수</td>
       <td align="center">166회</td>
       <td align="center">168회</td>
       <td align="center">162회</td>
