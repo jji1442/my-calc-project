@@ -2291,14 +2291,50 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 밸런스 패치를 헥사코어로 하는 것 자체가 상당히 불쾌합니다. 상승량이 낮았으면 낮았지. 마이너스가 말이 안된다고 생각합니다. 심지어 초기화가 자유로운 시스템도 아니면서,
 
 #### 추가 테스트 자료
-542.6904조
-538.5269조
-537.7801조
-539.4811조
-539.4811조
-평균 539.5919조
-
-[매서풀 VI 1레벨 VS. 9레벨 전체 데미지 비교 테이블]
+<table>
+  <thead>
+    <tr>
+      <th align="center">시행 횟수 \ 분석 종류</th>
+      <th align="center">'매서풀VI' 1레벨</th>
+      <th align="center">'매서풀VI' 9레벨</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">536조 5032억</td>
+      <td align="center">542조 6904억</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="center">537조 1919억</td>
+      <td align="center">538조 5269억</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="center">530조 0668억</td>
+      <td align="center">537조 7801억</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">534조 2614억</td>
+      <td align="center">539조 4811억</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">531조 3620억</td>
+      <td align="center">539조 4811억</td>
+    </tr>
+    <tr>
+      <td align="center">평균</td>
+      <td align="center">533조 8771억</td>
+      <td align="center">539조 5919억</td>
+    </tr>
+  </tbody>
+</table>
+<details>
+<summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
+<details>
 
 매서풀VI 1레벨 대비 1.07%(5.7148조) 상승하는 것을 확인할 수 있습니다.
 
