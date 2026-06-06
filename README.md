@@ -2381,12 +2381,13 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 
 '매서풀VI' 1레벨과 '매서풀VI' 9레벨 각각의 스킬 자체가 입힌 누적 데미지 및 사용횟수를 산출합니다.
 
+- 매서풀VI 1레벨 및 9레벨의 스킬 자체 누적 데미지(평균)와 사용 횟수(평균)
 <table>
   <thead>
     <tr>
       <th align="center">분석 항목</th>
-      <th align="center">매서풀VI 1레벨 스킬 자체</th>
-      <th align="center">매서풀VI 9레벨 스킬 자체</th>
+      <th align="center">매서풀VI 1레벨</th>
+      <th align="center">매서풀VI 9레벨</th>
     </tr>
   </thead>
   <tbody>
@@ -2405,6 +2406,7 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 
 <details>
 <summary> 분석 결과 확인하기(펼치기/닫기)</summary>
+- 매서풀VI 1레벨 및 9레벨의 스킬 자체 누적 데미지
 <table>
   <thead>
     <tr>
@@ -2447,12 +2449,13 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
   </tbody>
 </table>
 
+- 매서풀VI 1레벨 및 9레벨의 스킬 자체 사용횟수
 <table>
   <thead>
     <tr>
       <th align="center">시행 횟수 \ 분석 종류</th>
-      <th align="center">매서풀VI 1레벨 사용횟수</th>
-      <th align="center">매서풀VI 9레벨 사용횟수</th>
+      <th align="center">매서풀VI 1레벨</th>
+      <th align="center">매서풀VI 9레벨</th>
     </tr>
   </thead>
   <tbody>
