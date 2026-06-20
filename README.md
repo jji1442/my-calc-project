@@ -2373,40 +2373,40 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 <details>
 <summary> 전투분석 결과 확인하기(펼치기/닫기)</summary>
 - 매서풀VI 9레벨 + 기존 사이클(1)
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/1/1.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/1/2.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/1/3.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/1/4.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/1/5.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/1/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/1/1.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/1/2.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/1/3.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/1/4.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/1/5.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/1/6.PNG"><br>
 - 매서풀VI 9레벨 + 기존 사이클(2)
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/2/1.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/2/2.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/2/3.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/2/4.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/2/5.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/2/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/2/1.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/2/2.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/2/3.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/2/4.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/2/5.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/2/6.PNG"><br>
 - 매서풀VI 9레벨 + 기존 사이클(3)
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/3/1.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/3/2.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/3/3.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/3/4.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/3/5.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/3/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/3/1.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/3/2.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/3/3.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/3/4.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/3/5.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/3/6.PNG"><br>
 - 매서풀VI 9레벨 + 기존 사이클(4)
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/4/1.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/4/2.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/4/3.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/4/4.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/4/5.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/4/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/4/1.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/4/2.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/4/3.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/4/4.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/4/5.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/4/6.PNG"><br>
 - 매서풀VI 9레벨 + 기존 사이클(5)
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/5/1.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/5/2.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/5/3.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/5/4.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/5/5.PNG">
-<img src="patch_analysis_report_26.04.16/mcfd_vi_Lv_9/previous_build/5/6.PNG"><br>
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/5/1.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/5/2.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/5/3.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/5/4.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/5/5.PNG">
+<img src="patch_analysis_report_26.04.16(2)/mcfd_vi_Lv_9/previous_build/5/6.PNG"><br>
 </details>
 
 '매서풀VI' 0레벨은 '매서풀VI' 1레벨 보다 3조 0451억(+0.5671%) 높지만, '매서풀VI' 9레벨 보다 2조 6697억(-0.4972%) 낮다는 것을 알 수 있습니다.<br>
