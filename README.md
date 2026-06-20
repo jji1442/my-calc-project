@@ -31,6 +31,8 @@
 &emsp;[9-2. 알파 버전 설계](#alpha_version_architecture)<br>
 &emsp;[9-3. 알파 버전 구현](#alpha_version_implement)<br>
 &emsp;[9-4. 알파 버전 결과](#alpha_version_result)<br>
+[10. 패치 분석 보고서(26.03.19)](#patch_analysis_report_26.03.19)<br>
+[11. 패치 분석 보고서(26.04.16)](#patch_analysis_report_26.04.16)<br>
 [게임 시스템 설명](#game_system_explan)<br>
 [참고 자료](#references)<br>
 
@@ -1236,7 +1238,7 @@ python
 
 <br><br><br>
 
-<h2 id="patch_analysis_report_26.03.19">. 패치 분석 보고서(26.03.19)</h2>
+<h2 id="patch_analysis_report_26.03.19">10. 패치 분석 보고서(26.03.19)</h2>
 
 ### 작성 기간
 26.03.17 ~ 26.03.20
@@ -1839,7 +1841,7 @@ python
 
 <br><br><br>
 
-<h2 id="patch_analysis_report_26.04.16">. 패치 분석 보고서(26.04.16)</h2>
+<h2 id="patch_analysis_report_26.04.16">11. 패치 분석 보고서(26.04.16)</h2>
 
 ### 작성 기간
 26.04.14 ~ 26.05.30
