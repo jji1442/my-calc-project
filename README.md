@@ -699,6 +699,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 <details>
 <summary> 상세정보 확인하기(펼치기/닫기)</summary>
+
 링 익스체인지 미사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
 | 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 | 5 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -1100,6 +1101,7 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 
 <details>
 <summary> 상세정보 확인하기(펼치기/닫기)</summary>
+
 패치 '전' 링 익스체인지 사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
 | 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
 |:---:|:---:|:---:|:---:|:---:|
