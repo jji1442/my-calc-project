@@ -2718,7 +2718,7 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 <table>
   <thead>
     <tr>
-      <th align="center">레벨 구간/th>
+      <th align="center">레벨 구간</th>
       <th align="center">100억 메소당 최종데미지 상승율</th>
     </tr>
   </thead>
