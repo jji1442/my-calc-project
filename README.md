@@ -35,7 +35,6 @@
 [11. 패치 분석 보고서(26.04.16)](#patch_analysis_report_26.04.16)<br>
 [12. 패치 분석 보고서(26.06.18)](#patch_analysis_report_26.06.18)<br>
 [게임 시스템 설명](#game_system_explan)<br>
-[참고 자료](#references)<br>
 
 <br><br><br>
 
@@ -697,7 +696,66 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 | 플레인 차지드라이브VI | 4.95% | 4.84% | 97.78% |
     
    - 위와 같이 처리한 이유는 사용 횟수에 따른 스킬별 점유율 편차가 심하기 때문에 합산 수치로 처리하였습니다.
-   - [>> 상세정보 보러가기](#25.08.21_detail_info)
+
+<details>
+<summary> 상세정보 확인하기(펼치기/닫기)</summary>
+링 익스체인지 미사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
+| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 | 5 |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 지워지지 않는 상처VI | 1.77% | 1.89% | 1.89% | 1.83% | 1.74% |
+| 걷잡을 수 없는 혼돈VI | 1.77% | 1.62% | 1.57% | 1.52% | 1.41% |
+| 채워지지 않는 굶주림VI | 1.46% | 1.41% | 1.47% | 1.59% | 1.41% |
+| 멈출 수 없는 본능 | 1.37% | 1.51% | 1.53% | 1.55% | 1.59% |
+| 종합 | 6.37% | 6.43% | 6.46% | 6.49% | 6.15% |
+
+링 익스체인지 미사용 + '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율 테이블
+| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 | 5 |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 잊혀지지 않는 악몽VI | 1.74% | 1.91% | 1.96% | 2.03% | 1.98% |
+| 스칼렛 차지드라이브VI | 0.62% | 0.83% | 0.82% | 0.89% | 0.78% |
+| 어비스 차지드라이브VI | 0.74% | 0.81% | 0.75% | 0.75% | 0.80% |
+| 거스트 차지드라이브VI | 0.77% | 0.77% | 0.80% | 0.77% | 0.77% |
+| 멈출 수 없는 충동 | 0.58% | 0.69% | 0.69% | 0.58% | 0.61% |
+| 종합 | 4.45% | 5.01% | 5.02% | 5.02% | 4.94% |
+
+링 익스체인지 사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
+| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
+|:---:|:---:|:---:|:---:|:---:|
+| 지워지지 않는 상처VI | 1.87% | 1.81% | 1.84% | 1.84% |
+| 걷잡을 수 없는 혼돈VI | 1.57% | 1.67% | 1.66% | 1.53% |
+| 채워지지 않는 굶주림VI | 1.60% | 1.59% | 1.43% | 1.41% |
+| 멈출 수 없는 본능 | 1.47% | 1.55% | 1.64% | 1.51% |
+| 종합 | 6.51% | 6.62% | 6.57% | 6.29% |
+
+링 익스체인지 사용 + '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율 테이블
+| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
+|:---:|:---:|:---:|:---:|:---:|
+| 잊혀지지 않는 악몽VI | 1.73% | 1.90% | 1.85% | 1.98% |
+| 스칼렛 차지드라이브VI | 0.76% | 0.84% | 0.77% | 0.84% |
+| 어비스 차지드라이브VI | 0.73% | 0.73% | 0.75% | 0.80% |
+| 거스트 차지드라이브VI | 0.77% | 0.74% | 0.80% | 0.80% |
+| 멈출 수 없는 충동 | 0.64% | 0.61% | 0.64% | 0.66% |
+| 종합 | 4.63% | 4.82% | 4.81% | 5.08% |
+
+'잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율(평균) 비교
+| 스킬 이름 \ 테스트 종류 | 링 익스체인지 미사용 | 링 익스체인지 사용 | 비교 |
+|:---:|:---:|:---:|:---:|
+| 지워지지 않는 상처VI | 1.82% | 1.84% | 100.88% |
+| 걷잡을 수 없는 혼돈VI | 1.58% | 1.61% | 101.87% |
+| 채워지지 않는 굶주림VI | 1.47% | 1.51% | 102.69% |
+| 멈출 수 없는 본능 | 1.51% | 1.54% | 102.15% |
+| 종합 | 6.38% | 6.50% | 101.84% |
+
+'플레인 차지드라이브VI'과 연계되는 스킬들의 점유율(평균) 비교
+| 스킬 이름 \ 테스트 종류 | 링 익스체인지 미사용 | 링 익스체인지 사용 | 비교 |
+|:---:|:---:|:---:|:---:|
+| 잊혀지지 않는 악몽VI | 1.98% | 1.87% | 96.93% |
+| 스칼렛 차지드라이브VI | 0.79% | 0.8% | 101.84% |
+| 어비스 차지드라이브VI | 0.77% | 0.75% | 97.73% |
+| 거스트 차지드라이브VI | 0.78% | 0.78% | 100.19% |
+| 멈출 수 없는 충동 | 0.63% | 0.64% | 101.19% |
+| 종합 | 4.89% | 4.84% | 98.92% |
+</details>
 
 위 표를 보아, '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율이 소폭 상승을, '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율이 소폭 하락을 보였습니다.
 
@@ -933,10 +991,89 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 | 4 | 297조 9079억 | - | - |
 | 평균 | 298조 3243억 | 279조 7229억 | 301조 5426억 |
 
-   - [>> 패치 전 55:55 빌드 분석 결과 자세히 보러가기](#used_ring_exchange_img)
-   - [>> 패치 후 55:55 빌드 분석 결과 자세히 보러가기](#post_patch_legacy_build_img)
-   - [>> 패치 후 58:52 빌드 분석 결과 자세히 보러가기](#post_patch_new_build_img)
-  
+<details>
+<summary> 패치 전 55:55 빌드 분석 결과 확인하기(펼치기/닫기)</summary>
+- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(1)
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_1.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_2.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_3.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_4.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_5.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_6.PNG"><br>
+- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(2)
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_1.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_2.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_3.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_4.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_5.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_6.PNG"><br>
+- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(3)
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_1.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_2.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_3.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_4.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_5.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_6.PNG"><br>
+- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(4)
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_1.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_2.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_3.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_4.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_5.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG">
+</details>
+
+<details>
+<summary> 패치 후 55:55 빌드 분석 결과 확인하기(펼치기/닫기)</summary>
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_1.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_2.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_3.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_4.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_5.PNG">
+<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_6.PNG"><br>
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_1.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_2.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_3.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_4.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_5.PNG">
+<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_6.PNG"><br>
+- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_1.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_2.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_3.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_4.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_5.PNG">
+<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_6.PNG">
+</details>
+
+<details>
+<summary> 패치 후 58:52 빌드 분석 결과 확인하기(펼치기/닫기)</summary>
+<div id="post_patch_new_build_img"></div>
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_1.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_2.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_3.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_4.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_5.PNG">
+<img src="post_patch_new_build_img/1/post_patch_new_build_1_6.PNG"><br>
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_1.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_2.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_3.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_4.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_5.PNG">
+<img src="post_patch_new_build_img/2/post_patch_new_build_2_6.PNG"><br>
+- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_1.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_2.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_3.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_4.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_5.PNG">
+<img src="post_patch_new_build_img/3/post_patch_new_build_3_6.PNG">
+</details>
+
 패치 후 55:55 빌드(기존 빌드과 동일)의 평균 데미지와 패치 후 58:52 빌드의 평균 데미지의 차이가 "7.80%" 나는 것으로 보아, 패치 후 58:52 빌드를 반드시 사용해야 합니다. 패치 후 58:52 빌드의 데미지는 패치 전 55:55 빌드의 데미지 보다 "1.08%" 높다는 것을 알 수 있습니다.
   
 다음으로, 패치 전 55:55 빌드과 패치 후 58:52 빌드의 일부 스킬별 점유율 비교입니다.
@@ -961,7 +1098,65 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
 | 잊혀지지 않는 흉몽VI | 6.50% | 11.75% | 180.89% |
 | 플레인 차지드라이브VI | 4.84% | 5.44% | 112.58% |
 
-   - [>> 상세정보 보러가기](#25.09.18__info)
+<details>
+<summary> 상세정보 확인하기(펼치기/닫기)</summary>
+패치 '전' 링 익스체인지 사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
+| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
+|:---:|:---:|:---:|:---:|:---:|
+| 지워지지 않는 상처VI | 1.87% | 1.81% | 1.84% | 1.84% |
+| 걷잡을 수 없는 혼돈VI | 1.57% | 1.67% | 1.66% | 1.53% |
+| 채워지지 않는 굶주림VI | 1.60% | 1.59% | 1.43% | 1.41% |
+| 멈출 수 없는 본능 | 1.47% | 1.55% | 1.64% | 1.51% |
+| 종합 | 6.51% | 6.62% | 6.57% | 6.29% |
+
+패치 '전' 링 익스체인지 사용 + '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율 테이블
+| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
+|:---:|:---:|:---:|:---:|:---:|
+| 잊혀지지 않는 악몽VI | 1.73% | 1.90% | 1.85% | 1.98% |
+| 스칼렛 차지드라이브VI | 0.76% | 0.84% | 0.77% | 0.84% |
+| 어비스 차지드라이브VI | 0.73% | 0.73% | 0.75% | 0.80% |
+| 거스트 차지드라이브VI | 0.77% | 0.74% | 0.80% | 0.80% |
+| 멈출 수 없는 충동 | 0.64% | 0.61% | 0.64% | 0.66% |
+| 종합 | 4.63% | 4.82% | 4.81% | 5.08% |
+
+패치 '후' 링 익스체인지 사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
+| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 |
+|:---:|:---:|:---:|:---:|
+| 지워지지 않는 상처VI | 1.89% | 2.05% | 1.64% |
+| 걷잡을 수 없는 혼돈VI | 4.22% | 4.14% | 4.23% |
+| 채워지지 않는 굶주림VI | 4.14% | 4.23% | 4.04% |
+| 멈출 수 없는 본능 | 1.38% | 1.66% | 1.64% |
+| 종합 | 11.63% | 12.08% | 11.55% |
+
+패치 '후' 링 익스체인지 사용 + '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율 테이블
+| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 |
+|:---:|:---:|:---:|:---:|
+| 잊혀지지 않는 악몽VI | 2.58% | 2.49% | 2.61% |
+| 스칼렛 차지드라이브VI | 0.69% | 0.58% | 0.69% |
+| 어비스 차지드라이브VI | 0.97% | 0.92% | 1.02% |
+| 거스트 차지드라이브VI | 0.99% | 0.82% | 0.89% |
+| 멈출 수 없는 충동 | 0.25% | 0.38% | 0.45% |
+| 종합 | 5.48% | 5.19% | 5.66% |
+
+'잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율(평균) 비교
+| 스킬 이름 \ 테스트 종류 | 패치 전 55:55 | 패치 후 58:52 | 비교 |
+|:---:|:---:|:---:|:---:|
+| 지워지지 않는 상처VI | 1.84% | 1.86% | 101.09% |
+| 걷잡을 수 없는 혼돈VI | 1.61% | 4.20% | 261.07% |
+| 채워지지 않는 굶주림VI | 1.51% | 4.14% | 274.41% |
+| 멈출 수 없는 본능 | 1.54% | 1.56% | 101.13% |
+| 종합 | 6.50% | 11.75% | 180.89% |
+
+'플레인 차지드라이브VI'과 연계되는 스킬들의 점유율(평균) 비교
+| 스킬 이름 \ 테스트 종류 | 패치 전 55:55 | 패치 후 58:52 | 비교 |
+|:---:|:---:|:---:|:---:|
+| 잊혀지지 않는 악몽VI | 1.87% | 2.56% | 137.27% |
+| 스칼렛 차지드라이브VI | 0.80% | 0.65% | 81.41% |
+| 어비스 차지드라이브VI | 0.75% | 0.97% | 128.90% |
+| 거스트 차지드라이브VI | 0.78% | 0.90% | 115.76% |
+| 멈출 수 없는 충동 | 0.64% | 0.36% | 56.47% |
+| 종합 | 4.84% | 5.44% | 112.58% |
+</details>
 
 '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 밸류가 상당히(5.25%p) 높아졌습니다. '플레인 차지드라이브VI'과 연계되는 스킬들 또한 높아진 모습(0.60%p)을 확인할 수 있습니다.
   
@@ -2577,200 +2772,3 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
 사이클은 스킬 사용하는 순서를 의미한다.
 
 <br><br><br>
-
-<h2 id="references">참고 자료</h2>
-
-
-<div id="25.08.21_detail_info"></div>
-
-링 익스체인지 미사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
-| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 | 5 |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 지워지지 않는 상처VI | 1.77% | 1.89% | 1.89% | 1.83% | 1.74% |
-| 걷잡을 수 없는 혼돈VI | 1.77% | 1.62% | 1.57% | 1.52% | 1.41% |
-| 채워지지 않는 굶주림VI | 1.46% | 1.41% | 1.47% | 1.59% | 1.41% |
-| 멈출 수 없는 본능 | 1.37% | 1.51% | 1.53% | 1.55% | 1.59% |
-| 종합 | 6.37% | 6.43% | 6.46% | 6.49% | 6.15% |
-
-링 익스체인지 미사용 + '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율 테이블
-| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 | 5 |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 악몽VI | 1.74% | 1.91% | 1.96% | 2.03% | 1.98% |
-| 스칼렛 차지드라이브VI | 0.62% | 0.83% | 0.82% | 0.89% | 0.78% |
-| 어비스 차지드라이브VI | 0.74% | 0.81% | 0.75% | 0.75% | 0.80% |
-| 거스트 차지드라이브VI | 0.77% | 0.77% | 0.80% | 0.77% | 0.77% |
-| 멈출 수 없는 충동 | 0.58% | 0.69% | 0.69% | 0.58% | 0.61% |
-| 종합 | 4.45% | 5.01% | 5.02% | 5.02% | 4.94% |
-
-링 익스체인지 사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
-| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
-|:---:|:---:|:---:|:---:|:---:|
-| 지워지지 않는 상처VI | 1.87% | 1.81% | 1.84% | 1.84% |
-| 걷잡을 수 없는 혼돈VI | 1.57% | 1.67% | 1.66% | 1.53% |
-| 채워지지 않는 굶주림VI | 1.60% | 1.59% | 1.43% | 1.41% |
-| 멈출 수 없는 본능 | 1.47% | 1.55% | 1.64% | 1.51% |
-| 종합 | 6.51% | 6.62% | 6.57% | 6.29% |
-
-링 익스체인지 사용 + '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율 테이블
-| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
-|:---:|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 악몽VI | 1.73% | 1.90% | 1.85% | 1.98% |
-| 스칼렛 차지드라이브VI | 0.76% | 0.84% | 0.77% | 0.84% |
-| 어비스 차지드라이브VI | 0.73% | 0.73% | 0.75% | 0.80% |
-| 거스트 차지드라이브VI | 0.77% | 0.74% | 0.80% | 0.80% |
-| 멈출 수 없는 충동 | 0.64% | 0.61% | 0.64% | 0.66% |
-| 종합 | 4.63% | 4.82% | 4.81% | 5.08% |
-
-'잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율(평균) 비교
-| 스킬 이름 \ 테스트 종류 | 링 익스체인지 미사용 | 링 익스체인지 사용 | 비교 |
-|:---:|:---:|:---:|:---:|
-| 지워지지 않는 상처VI | 1.82% | 1.84% | 100.88% |
-| 걷잡을 수 없는 혼돈VI | 1.58% | 1.61% | 101.87% |
-| 채워지지 않는 굶주림VI | 1.47% | 1.51% | 102.69% |
-| 멈출 수 없는 본능 | 1.51% | 1.54% | 102.15% |
-| 종합 | 6.38% | 6.50% | 101.84% |
-
-'플레인 차지드라이브VI'과 연계되는 스킬들의 점유율(평균) 비교
-| 스킬 이름 \ 테스트 종류 | 링 익스체인지 미사용 | 링 익스체인지 사용 | 비교 |
-|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 악몽VI | 1.98% | 1.87% | 96.93% |
-| 스칼렛 차지드라이브VI | 0.79% | 0.8% | 101.84% |
-| 어비스 차지드라이브VI | 0.77% | 0.75% | 97.73% |
-| 거스트 차지드라이브VI | 0.78% | 0.78% | 100.19% |
-| 멈출 수 없는 충동 | 0.63% | 0.64% | 101.19% |
-| 종합 | 4.89% | 4.84% | 98.92% |
-
-<div id="used_ring_exchange_img"></div>
-- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(1)
-<img src="used_ring_exchange_img/1/used_ring_exchange_1_1.PNG">
-<img src="used_ring_exchange_img/1/used_ring_exchange_1_2.PNG">
-<img src="used_ring_exchange_img/1/used_ring_exchange_1_3.PNG">
-<img src="used_ring_exchange_img/1/used_ring_exchange_1_4.PNG">
-<img src="used_ring_exchange_img/1/used_ring_exchange_1_5.PNG">
-<img src="used_ring_exchange_img/1/used_ring_exchange_1_6.PNG"><br>
-- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(2)
-<img src="used_ring_exchange_img/2/used_ring_exchange_2_1.PNG">
-<img src="used_ring_exchange_img/2/used_ring_exchange_2_2.PNG">
-<img src="used_ring_exchange_img/2/used_ring_exchange_2_3.PNG">
-<img src="used_ring_exchange_img/2/used_ring_exchange_2_4.PNG">
-<img src="used_ring_exchange_img/2/used_ring_exchange_2_5.PNG">
-<img src="used_ring_exchange_img/2/used_ring_exchange_2_6.PNG"><br>
-- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(3)
-<img src="used_ring_exchange_img/3/used_ring_exchange_3_1.PNG">
-<img src="used_ring_exchange_img/3/used_ring_exchange_3_2.PNG">
-<img src="used_ring_exchange_img/3/used_ring_exchange_3_3.PNG">
-<img src="used_ring_exchange_img/3/used_ring_exchange_3_4.PNG">
-<img src="used_ring_exchange_img/3/used_ring_exchange_3_5.PNG">
-<img src="used_ring_exchange_img/3/used_ring_exchange_3_6.PNG"><br>
-- 패치 '전' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기(4)
-<img src="used_ring_exchange_img/4/used_ring_exchange_4_1.PNG">
-<img src="used_ring_exchange_img/4/used_ring_exchange_4_2.PNG">
-<img src="used_ring_exchange_img/4/used_ring_exchange_4_3.PNG">
-<img src="used_ring_exchange_img/4/used_ring_exchange_4_4.PNG">
-<img src="used_ring_exchange_img/4/used_ring_exchange_4_5.PNG">
-<img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG"><br>
-<br>
-<div id="post_patch_legacy_build_img"></div>
-- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
-<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_1.PNG">
-<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_2.PNG">
-<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_3.PNG">
-<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_4.PNG">
-<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_5.PNG">
-<img src="post_patch_legacy_build_img/1/post_patch_legacy_build_1_6.PNG"><br>
-- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
-<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_1.PNG">
-<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_2.PNG">
-<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_3.PNG">
-<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_4.PNG">
-<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_5.PNG">
-<img src="post_patch_legacy_build_img/2/post_patch_legacy_build_2_6.PNG"><br>
-- 패치 '후' 55초 스펙터 / 55초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
-<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_1.PNG">
-<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_2.PNG">
-<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_3.PNG">
-<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_4.PNG">
-<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_5.PNG">
-<img src="post_patch_legacy_build_img/3/post_patch_legacy_build_3_6.PNG"><br>
-<br>
-<div id="post_patch_new_build_img"></div>
-- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
-<img src="post_patch_new_build_img/1/post_patch_new_build_1_1.PNG">
-<img src="post_patch_new_build_img/1/post_patch_new_build_1_2.PNG">
-<img src="post_patch_new_build_img/1/post_patch_new_build_1_3.PNG">
-<img src="post_patch_new_build_img/1/post_patch_new_build_1_4.PNG">
-<img src="post_patch_new_build_img/1/post_patch_new_build_1_5.PNG">
-<img src="post_patch_new_build_img/1/post_patch_new_build_1_6.PNG"><br>
-- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
-<img src="post_patch_new_build_img/2/post_patch_new_build_2_1.PNG">
-<img src="post_patch_new_build_img/2/post_patch_new_build_2_2.PNG">
-<img src="post_patch_new_build_img/2/post_patch_new_build_2_3.PNG">
-<img src="post_patch_new_build_img/2/post_patch_new_build_2_4.PNG">
-<img src="post_patch_new_build_img/2/post_patch_new_build_2_5.PNG">
-<img src="post_patch_new_build_img/2/post_patch_new_build_2_6.PNG"><br>
-- 패치 '후' 34초 스펙터 / 21초 레프 / 24초 스펙터 / 31초 레프 구조 + 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
-<img src="post_patch_new_build_img/3/post_patch_new_build_3_1.PNG">
-<img src="post_patch_new_build_img/3/post_patch_new_build_3_2.PNG">
-<img src="post_patch_new_build_img/3/post_patch_new_build_3_3.PNG">
-<img src="post_patch_new_build_img/3/post_patch_new_build_3_4.PNG">
-<img src="post_patch_new_build_img/3/post_patch_new_build_3_5.PNG">
-<img src="post_patch_new_build_img/3/post_patch_new_build_3_6.PNG"><br>
-<br>
-<div id="25.09.18_detail_info"></div>
-
-패치 '전' 링 익스체인지 사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
-| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
-|:---:|:---:|:---:|:---:|:---:|
-| 지워지지 않는 상처VI | 1.87% | 1.81% | 1.84% | 1.84% |
-| 걷잡을 수 없는 혼돈VI | 1.57% | 1.67% | 1.66% | 1.53% |
-| 채워지지 않는 굶주림VI | 1.60% | 1.59% | 1.43% | 1.41% |
-| 멈출 수 없는 본능 | 1.47% | 1.55% | 1.64% | 1.51% |
-| 종합 | 6.51% | 6.62% | 6.57% | 6.29% |
-
-패치 '전' 링 익스체인지 사용 + '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율 테이블
-| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 | 4 |
-|:---:|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 악몽VI | 1.73% | 1.90% | 1.85% | 1.98% |
-| 스칼렛 차지드라이브VI | 0.76% | 0.84% | 0.77% | 0.84% |
-| 어비스 차지드라이브VI | 0.73% | 0.73% | 0.75% | 0.80% |
-| 거스트 차지드라이브VI | 0.77% | 0.74% | 0.80% | 0.80% |
-| 멈출 수 없는 충동 | 0.64% | 0.61% | 0.64% | 0.66% |
-| 종합 | 4.63% | 4.82% | 4.81% | 5.08% |
-
-패치 '후' 링 익스체인지 사용 + '잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율 테이블
-| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 |
-|:---:|:---:|:---:|:---:|
-| 지워지지 않는 상처VI | 1.89% | 2.05% | 1.64% |
-| 걷잡을 수 없는 혼돈VI | 4.22% | 4.14% | 4.23% |
-| 채워지지 않는 굶주림VI | 4.14% | 4.23% | 4.04% |
-| 멈출 수 없는 본능 | 1.38% | 1.66% | 1.64% |
-| 종합 | 11.63% | 12.08% | 11.55% |
-
-패치 '후' 링 익스체인지 사용 + '플레인 차지드라이브VI'과 연계되는 스킬들의 점유율 테이블
-| 스킬 이름 \ 전투 횟수 | 1 | 2 | 3 |
-|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 악몽VI | 2.58% | 2.49% | 2.61% |
-| 스칼렛 차지드라이브VI | 0.69% | 0.58% | 0.69% |
-| 어비스 차지드라이브VI | 0.97% | 0.92% | 1.02% |
-| 거스트 차지드라이브VI | 0.99% | 0.82% | 0.89% |
-| 멈출 수 없는 충동 | 0.25% | 0.38% | 0.45% |
-| 종합 | 5.48% | 5.19% | 5.66% |
-
-'잊혀지지 않는 흉몽VI'과 연계되는 스킬들의 점유율(평균) 비교
-| 스킬 이름 \ 테스트 종류 | 패치 전 55:55 | 패치 후 58:52 | 비교 |
-|:---:|:---:|:---:|:---:|
-| 지워지지 않는 상처VI | 1.84% | 1.86% | 101.09% |
-| 걷잡을 수 없는 혼돈VI | 1.61% | 4.20% | 261.07% |
-| 채워지지 않는 굶주림VI | 1.51% | 4.14% | 274.41% |
-| 멈출 수 없는 본능 | 1.54% | 1.56% | 101.13% |
-| 종합 | 6.50% | 11.75% | 180.89% |
-
-'플레인 차지드라이브VI'과 연계되는 스킬들의 점유율(평균) 비교
-| 스킬 이름 \ 테스트 종류 | 패치 전 55:55 | 패치 후 58:52 | 비교 |
-|:---:|:---:|:---:|:---:|
-| 잊혀지지 않는 악몽VI | 1.87% | 2.56% | 137.27% |
-| 스칼렛 차지드라이브VI | 0.80% | 0.65% | 81.41% |
-| 어비스 차지드라이브VI | 0.75% | 0.97% | 128.90% |
-| 거스트 차지드라이브VI | 0.78% | 0.90% | 115.76% |
-| 멈출 수 없는 충동 | 0.64% | 0.36% | 56.47% |
-| 종합 | 4.84% | 5.44% | 112.58% |
