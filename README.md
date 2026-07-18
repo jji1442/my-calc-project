@@ -596,80 +596,76 @@ mastery_core_list = test_model.test_data(mastery_core_list)</code>
     
    - 링 익스체인지 미사용의 측정된 값 중 평균적인 범위에서 벗어나는 데이터가 확인되어, 2번 더 측정하여 데이터의 일관성을 확보했습니다.
    - 링 익스체인지 사용을 1번 더 측정하여 기존 데이터 무결성을 확인하였습니다.
-   - <details>
-   <summary> 링 익스체인지 '미사용' 분석 결과 확인하기(펼치기/닫기)</summary>
-   - 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(1)
-   <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_1.PNG">
-   <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_2.PNG">
-   <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_3.PNG">
-   <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_4.PNG">
-   <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_5.PNG">
-   <img src="unused_ring_exchange_img/1/unused_ring_exchange_1_6.PNG"><br>
-   - 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(2)
-   <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_1.PNG">
-   <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_2.PNG">
-   <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_3.PNG">
-   <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_4.PNG">
-   <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_5.PNG">
-   <img src="unused_ring_exchange_img/2/unused_ring_exchange_2_6.PNG"><br>
-   - 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(3)
-   <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_1.PNG">
-   <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_2.PNG">
-   <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_3.PNG">
-   <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_4.PNG">
-   <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_5.PNG">
-   <img src="unused_ring_exchange_img/3/unused_ring_exchange_3_6.PNG"><br>
-   - 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(4)
-   <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_1.PNG">
-   <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_2.PNG">
-   <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_3.PNG">
-   <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_4.PNG">
-   <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_5.PNG">
-   <img src="unused_ring_exchange_img/4/unused_ring_exchange_4_6.PNG"><br>
-   - 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(5)
-   <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_1.PNG">
-   <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_2.PNG">
-   <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_3.PNG">
-   <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_4.PNG">
-   <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_5.PNG">
-   <img src="unused_ring_exchange_img/5/unused_ring_exchange_5_6.PNG">
-   </details>
-   - <details>
-   <summary> 링 익스체인지 '사용' 분석 결과 확인하기(펼치기/닫기)</summary>
-   - 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
-   <img src="used_ring_exchange_img/1/used_ring_exchange_1_1.PNG">
-   <img src="used_ring_exchange_img/1/used_ring_exchange_1_2.PNG">
-   <img src="used_ring_exchange_img/1/used_ring_exchange_1_3.PNG">
-   <img src="used_ring_exchange_img/1/used_ring_exchange_1_4.PNG">
-   <img src="used_ring_exchange_img/1/used_ring_exchange_1_5.PNG">
-   <img src="used_ring_exchange_img/1/used_ring_exchange_1_6.PNG"><br>
-   - 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
-   <img src="used_ring_exchange_img/2/used_ring_exchange_2_1.PNG">
-   <img src="used_ring_exchange_img/2/used_ring_exchange_2_2.PNG">
-   <img src="used_ring_exchange_img/2/used_ring_exchange_2_3.PNG">
-   <img src="used_ring_exchange_img/2/used_ring_exchange_2_4.PNG">
-   <img src="used_ring_exchange_img/2/used_ring_exchange_2_5.PNG">
-   <img src="used_ring_exchange_img/2/used_ring_exchange_2_6.PNG"><br>
-   - 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
-   <img src="used_ring_exchange_img/3/used_ring_exchange_3_1.PNG">
-   <img src="used_ring_exchange_img/3/used_ring_exchange_3_2.PNG">
-   <img src="used_ring_exchange_img/3/used_ring_exchange_3_3.PNG">
-   <img src="used_ring_exchange_img/3/used_ring_exchange_3_4.PNG">
-   <img src="used_ring_exchange_img/3/used_ring_exchange_3_5.PNG">
-   <img src="used_ring_exchange_img/3/used_ring_exchange_3_6.PNG"><br>
-   - 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(4)
-   <img src="used_ring_exchange_img/4/used_ring_exchange_4_1.PNG">
-   <img src="used_ring_exchange_img/4/used_ring_exchange_4_2.PNG">
-   <img src="used_ring_exchange_img/4/used_ring_exchange_4_3.PNG">
-   <img src="used_ring_exchange_img/4/used_ring_exchange_4_4.PNG">
-   <img src="used_ring_exchange_img/4/used_ring_exchange_4_5.PNG">
-   <img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG">
-   </details>
+<details>
+<summary> 링 익스체인지 '미사용' 분석 결과 확인하기(펼치기/닫기)</summary>
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(1)
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_1.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_2.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_3.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_4.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_5.PNG">
+<img src="unused_ring_exchange_img/1/unused_ring_exchange_1_6.PNG"><br>
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(2)
+<img src="unused_ring_exchange_img/2/unused_ring_exchange_2_1.PNG">
+<img src="unused_ring_exchange_img/2/unused_ring_exchange_2_2.PNG">
+<img src="unused_ring_exchange_img/2/unused_ring_exchange_2_3.PNG">
+<img src="unused_ring_exchange_img/2/unused_ring_exchange_2_4.PNG">
+<img src="unused_ring_exchange_img/2/unused_ring_exchange_2_5.PNG">
+<img src="unused_ring_exchange_img/2/unused_ring_exchange_2_6.PNG"><br>
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(3)
+<img src="unused_ring_exchange_img/3/unused_ring_exchange_3_1.PNG">
+<img src="unused_ring_exchange_img/3/unused_ring_exchange_3_2.PNG">
+<img src="unused_ring_exchange_img/3/unused_ring_exchange_3_3.PNG">
+<img src="unused_ring_exchange_img/3/unused_ring_exchange_3_4.PNG">
+<img src="unused_ring_exchange_img/3/unused_ring_exchange_3_5.PNG">
+<img src="unused_ring_exchange_img/3/unused_ring_exchange_3_6.PNG"><br>
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(4)
+<img src="unused_ring_exchange_img/4/unused_ring_exchange_4_1.PNG">
+<img src="unused_ring_exchange_img/4/unused_ring_exchange_4_2.PNG">
+<img src="unused_ring_exchange_img/4/unused_ring_exchange_4_3.PNG">
+<img src="unused_ring_exchange_img/4/unused_ring_exchange_4_4.PNG">
+<img src="unused_ring_exchange_img/4/unused_ring_exchange_4_5.PNG">
+<img src="unused_ring_exchange_img/4/unused_ring_exchange_4_6.PNG"><br>
+- 허수아비형 보스 기준 링 익스체인지 '미사용' 6분 주기.(5)
+<img src="unused_ring_exchange_img/5/unused_ring_exchange_5_1.PNG">
+<img src="unused_ring_exchange_img/5/unused_ring_exchange_5_2.PNG">
+<img src="unused_ring_exchange_img/5/unused_ring_exchange_5_3.PNG">
+<img src="unused_ring_exchange_img/5/unused_ring_exchange_5_4.PNG">
+<img src="unused_ring_exchange_img/5/unused_ring_exchange_5_5.PNG">
+<img src="unused_ring_exchange_img/5/unused_ring_exchange_5_6.PNG">
+</details>
 
-
-
-
-
+<details>
+<summary> 링 익스체인지 '사용' 분석 결과 확인하기(펼치기/닫기)</summary>
+- 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(1)
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_1.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_2.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_3.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_4.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_5.PNG">
+<img src="used_ring_exchange_img/1/used_ring_exchange_1_6.PNG"><br>
+- 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(2)
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_1.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_2.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_3.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_4.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_5.PNG">
+<img src="used_ring_exchange_img/2/used_ring_exchange_2_6.PNG"><br>
+- 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(3)
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_1.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_2.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_3.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_4.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_5.PNG">
+<img src="used_ring_exchange_img/3/used_ring_exchange_3_6.PNG"><br>
+- 허수아비형 보스 기준 링 익스체인지 '사용' 6분 주기.(4)
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_1.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_2.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_3.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_4.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_5.PNG">
+<img src="used_ring_exchange_img/4/used_ring_exchange_4_6.PNG">
+</details>
 
 링 익스체인지 스킬 사용으로 인한 평균 데미지 상승량은 "1.83%"이며, 이로 인한 아크의 일부 스킬별 점유율 변화는 다음과 같습니다.
 
