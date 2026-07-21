@@ -2725,28 +2725,34 @@ MP 1000 소비, 60초 동안 데미지 45% 증가, 공격력 '10 + 3 * 스킬레
   <thead>
     <tr>
       <th align="center">스킬 레벨</th>
+      <th align="center">약식 유무</th>
       <th align="center">100억 메소당 최종데미지 상승율</th>
     </tr>
   </thead>
   <tbody>
      <tr>
       <td align="center">0 -> 1</td>
+      <td align="center">실측</td>
       <td align="center">-9.0016%</td>
     </tr>
     <tr>
-      <td align="center">8 -> 9(약식)</td>
+      <td align="center">8 -> 9</td>
+      <td align="center">약식</td>
       <td align="center">3.1857%</td>
     </tr>
      <tr>
       <td align="center">0 -> 9</td>
+      <td align="center">실측</td>
       <td align="center">1.6518%</td>
      </tr>
      <tr>
       <td align="center">9 -> 14(약식)</td>
+      <td align="center">약식</td>
       <td align="center">1.8309%</td>
      </tr>
     <tr>
-      <td align="center">0 -> 14(약식)</td>
+      <td align="center">0 -> 14</td>
+      <td align="center">약식</td>
       <td align="center">1.7500%</td>
     </tr>
   </tbody>
